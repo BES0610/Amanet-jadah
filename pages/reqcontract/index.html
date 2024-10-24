@@ -237,65 +237,45 @@
                         <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">المالك  > طلب خدمة ضخ مياة ></span>
                         <span style="color: #004693; font-weight: 600; font-size: 20px"> بيانات الطلب</span>
                     </div>
-                    <div class="OwnerDetils">
-                        <form class="form-container">
-                            <div class="inputCon">
-                                <label>نوع الرخص</label>
-                                <select class="input-field" placeholder="اختر" required>
-                                    <option value="">موقع مباني</option>
-                                    <option value="">موقع مباني</option>
-                                    <option value="">موقع مباني</option>
-                                </select>
-                            </div>
-                            <div class="inputCon">
-                                <label>رقم الرخصة</label>
-                                <input type="text" class="input-field" placeholder="رقم الرخصة" required />
-                            </div>
-                            <div class="inputCon">
-                                <label>اسم صاحب الرخصة</label>
-                                <input type="text" class="input-field" placeholder="اسم صاحب الرخصة" required />
-                            </div>
-                            <div class="inputCon">
-                                <label>تاريخ الإصدار</label>
-                                <input type="date" class="input-field" required />
-                            </div>
-                    
-                            <!-- Map Modal -->
-                            <div id="mapModal" class="modal">
-                                <div class="modal-content">
-                                    <span class="close" onclick="document.getElementById('mapModal').style.display='none'">&times;</span>
-                                    <div id="map" style="height: 400px; width: 100%;"></div>
+                    <div class="OwnerDetails">
+                        <h3>طلب التعاقد مع:</h3>
+                        <div class="radioInput">
+                            <div style="display: flex; width: 100%; justify-content: space-between;"> 
+                                <div style="width: 30%; display: flex; align-items: center;">
+                                    <input type="radio" name="consultant" id="specific" value="specific" />
+                                    <label for="specific">اختيار استشاري محدد</label>
+                                </div>
+                                <div class="conditional-select" style="display: none;width: 40%;height: 84px;">
+                                    <label for="specificConsultant" style="display: block;">الاستشاري</label>
+                                    <select id="specificConsultant" aria-placeholder="اختر">
+                                            <option value="">استشاري 1</option>
+                                            <option value="">استشاري 2</option>
+                                            <option value="">استشاري 3</option>
+                                    </select>
                                 </div>
                             </div>
-                    
-                            <div class="DragBoxsContnar">
-                                <div class="DragBox">
-                                    <label>تقرير</label>
-                                    <div class="drag-and-drop" data-input-id="file-input-report">
-                                        <img src="../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-report" />
-                                        <div style="width: 100%;">
-                                            <div id="uploadText-report" style="text-align: center;">اضغط للارفاق</div>
-                                            <input type="file" id="file-input-report" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
-                                            <div class="file-name" id="file-name-report"></div>
-                                            <div class="file-size" id="file-size-report"></div>
-                                            <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
-                                                <div class="progress-container" id="progress-container-report" style="display: none; flex: 1; margin-right: 10px;">
-                                                    <div class="progress-bar" id="progress-bar-report" style="height: 100%;"></div>
-                                                </div>
-                                                <div id="upload-percentage-report" class="upload-percentage"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Additional DragBox elements can be added similarly -->
-                            </div>
-                        </form>
+                        </div>
+                        <div class="radioInput">
+                            <input type="radio" name="consultant" id="all" value="all" />
+                            <label for="all">كل الاستشاريين</label>
+                        </div>
+                        <hr />
+                        <div style="padding: 24px; display: flex;">
+                            <img style="width: 14px; margin: 4px;" src="../../assest/Icons/OrderDetils/info-circle-Filled@3x.jpg" />
+                            <a href="#">الاطلاع علي الاستشاريين المعتمدين</a>
+                        </div>
+                        <div class="select" style="width: 50%;margin: 24px;">
+                            <label for="duration" style="font-size: 18px;font-weight: 600;display: block;">المدة</label>
+                            <select id="duration" aria-placeholder="اختر">
+                                <option value="">3 ايام</option>
+                                <option value="">5 ايام</option>
+                                <option value="">7 ايام</option>
+                            </select>
+                        </div>
                     </div>
-                    
                     <div class="Btnscontainer">
                         <a href="/pages/ReqWaterServiceDoc2" style="width: 26%;">
-                            <button class="service-button" id="serviceButton">التالي</button>
+                            <button class="service-button" id="serviceButton">ارسال الطلب</button>
                         </a>
                     </div>
                 </div>

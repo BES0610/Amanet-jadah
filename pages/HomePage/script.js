@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     const imagesSlider = document.querySelector('.ImagesSlider');
+    const slides = imagesSlider.children; // Get all slides
     const paginationButtons = document.querySelectorAll('.pagination-button');
     let currentIndex = 0;
 
     function updateSlider() {
-        const offset = -currentIndex * 100; // Change this based on your layout
-        imagesSlider.style.transform = `translateX(${offset}%)`;
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none'; // Hide all slides
+        }
+        
+        // Show the current slide
+        slides[currentIndex].style.display = 'block'; // Show current slide
 
         // Update active button
         paginationButtons.forEach(button => button.classList.remove('active'));
@@ -18,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
             updateSlider();
         });
     });
+
+    // Show the initial slide
+    updateSlider();
 
     // Optionally, add automatic sliding
     setInterval(() => {

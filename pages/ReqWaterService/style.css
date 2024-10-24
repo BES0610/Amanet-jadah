@@ -97,6 +97,7 @@ body{
     font-size: 21px;
     line-height: 24px;
     cursor: pointer;
+    color: #004693;
 }
 /* OnwerTap */
 
@@ -378,7 +379,10 @@ body{
 .ContentContaner{
     width: 80%;
 }
-
+a{
+    color: #003366;
+    text-decoration: none; 
+}
     /* footer */
 
     .footer {

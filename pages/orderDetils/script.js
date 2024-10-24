@@ -61,6 +61,8 @@
             mapModal.style.display = 'none';
         }
     }
+
+    
 // Add click event listeners to each drag-and-drop area
 document.querySelectorAll('.drag-and-drop').forEach(dragDrop => {
     const uploadText = dragDrop.querySelector('div[id^="uploadText-"]');

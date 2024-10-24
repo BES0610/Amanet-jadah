@@ -1,0 +1,685 @@
+body{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    overflow-x: hidden; 
+    height: auto; 
+}
+.presentSaleOffer{
+    width: 100%; 
+}
+.presentSaleOffer .Media{
+}
+.presentSaleOffer .Media .TopLeft{
+    position: absolute;
+    width: 475px;
+    height: 478px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.presentSaleOffer .Media .TopLeft img{
+    width: 100%;
+    height: 100%;
+}
+.presentSaleOffer .Media .TopRight{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -210px; 
+    right: 950px;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+.presentSaleOffer .Media .NastedTopRight{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 87px;
+    top: 0px;
+}
+
+.presentSaleOffer .Contaner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentSaleOffer .Contaner .NavBar {
+    width: 100%;
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px 0px #655FDB10;
+    display: flex;
+    border-radius: 12px;
+    margin-top: 110px;
+    z-index: 10;
+}
+.presentSaleOffer .Contaner .NavBar .contaner{
+    width: 100%;
+}
+
+.presentSaleOffer .Contaner .NavBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row-reverse; 
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+ .Contaner .fullstope {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%; /* Makes the shape a circle */
+    margin-left: 5px; /* Optional: spacing after the circle */
+}
+
+
+.presentSaleOffer .Contaner .NavBar ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    text-align: center;
+    height: 100%; 
+    margin: 8px;
+    padding: 0 12px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #004693;
+    line-height: 24px;
+    cursor: pointer;
+}
+/* OnwerTap */
+
+.presentSaleOffer .Contaner .NavBar .OnwerTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:4px ;
+    direction: rtl;
+    display: flex;
+}
+.presentSaleOffer .Contaner .NavBar .OnwerTap h4{
+    text-decoration: underline;
+    color: gray;
+}
+.presentSaleOffer .Contaner .NavBar .OnwerTap .firstRow,
+    .presentSaleOffer .Contaner .NavBar .OnwerTap .ScoRow,
+    .presentSaleOffer .Contaner .NavBar .OnwerTap .ThirdRow{
+        width: 200px;
+        height: 80%;
+        margin: 18px;
+    }
+    .presentSaleOffer .Contaner .NavBar .OnwerTap .ScoRow{
+        margin-top: 80px;
+    }
+
+/* consultativeTap */
+.presentSaleOffer .Contaner .NavBar .consultativeTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:4px ;
+    display: flex;
+    direction: rtl;
+    display: none;
+}
+
+.presentSaleOffer .Contaner .NavBar .consultativeTap h4{
+    text-decoration: underline;
+    color: gray;
+}
+.presentSaleOffer .Contaner .NavBar .consultativeTap .firstRow,
+    .presentSaleOffer .Contaner .NavBar .consultativeTap .ScoRow,
+    .presentSaleOffer .Contaner .NavBar .consultativeTap .ThirdRow{
+        width: auto;
+        height: 80%;
+        margin: 18px;
+    }
+    .presentSaleOffer .Contaner .NavBar .consultativeTap .ScoRow{
+        margin-top: 70px;
+    }
+
+
+/* Contractors */
+
+.presentSaleOffer .Contaner .NavBar .ContractorsTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:4px ;
+    display: flex;
+    direction: rtl;
+    display: none;
+}
+
+.presentSaleOffer .Contaner .NavBar .ContractorsTap h4{
+    text-decoration: underline;
+    color: gray;
+    
+}
+
+.presentSaleOffer .Contaner .NavBar .ContractorsTap .firstRow,
+    .presentSaleOffer .Contaner .NavBar .ContractorsTap .ScoRow,
+    .presentSaleOffer .Contaner .NavBar .ContractorsTap .ThirdRow{
+        width: auto;
+        height: 80%;
+        margin: 18px;
+    }
+    .presentSaleOffer .Contaner .NavBar .ContractorsTap .ScoRow{
+        margin-top: 70px;
+    }
+/* HonestyTap */
+
+.presentSaleOffer .Contaner .NavBar .HonestyTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:4px ;
+    display: flex;
+    direction: rtl;
+    display: none;
+}
+
+.presentSaleOffer .Contaner .NavBar .HonestyTap h4{
+    text-decoration: underline;
+    color: gray;
+}
+.presentSaleOffer .Contaner .NavBar .HonestyTap .firstRow,
+    .presentSaleOffer .Contaner .NavBar .HonestyTap .ScoRow,
+    .presentSaleOffer .Contaner .NavBar .HonestyTap .ThirdRow{
+        width: auto;
+        height: 80%;
+        margin: 18px;
+    }
+    .presentSaleOffer .Contaner .NavBar .HonestyTap .ScoRow{
+        margin-top: 70px;
+    }
+
+.tab-link {
+    cursor: pointer;
+}
+.tab-content {
+    display: none; /* Hide all tabs by default */
+}
+
+
+  
+.presentSaleOffer .Contaner .NavBar  .firstRow,
+.presentSaleOffer .Contaner .NavBar  .ScoRow{
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 10px;
+}
+.presentSaleOffer .Contaner .NavBar .firstRow .link-container,
+.presentSaleOffer .Contaner .NavBar .ScoRow .link-container{
+    display: flex; 
+    align-items: center; 
+    margin: 5px 0;
+    height: 24px;
+}
+.presentSaleOffer .Contaner .NavBar .firstRow .link-container img,
+.presentSaleOffer .Contaner .NavBar .ScoRow .link-container img {
+    margin-right: 10px; 
+    height: 24px; 
+    width: auto; 
+}
+.presentSaleOffer .Contaner .NavBar  .firstRow .link-container a,
+.presentSaleOffer .Contaner .NavBar  .ScoRow .link-container a {
+    text-decoration: none;
+    color: inherit;
+
+}
+.presentSaleOffer .Contaner .NavBar .ThirdRow  a {
+    display: block;
+    height: 24px;
+}
+
+
+.presentSaleOffer .Contaner .NavBar .OnwerTap  div,
+.presentSaleOffer .Contaner .NavBar .OnwerTap div,
+.presentSaleOffer .Contaner .NavBar .OnwerTap  div,
+.presentSaleOffer .Contaner .NavBar .consultativeTap  div,
+.presentSaleOffer .Contaner .NavBar .consultativeTap  div ,
+.presentSaleOffer .Contaner .NavBar .consultativeTap div ,
+.presentSaleOffer .Contaner .NavBar .ContractorsTap  div ,
+.presentSaleOffer .Contaner .NavBar .ContractorsTap  div ,
+.presentSaleOffer .Contaner .NavBar .ContractorsTap  div,
+.presentSaleOffer .Contaner .NavBar .HonestyTap  div ,
+.presentSaleOffer .Contaner .NavBar .HonestyTap  div ,
+.presentSaleOffer .Contaner .NavBar .HonestyTap  div {
+    font-weight: 400;
+    margin: 22px;
+    cursor: pointer;
+}
+
+.presentSaleOffer .Contaner .NavBar .OnwerTap  div:hover,
+.presentSaleOffer .Contaner .NavBar .OnwerTap div:hover,
+.presentSaleOffer .Contaner .NavBar .OnwerTap  div:hover,
+.presentSaleOffer .Contaner .NavBar .consultativeTap  div:hover,
+.presentSaleOffer .Contaner .NavBar .consultativeTap  div:hover ,
+.presentSaleOffer .Contaner .NavBar .consultativeTap div:hover ,
+.presentSaleOffer .Contaner .NavBar .ContractorsTap  div:hover ,
+.presentSaleOffer .Contaner .NavBar .ContractorsTap .ScoRow div:hover ,
+.presentSaleOffer .Contaner .NavBar .ContractorsTap  div:hover,
+.presentSaleOffer .Contaner .NavBar .HonestyTap  div:hover ,
+.presentSaleOffer .Contaner .NavBar .HonestyTap  div:hover ,
+.presentSaleOffer .Contaner .NavBar .HonestyTap  div:hover {
+    color: #003366; /* Change this to your desired hover color */
+    transition: color 0.3s ease; 
+    position: relative;
+    bottom: 1px;
+}
+
+/* login */
+.presentSaleOffer .Contaner .NavBar .login{
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 12px;
+    border-bottom-left-radius: 33px ;
+    border-bottom-right-radius: 33px ;
+    position: relative;
+    top: -20px;
+    box-shadow: 0px 5.6px 27.6px 0px #0000001F;
+    color: black;
+    font-size: 10px;
+        font-family: "Zain", sans-serif;
+    cursor: pointer;
+}
+.presentSaleOffer .Contaner .NavBar .login-item {
+    display: flex; /* Align image and text in a row */
+    align-items: center; /* Center the items vertically */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.presentSaleOffer .Contaner .NavBar .login-img {
+    width: 30px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    margin-left: 20px   ;
+}
+
+    /* presentSaleCon */
+    .presentSaleOffer .ContentContaner{
+        width: 80%;
+        background-color: white;
+        padding: 44px;
+        border-radius: 12px;
+    }
+    .presentSaleCon {
+        width: 100%;
+        height: 900px;
+
+    }
+    .presentSaleCon .presentSaleTop {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        direction: rtl;
+        margin-bottom: 30px;
+    } 
+    .presentSaleCon .presentSaleTop input{
+        flex-grow: 8;
+        border-radius: 12px;
+        background-color: white;
+        border: 1px solid #3E2984;
+        padding: 8px 32px;
+        gap: 10px;
+        height: 40px;
+        margin: 8px;
+        cursor: pointer;
+    } 
+    .presentSaleCon .presentSaleTop input::placeholder{
+        font-family:  "Zain", sans-serif;
+    }
+    .presentSaleCon .presentSaleTop button{
+        flex-grow: 2    ;
+        background-color: #3E2984;
+        border-radius: 12px;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 8px;
+        height: 40px;
+        font-family:  "Zain", sans-serif;
+        cursor: pointer;
+    } 
+    .presentSaleCon .presentSaleTop div{
+        flex-grow: 1;
+        height: 40px;
+        border: 2px solid #3E2984;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin: 4px;
+        font-family:  "Zain", sans-serif;
+        cursor: pointer;
+    } 
+    .presentSaleCon .TapleCon{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        direction: rtl;
+        border-radius: 12px;
+    } 
+    .presentSaleCon .TapleCon .Header{
+        width: 20%;
+        height: 50px;
+        background-color: #FBF9FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #3E2984;
+    }  
+    .presentSaleCon .TapleCon .Taple{
+        width: 100%;
+        height: 100%;
+        background-color: #FBF9FF;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        /* justify-content: space-between; */
+    } 
+    .presentSaleCon .TapleCon .Taple span{
+        width: 100%;
+    }
+    .presentSaleCon .TapleCon .Taple .Header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        justify-content: space-around;
+        border-bottom: 2px solid  #3E2984;
+        margin-bottom: 10px;
+        
+    } 
+    .presentSaleCon .TapleCon .Taple .Header div{
+        flex-grow: 1;
+        grid-area: 4;
+        font-size: 18px;
+        font-weight: 800;
+        font-family:  "Zain", sans-serif;
+        color: #3E2984 ;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+    } 
+    .presentSaleCon .TapleCon .Taple .body{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        justify-content: space-around;
+        margin-top: 10px;
+    } 
+    .presentSaleCon .TapleCon .Taple .body div{
+        flex-grow: 1;
+        grid-area: 4;
+        font-size: 16px;
+        font-weight: 500;
+        font-family:  "Zain", sans-serif;
+        color: #002195 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+    } 
+    .presentSaleCon .TapleCon .Taple .body div:nth-child(6){
+        padding: 8px;
+    } 
+    .presentSaleCon .TapleCon .Taple .body .green{
+        background-color: #0A9D4C1A;
+        border-radius: 12px;
+        color: #0A9D4C;
+        font-weight: 800;
+    } 
+    .presentSaleCon .TapleCon .Taple .body .yellow{
+        background-color: #FFFAED;
+        border-radius: 12px;
+        color: #F19B02;
+        font-weight: 800;
+    } 
+    .presentSaleCon .TapleCon .Taple .body .red{
+        background-color: #A008131A;
+        border-radius: 12px;
+        color: #A00813;
+        font-weight: 800;
+    } 
+    .presentSaleCon .TapleCon .Taple .body .gray{
+        background-color: #E0E0E0;
+        border-radius: 12px;
+        color: #707070;
+        font-weight: 800;
+    } 
+    .presentSaleCon .TapleCon .Taple .body .blue{
+        background-color: #E2E4F8;
+        border-radius: 12px;
+        color: #3E2984;
+        font-weight: 800;
+    } 
+
+
+    .presentSaleCon .pagination {
+        margin-top: 20px; 
+        display: flex; 
+        justify-content: center; 
+        gap: 5px;
+        align-items: center;
+        position: relative;
+    }
+    .presentSaleCon .pagination-button {
+        padding: 5px 10px; 
+        border: 1px solid #707070; 
+        color: #707070;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        transition: background-color 0.3s;
+        border-radius: 4px;
+    }
+    .presentSaleCon .pagination-button.active {
+        color: black;
+        border:2px solid #3E2984;
+        background-color: #FBF9FF; 
+        font-weight: 600;
+    }
+    .presentSaleCon .page-select {
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        color:#3E2984 ;
+        border: 1px solid #CFD3D8;
+        border-radius: 6px;
+    }
+
+    .tab {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the tab */
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000; /* Make sure it appears above other content */
+        padding: 20px;
+        border-radius: 8px;
+        width: 70%;
+        height: 600px;
+        overflow-y: scroll;
+    }
+    
+    
+    .tab-content {
+        text-align: center; /* Center text in the tab */
+    }
+ 
+    
+    a{
+        text-decoration: none;
+        
+    }
+    /* Form */
+    .form-container{
+        direction: rtl;
+    }
+    .form-container .inputCon {
+        display: inline-flex;
+        margin: 22px;
+        flex-direction: column;
+        width: calc((100% / 2) - 50px);
+    }
+    .form-container .inputCon input{
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #CFD3D8;
+    }
+    .form-container .inputCon select{
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #CFD3D8;
+    }
+    .form-container .inputCon label{
+        font-weight: 400;
+        margin: 8px;
+    }
+    .form-container .inputCon input::placeholder {
+        font-family: "Zain", sans-serif;
+        color: #888; /* Color of the placeholder text */
+        font-style: italic; /* Italic style for the placeholder */
+        opacity: 1; /* Set opacity to ensure visibility */
+    }
+    .form-container .Location {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container .Location .LocationInput{
+        display: flex;
+        justify-content: space-around;
+    }
+    .form-container .Location .LocationInput input{
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #CFD3D8;
+        width: 45%;
+    }
+
+
+    .form-container .DragBoxsContnar {
+        text-align: center;
+    }
+    .form-container .DragBox{
+        width: calc((100% / 2) - 150px);
+        display: inline-block;
+        cursor: pointer;
+        text-align: justify;
+        font-weight: 400;
+        margin: 18px 25px;
+    }
+    .form-container .DragBox .drag-and-drop {
+        height: auto;
+        padding: 12px;
+        box-shadow: 0px 4px 16px 0px #0046931A;
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column; /* Keep the flex direction as row */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-container .DragBox .drag-and-drop img {
+        width: 20px; 
+        height: 20px; /* Original height for default state */
+    }
+    
+    .form-container .DragBox .drag-and-drop.uploaded img {
+        width: 50px; /* Updated width when file is uploaded */
+        margin: 10px; /* Margin when file is uploaded */
+    }
+    .form-container .DragBox  .file-size {
+        font-size: 11px;
+        font-weight: 300;
+    }
+    
+    .form-container .DragBox .progress-container {
+        width: 100%;
+        background-color: #f3f3f3;
+        border-radius: 5px; 
+        overflow: hidden; 
+        display: flex; 
+        height: 10px;
+    }
+    
+    .form-container .DragBox .progress-bar {
+        height: 100%; 
+        background-color: #2F7CBE; 
+        width: 0; 
+        transition: width 0.5s; 
+    }
+    
+    .form-container .DragBox .upload-percentage {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+        direction: rtl; 
+    }
+    
+/* To show file name */
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+    /* footer */
+
+    .footer {
+        position: relative;
+        display: inline-block;
+        width: 98vw;
+        height: 330px;
+        margin: 19px auto 0 auto;
+        margin-left: calc(51.3% - 50vw);
+    }
+    
+    .footer img {
+        width: 100%;
+    }
+    
+    .footer .footer-text {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        top: 23%;
+        left: 50%;
+        color: white;
+        text-align: center;
+    }    
+    .footer .footer-text div{
+        font-size:18px ;
+    }

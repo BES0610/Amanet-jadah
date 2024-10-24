@@ -448,13 +448,17 @@ body{
         text-align: center;
         justify-content: center;
         border: 0;
+        font-family: "Zain", sans-serif;
     }
     .service-button:disabled {
         background-color: #ccc; /* Change background color when disabled */
         cursor: not-allowed; /* Change cursor style */
         opacity: 0.6; /* Make it appear faded */
     }
-    
+    a{
+        color: #003366;
+        text-decoration: none; 
+    }
     /* footer */
 
     .footer {

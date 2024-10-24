@@ -99,6 +99,7 @@ body{
     cursor: pointer;
     width: calc((100% / 8) - 51px);
     font-family: "Zain", sans-serif;
+    color: #004693;
 }   
 /* OnwerTap */
 
@@ -399,6 +400,17 @@ body {
     width: 50px;
 }
 
+/* Style for the active button */
+.Slider .pagination-button.active {
+    background-color: #3E2984; /* Active button color */
+    border: 2px solid #3E2984; /* Optional: Add border for active state */
+}
+
+/* Optional: Add hover effect */
+.Slider .pagination-button:hover {
+    background-color: #d0bfff; /* Lighter shade on hover */
+}
+
 
     /* Roles */
 
@@ -561,7 +573,10 @@ h1 {
         font-weight: 500;
         color: #3C2678;
     }
-
+    a{
+        color: #003366;
+        text-decoration: none; 
+    }
     /* footer */
 
     .footer {

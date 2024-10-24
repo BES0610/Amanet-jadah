@@ -97,6 +97,7 @@ body{
     font-size: 21px;
     line-height: 24px;
     cursor: pointer;
+    color: #004693;
 }
 /* OnwerTap */
 
@@ -315,30 +316,7 @@ body{
     margin-right: 20px; /* Space between image and text */
     margin-left: 20px   ;
 }
-    /* btns */
 
-    .Btnscontainer {
-        display: flex;
-        width: 100%;
-        margin: 20px 0;
-        justify-content: start;
-    }
-    
-    
-    .Btnscontainer .service-button {
-        width: 100%;
-        height: 50px;
-        background-color: #3E2984;
-        color: white;
-        font-size: 23px;
-        font-weight: 500;
-        border-radius: 12px;
-        cursor: pointer;
-        padding: 12px;
-        text-align: center;
-        justify-content: center;
-        border: 0;
-    }
 
     /* Form */
 
@@ -499,6 +477,36 @@ body{
         font-weight: bold;
         margin-top: 10px;
     }    
+
+        /* btns */
+
+        .Btnscontainer {
+            display: flex;
+            width: 100%;
+            margin: 20px 0;
+            justify-content: start;
+        }
+        
+        
+        .Btnscontainer .service-button {
+            width: 100%;
+            height: 50px;
+            background-color: #3E2984;
+            color: white;
+            font-size: 23px;
+            font-weight: 500;
+            border-radius: 12px;
+            cursor: pointer;
+            padding: 12px;
+            text-align: center;
+            justify-content: center;
+            border: 0;
+            font-family: "Zain", sans-serif;
+        }
+        a{
+            color: #003366;
+            text-decoration: none; 
+        }
     /* footer */
 
     .footer {
