@@ -1,0 +1,38 @@
+    
+        /* LIB */
+    
+
+.mr-8{
+margin: 8px;
+}
+.mr-12{
+margin: 12px;
+}
+.padd-8{
+    padding: 8px;
+}
+.padd-12{
+    padding: 12px;
+}
+.padd-24{
+    padding: 24px;
+}
+.displayFlex{
+    display: flex;
+}
+.displayBlock{
+    display: flex;
+}
+.displayNon{
+    display: flex;
+}
+.borderReduce{
+    border-radius: 12px;
+}
+
+
+/* GLOPAL */
+
+a {
+    text-decoration: none;
+}

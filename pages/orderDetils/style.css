@@ -1,5 +1,5 @@
 body{
-    font-family: "Zain", sans-serif;
+    font-family: "Helvetica";
     font-weight: 300;
     overflow-x: hidden; 
     height: auto; 
@@ -98,6 +98,8 @@ body{
     line-height: 24px;
     cursor: pointer;
     color: #004693;
+    font-family: Helvetica;
+    width: calc((100% / 8) - 51px);
 }
 /* OnwerTap */
 
@@ -244,12 +246,12 @@ body{
     color: inherit;
 
 }
-.orderDetils .Contaner .NavBar .ThirdRow  a {
-    display: block;
-    height: 24px;
+
+.orderDetils .Contaner .NavBar .ThirdRow {
+    position: absolute;
+    left: 20%;
+    height: 50px;
 }
-
-
 .orderDetils .Contaner .NavBar .OnwerTap  div,
 .orderDetils .Contaner .NavBar .OnwerTap div,
 .orderDetils .Contaner .NavBar .OnwerTap  div,
@@ -301,7 +303,7 @@ body{
     box-shadow: 0px 5.6px 27.6px 0px #0000001F;
     color: black;
     font-size: 10px;
-        font-family: "Zain", sans-serif;
+    font-family: "HelveticaBold", sans-serif;
     cursor: pointer;
 }
 .orderDetils .Contaner .NavBar .login-item {
@@ -350,7 +352,7 @@ body{
         margin: 8px;
     }
     .form-container .inputCon input::placeholder {
-        font-family: "Zain", sans-serif;
+        font-family: "Helvetica", sans-serif;
         color: #888; /* Color of the placeholder text */
         font-style: italic; /* Italic style for the placeholder */
         opacity: 1; /* Set opacity to ensure visibility */
@@ -473,7 +475,7 @@ body{
         cursor: pointer;
     }
     .loading-indicator {
-        color: #007BFF; /* Change to your desired color */
+        color: var(--text-color); /* Change to your desired color */
         font-weight: bold;
         margin-top: 10px;
     }    
@@ -498,10 +500,11 @@ body{
             border-radius: 12px;
             cursor: pointer;
             padding: 12px;
-            text-align: center;
+            display: flex;
+            align-items: center;
             justify-content: center;
             border: 0;
-            font-family: "Zain", sans-serif;
+            font-family: "HelveticaBold", sans-serif;
         }
         a{
             color: #003366;

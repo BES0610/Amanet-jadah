@@ -1,5 +1,5 @@
 body{
-    font-family: "Zain", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     overflow-x: hidden; 
     height: auto; 
@@ -91,9 +91,10 @@ body{
     padding: 0 12px;
     font-size: 21px;
     font-weight: 500;
-    color: #004693;
+    color: var(--text-color);
     line-height: 24px;
     cursor: pointer;
+    width: calc((100% / 8) - 51px);
 }
 /* OnwerTap */
 
@@ -240,12 +241,11 @@ body{
     color: inherit;
 
 }
-.presentSaleOffer .Contaner .NavBar .ThirdRow  a {
-    display: block;
-    height: 24px;
+.presentSaleOffer .Contaner .NavBar .ThirdRow  {
+    position: absolute;
+    left: 20%;
+    height: 50px;
 }
-
-
 .presentSaleOffer .Contaner .NavBar .OnwerTap  div,
 .presentSaleOffer .Contaner .NavBar .OnwerTap div,
 .presentSaleOffer .Contaner .NavBar .OnwerTap  div,
@@ -297,7 +297,7 @@ body{
     box-shadow: 0px 5.6px 27.6px 0px #0000001F;
     color: black;
     font-size: 10px;
-        font-family: "Zain", sans-serif;
+        font-family: "HelveticaBold", sans-serif;
     cursor: pointer;
 }
 .presentSaleOffer .Contaner .NavBar .login-item {
@@ -319,6 +319,7 @@ body{
         background-color: white;
         padding: 44px;
         border-radius: 12px;
+        height: 80vw;
     }
     .presentSaleCon {
         width: 100%;
@@ -339,7 +340,7 @@ body{
         flex-grow: 8;
         border-radius: 12px;
         background-color: white;
-        border: 1px solid #3E2984;
+        border: 1px solid var(--btn-color);
         padding: 8px 32px;
         gap: 10px;
         height: 40px;
@@ -347,30 +348,30 @@ body{
         cursor: pointer;
     } 
     .presentSaleCon .presentSaleTop input::placeholder{
-        font-family:  "Zain", sans-serif;
+        font-family:  "Helvetica", sans-serif;
     }
     .presentSaleCon .presentSaleTop button{
         flex-grow: 2    ;
-        background-color: #3E2984;
+        background-color: var(--btn-color);
         border-radius: 12px;
         color: white;
         font-size: 14px;
         font-weight: 400;
         margin: 8px;
         height: 40px;
-        font-family:  "Zain", sans-serif;
+        font-family:  "HelveticaBold", sans-serif;
         cursor: pointer;
     } 
     .presentSaleCon .presentSaleTop div{
         flex-grow: 1;
         height: 40px;
-        border: 2px solid #3E2984;
+        border: 2px solid var(--btn-color);
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 12px;
         margin: 4px;
-        font-family:  "Zain", sans-serif;
+        font-family:  "Helvetica", sans-serif;
         cursor: pointer;
     } 
     .presentSaleCon .TapleCon{
@@ -390,7 +391,7 @@ body{
         align-items: center;
         font-size: 24px;
         font-weight: 600;
-        color: #3E2984;
+        color: var(--btn-color);
     }  
     .presentSaleCon .TapleCon .Taple{
         width: 100%;
@@ -411,7 +412,7 @@ body{
         flex-direction: row;
         direction: rtl;
         justify-content: space-around;
-        border-bottom: 2px solid  #3E2984;
+        border-bottom: 2px solid  var(--btn-color);
         margin-bottom: 10px;
         
     } 
@@ -420,8 +421,8 @@ body{
         grid-area: 4;
         font-size: 18px;
         font-weight: 800;
-        font-family:  "Zain", sans-serif;
-        color: #3E2984 ;
+        font-family:  "HelveticaBold", sans-serif;
+        color: var(--btn-color) ;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -441,7 +442,7 @@ body{
         grid-area: 4;
         font-size: 16px;
         font-weight: 500;
-        font-family:  "Zain", sans-serif;
+        font-family:  "Helvetica", sans-serif;
         color: #002195 ;
         display: flex;
         justify-content: center;
@@ -478,7 +479,7 @@ body{
     .presentSaleCon .TapleCon .Taple .body .blue{
         background-color: #E2E4F8;
         border-radius: 12px;
-        color: #3E2984;
+        color: var(--btn-color);
         font-weight: 800;
     } 
 
@@ -502,7 +503,7 @@ body{
     }
     .presentSaleCon .pagination-button.active {
         color: black;
-        border:2px solid #3E2984;
+        border:2px solid var(--btn-color);
         background-color: #FBF9FF; 
         font-weight: 600;
     }
@@ -511,7 +512,7 @@ body{
         position: absolute;
         right: 0;
         background-color: white;
-        color:#3E2984 ;
+        color:var(--btn-color) ;
         border: 1px solid #CFD3D8;
         border-radius: 6px;
     }
@@ -532,12 +533,9 @@ body{
         height: 600px;
         overflow-y: scroll;
     }
-    
-    
     .tab-content {
         text-align: center; /* Center text in the tab */
     }
- 
     
     a{
         text-decoration: none;
@@ -566,9 +564,10 @@ body{
     .form-container .inputCon label{
         font-weight: 400;
         margin: 8px;
+        text-align: justify;
     }
     .form-container .inputCon input::placeholder {
-        font-family: "Zain", sans-serif;
+        font-family: "Helvetica", sans-serif;
         color: #888; /* Color of the placeholder text */
         font-style: italic; /* Italic style for the placeholder */
         opacity: 1; /* Set opacity to ensure visibility */

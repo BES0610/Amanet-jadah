@@ -1,5 +1,5 @@
 body{
-    font-family: "Zain", sans-serif;
+    font-family: "Helvetica";
     font-weight: 300;
     overflow-x: hidden;
     height: auto; 
@@ -98,8 +98,8 @@ body{
     line-height: 24px;
     cursor: pointer;
     width: calc((100% / 8) - 51px);
-    font-family: "Zain", sans-serif;
-    color: #004693;
+    font-family: "Helvetica";
+    color: var(--text-color);
 }   
 /* OnwerTap */
 
@@ -272,9 +272,10 @@ body{
         color: inherit;
     
     }
-    .Home-Page .Contaner .NavBar .ThirdRow  a {
-        display: block;
-        height: 24px;
+    .Home-Page .Contaner .NavBar .ThirdRow {
+        position: absolute;
+        left: 20%;
+        height: 50px;
     }
 .Home-Page .Contaner .NavBar .OnwerTap  div,
 .Home-Page .Contaner .NavBar .OnwerTap div,
@@ -327,26 +328,21 @@ body{
     box-shadow: 0px 5.6px 27.6px 0px #0000001F;
     color: black;
     font-size: 10px;
-        font-family: "Zain", sans-serif;
+    font-family: "HelveticaBold";
     cursor: pointer;
 }
 .Home-Page .Contaner .NavBar .login-item {
-    display: flex; /* Align image and text in a row */
-    align-items: center; /* Center the items vertically */
-    margin-bottom: 10px; /* Space between items */
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
 }
 
 .Home-Page .Contaner .NavBar .login-img {
-    width: 30px; /* Set image width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between image and text */
+    width: 30px; 
+    height: auto; 
+    margin-right: 20px; 
     margin-left: 20px   ;
 }
-/* Slider */
-body {
-    font-family: Arial, sans-serif;
-}
-
 .Slider {
     position: relative;
     width: 100%;
@@ -400,15 +396,13 @@ body {
     width: 50px;
 }
 
-/* Style for the active button */
 .Slider .pagination-button.active {
-    background-color: #3E2984; /* Active button color */
-    border: 2px solid #3E2984; /* Optional: Add border for active state */
+    background-color: var(--btn-color); 
+    border: 2px solid var(--btn-color);
 }
 
-/* Optional: Add hover effect */
 .Slider .pagination-button:hover {
-    background-color: #d0bfff; /* Lighter shade on hover */
+    background-color: var(--primiry-btn-color); /* Lighter shade on hover */
 }
 
 
@@ -496,7 +490,7 @@ h1 {
 }
 
 .lib div {
-    font-family: Maven Pro;
+    font-family: 'Helvetica';
     font-size: 32px; 
     font-weight: 400;
     color: #333; 
@@ -604,10 +598,3 @@ h1 {
     .footer .footer-text div{
         font-size:18px ;
     }
-        /* GLOPAL */
-        a {
-            text-decoration: none; /* Remove underline from all links */
-        }
-.mr-8{
-    margin: 8px;
-}

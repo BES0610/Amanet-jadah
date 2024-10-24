@@ -1,5 +1,5 @@
 body{
-    font-family: "Zain", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     overflow-x: hidden;
     height: auto; 
@@ -97,7 +97,8 @@ body{
     font-size: 21px;
     line-height: 24px;
     cursor: pointer;
-    color: #004693;
+    color: var(--text-color);
+    width: calc((100% / 8) - 51px);
 }
 /* OnwerTap */
 
@@ -245,11 +246,11 @@ body{
     color: inherit;
 
 }
-.ReqWaterServiceDoc .Contaner .NavBar .ThirdRow  a {
-    display: block;
-    height: 24px;
-}
-
+.ReqWaterServiceDoc .Contaner .NavBar .ThirdRow {
+    position: absolute;
+    left: 20%;
+    height: 50px;
+}   
 .ReqWaterServiceDoc .Contaner .NavBar .OnwerTap  div,
 .ReqWaterServiceDoc .Contaner .NavBar .OnwerTap div,
 .ReqWaterServiceDoc .Contaner .NavBar .OnwerTap  div,
@@ -301,7 +302,7 @@ body{
     box-shadow: 0px 5.6px 27.6px 0px #0000001F;
     color: black;
     font-size: 10px;
-        font-family: "Zain", sans-serif;
+        font-family: "HelveticaBold", sans-serif;
     cursor: pointer;
 }
 .ReqWaterServiceDoc .Contaner .NavBar .login-item {
@@ -335,11 +336,11 @@ body{
 
 }
 .ReqWaterServiceDoc .paragraph h3{
-    color: #004693;
+    color: var(--text-color);
     font-size: 18px;
 }
 .ReqWaterServiceDoc .paragraph p{
-    color: #004693;
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
 }
@@ -372,24 +373,56 @@ body{
         align-items: right; /* Center items vertically */
     }
     
-    .Btnscontainer input[type="radio"] {
-        margin-right: 10px; /* Space between radio button and text */
+
+    .Btnscontainer input[type="checkbox"] {
+        margin-right: 10px; 
+        margin-left: 22px;
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: white; 
+        appearance: none; 
+        border: 2px solid #ccc;
+        position: relative; 
+        transition: 0.3s ease, border-color 0.3s ease;
     }
     
+    .Btnscontainer input[type="checkbox"]:checked {
+        background-color: var(--btn-color); 
+        border-color: var(--btn-color);
+    }
+    
+    .Btnscontainer input[type="checkbox"]::before {
+        content: ''; /* Initially empty */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        color: white;
+        display: none; /* Hidden by default */
+    }
+    
+    .Btnscontainer input[type="checkbox"]:checked::before {
+        content: '✔'; /* Checkmark symbol */
+        display: block;
+    }
     .Btnscontainer .service-button {
         width: 100%;
         height: 50px;
-        background-color: #3E2984;
+        background-color: var(--btn-color);
         color: white;
         font-size: 23px;
         font-weight: 500;
         border-radius: 12px;
         cursor: pointer;
-        padding: 12px;
-        text-align: center;
+        display: flex;
         justify-content: center;
+        align-items: center;
         border: 0;
-        font-family: "Zain", sans-serif;
+        font-family: "HelveticaBold", sans-serif;
+        padding-bottom: 4px;
     }
     .service-button:disabled {
         background-color: #ccc; /* Change background color when disabled */

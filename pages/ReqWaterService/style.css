@@ -1,5 +1,5 @@
 body{
-    font-family: "Zain", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: 300;
     overflow-x: hidden;
     height: auto; 
@@ -97,7 +97,8 @@ body{
     font-size: 21px;
     line-height: 24px;
     cursor: pointer;
-    color: #004693;
+    color: var(--text-color);
+    width: calc((100% / 8) - 51px);
 }
 /* OnwerTap */
 
@@ -243,11 +244,15 @@ body{
     color: inherit;
 
 }
-.ReqWaterService .Contaner .NavBar .ThirdRow  a {
-    display: block;
-    height: 24px;
+.ReqWaterService .Contaner .NavBar .ThirdRow {
+    position: absolute;
+    left: 20%;
+}   
+.ReqWaterService .Contaner .NavBar .ThirdRow {
+    position: absolute;
+    left: 20%;
+    height: 50px;
 }
-
 .ReqWaterService .Contaner .NavBar .OnwerTap  div,
 .ReqWaterService .Contaner .NavBar .OnwerTap div,
 .ReqWaterService .Contaner .NavBar .OnwerTap  div,
@@ -299,7 +304,7 @@ body{
     box-shadow: 0px 5.6px 27.6px 0px #0000001F;
     color: black;
     font-size: 10px;
-        font-family: "Zain", sans-serif;
+        font-family: "HelveticaBold", sans-serif;
     cursor: pointer;
 }
 .ReqWaterService .Contaner .NavBar .login-item {
@@ -313,66 +318,6 @@ body{
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px; /* Space between image and text */
     margin-left: 20px   ;
-}
-/* Slider */
-/* Slider */
-.Slider {
-    width: 98vw;
-    height: 500px;
-    margin: 19px auto;
-    margin-left: calc(51.3% - 50vw);
-    position: relative;
-    overflow: hidden; 
-}
-
-.Slider .ImagesSlider {
-    position: absolute; /* Position absolute to stack images */
-    height: 88%;
-    width: 100%; /* Set width to 100% */
-    transition: opacity 0.5s ease; /* Change to opacity transition */
-}
-
-.Slider .ImagesSlider img {
-    width: 100%; /* Set image width to 100% */
-    border-radius: 12px;
-    position: absolute; /* Position images absolutely */
-    top: 0; /* Align images to the top */
-    left: 0; /* Align images to the left */
-    opacity: 0; /* Initially hide all images */
-    transition: opacity 0.5s ease; /* Transition effect for opacity */
-}
-
-.Slider .ImagesSlider img.active {
-    opacity: 1; /* Show the active image */
-}
-
-.Slider .pagination {
-    width: 407px;
-    height: 12px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 1;
-    background-color: white;
-    padding: 3px;
-    border-radius: 30px;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 1px 2px 5px 0px #574FBB0D;
-}
-
-.Slider .pagination-button {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    background: #E5D9FF;
-    height: 6px;
-    width: 50px;
 }
 
 /* VideoContaner */

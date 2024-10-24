@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../root.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
         </div>
         </div>
         <div class="Contaner">
-            <div class="NavBar">    
+            <div class="NavBar">
                 <div class="contaner">
                     <ul class="mr-8">
                         <li>
@@ -35,7 +36,7 @@
                             <span class="mr-8">وكالة برنامج الامطارالإدارة العامة لصيانة شبكات المياةإدارة الحلول العاجلة</span>
                         </li>
                         <li style="flex-direction: column-reverse;">
-                            <a href="/pages/homepage" class="mr-8 " >الرئيسية</a>
+                            <span class="mr-8 " >الرئيسية</span>
                         </li>
                         <li>
                             <icon><img src="../../assest/Media/Genral/arrow.jpg" alt="Arrow" /></icon>
@@ -56,7 +57,7 @@
                         </li>
                         <li>
                             <icon><img src="../../assest/Media/Genral/arrow.jpg" alt="Arrow" /></icon>
-                            <span class="mr-8 tab-link" data-tab="login">تسجيل الدخول</span>
+                            <span class="mr-8 tab-link" style="font-family: HelveticaBold;" data-tab="login">تسجيل الدخول</span>
                         </li>
                     </ul>
             
@@ -101,7 +102,7 @@
                             <h4>الاستشاريين</h4>
                             <div class="link-container">
                                 <img src="../../assest/Icons/HomePage/consultative/case 1.jpg" alt="" />
-                                <div>تقديم عروض الاسعار</div>
+                                <a href="/pages/presentSaleOffer/">تقديم عروض الاسعار</a>
                             </div>
                             <div class="link-container">
                                 <img src="../../assest/Icons/HomePage/consultative/Group 1171275059 (1).jpg" alt="" />
@@ -232,63 +233,62 @@
                     
                 </div>
             </div>
-                <div class="ContentContaner">
-                    <div class="Links" style="width: 100%; text-align: right; margin: 12px 0;">
-                        <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">المالك  > طلب خدمة ضخ مياة ></span>
-                        <span style="color: #004693; font-weight: 600; font-size: 20px"> بيانات الطلب</span>
-                    </div>
-                    <div class="OwnerDetails">
-                        <h3>طلب التعاقد مع:</h3>
-                        <div class="radioInput">
-                            <div style="display: flex; width: 100%; justify-content: space-between;"> 
-                                <div style="width: 30%; display: flex; align-items: center;">
-                                    <input type="radio" name="consultant" id="specific" value="specific" />
-                                    <label for="specific">اختيار استشاري محدد</label>
-                                </div>
-                                <div class="conditional-select" style="display: none;width: 40%;height: 84px;">
-                                    <label for="specificConsultant" style="display: block;">الاستشاري</label>
-                                    <select id="specificConsultant" aria-placeholder="اختر">
-                                            <option value="">استشاري 1</option>
-                                            <option value="">استشاري 2</option>
-                                            <option value="">استشاري 3</option>
-                                    </select>
-                                </div>
+            <div class="ContentContaner">
+                <div class="Links" style="width: 100%; text-align: right; margin: 12px 0;">
+                    <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">المالك  > طلب خدمة ضخ مياة ></span>
+                    <span style="color: var(--text-color); font-weight: 600; font-size: 20px"> بيانات الطلب</span>
+                </div>
+                <div class="OwnerDetails">
+                    <h3>طلب التعاقد مع:</h3>
+                    <div class="radioInput">
+                        <div style="display: flex; width: 100%; justify-content: space-between;"> 
+                            <div style="width: 30%; display: flex; align-items: center;">
+                                <input type="radio" name="consultant" id="specific" value="specific" />
+                                <label for="specific">اختيار استشاري محدد</label>
+                            </div>
+                            <div class="conditional-select" style="display: none;width: 40%;height: 84px;">
+                                <label for="specificConsultant" style="display: block;">الاستشاري</label>
+                                <select id="specificConsultant" aria-placeholder="اختر">
+                                        <option value="">استشاري 1</option>
+                                        <option value="">استشاري 2</option>
+                                        <option value="">استشاري 3</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="radioInput">
-                            <input type="radio" name="consultant" id="all" value="all" />
-                            <label for="all">كل الاستشاريين</label>
-                        </div>
-                        <hr />
-                        <div style="padding: 24px; display: flex;">
-                            <img style="width: 14px; margin: 4px;" src="../../assest/Icons/OrderDetils/info-circle-Filled@3x.jpg" />
-                            <a href="#">الاطلاع علي الاستشاريين المعتمدين</a>
-                        </div>
-                        <div class="select" style="width: 50%;margin: 24px;">
-                            <label for="duration" style="font-size: 18px;font-weight: 600;display: block;">المدة</label>
-                            <select id="duration" aria-placeholder="اختر">
-                                <option value="">3 ايام</option>
-                                <option value="">5 ايام</option>
-                                <option value="">7 ايام</option>
-                            </select>
-                        </div>
                     </div>
-                    <div class="Btnscontainer">
-                        <a href="/pages/ReqWaterServiceDoc2" style="width: 26%;">
-                            <button class="service-button" id="serviceButton">ارسال الطلب</button>
-                        </a>
+                    <div class="radioInput">
+                        <input type="radio" name="consultant" id="all" value="all" />
+                        <label for="all">كل الاستشاريين</label>
+                    </div>
+                    <hr />
+                    <div style="padding: 24px; display: flex;">
+                        <img style="width: 15px;height: 15px;  margin-top: 12px;margin-left: 4px;" src="../../assest/Icons/OrderDetils/info-circle-Filled@3x.jpg" />
+                        <a href="#">الاطلاع علي الاستشاريين المعتمدين</a>
+                    </div>
+                    <div class="select" style="width: 50%;margin: 24px;">
+                        <label for="duration" style="font-size: 18px;font-weight: 600;display: block;">المدة</label>
+                        <select id="duration" aria-placeholder="اختر">
+                            <option value="">3 ايام</option>
+                            <option value="">5 ايام</option>
+                            <option value="">7 ايام</option>
+                        </select>
                     </div>
                 </div>
-                <div class="footer" style="position: relative; display: inline-block;">
-                    <img src="../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
-                    <div class="footer-text" >
-                        <div>ابق علي تواصل مع شبكاتنا </div>
-                        <div></div>
-                        <div>جميع الحقوق محفوظة  2024</div>
-                    </div>
+                <div class="Btnscontainer">
+                    <a href="/pages/ReqWaterServiceDoc2" style="width: 26%;">
+                        <button class="service-button" id="serviceButton">ارسال الطلب</button>
+                    </a>
                 </div>
             </div>
-    </div>
+            <div class="footer" style="position: relative; display: inline-block;">
+                <img src="../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
+                <div class="footer-text" >
+                    <div>ابق علي تواصل مع شبكاتنا </div>
+                    <div></div>
+                    <div>جميع الحقوق محفوظة  2024</div>
+                </div>
+            </div>
+        </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script src="../../MianJS/script.js"></script>
     <script src="./script.js"></script>
