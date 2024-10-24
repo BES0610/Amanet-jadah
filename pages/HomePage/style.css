@@ -1,0 +1,598 @@
+body{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    height: auto; 
+}
+.Home-Page{
+    width: 100%; 
+}
+.Home-Page .Media{
+}
+.Home-Page .Media .TopLeft{
+    position: absolute;
+    width: 475px;
+    height: 478px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.Home-Page .Media .TopLeft img{
+    width: 100%;
+    height: 100%;
+}
+.Home-Page .Media .TopRight{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -210px; 
+    right: 950px;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+.Home-Page .Media .NastedTopRight{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 87px;
+    top: 0px;
+}
+.Home-Page .Media .AboutSection{
+    
+}
+.Home-Page .Media .footer{
+    
+}
+.Home-Page .Contaner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Home-Page .Contaner .NavBar {
+    width: 100%;
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px 0px #655FDB10;
+    display: flex;
+    border-radius: 12px;
+    margin-top: 110px;
+    z-index: 10;
+}
+.Home-Page .Contaner .NavBar .contaner{
+    width: 100%;
+}
+
+.Home-Page .Contaner .NavBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row-reverse; 
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+ .Contaner .fullstope {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%; /* Makes the shape a circle */
+    margin-left: 5px; /* Optional: spacing after the circle */
+}
+
+
+.Home-Page .Contaner .NavBar ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    text-align: center;
+    height: 100%; 
+    margin: 8px;
+    padding: 0 12px;
+    font-size: 21px;
+    line-height: 24px;
+    cursor: pointer;
+    width: calc((100% / 8) - 51px);
+    font-family: "Zain", sans-serif;
+}   
+/* OnwerTap */
+
+.Home-Page .Contaner .NavBar .OnwerTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:-4px ;
+    direction: rtl;
+    display: flex;
+}
+.Home-Page .Contaner .NavBar .OnwerTap h4{
+    text-decoration: underline;
+    color: gray;
+}
+.Home-Page .Contaner .NavBar .OnwerTap .firstRow,
+    .Home-Page .Contaner .NavBar .OnwerTap .ScoRow,
+    .Home-Page .Contaner .NavBar .OnwerTap .ThirdRow{
+        width: 200px;
+        height: 80%;
+        margin: 18px;
+    }
+    .Home-Page .Contaner .NavBar .OnwerTap .ScoRow{
+        margin-top: 80px;
+    }
+
+    .Home-Page .Contaner .NavBar  .firstRow,
+    .Home-Page .Contaner .NavBar  .ScoRow{
+        display: flex; 
+        flex-direction: column; 
+        margin-bottom: 10px;
+    }
+    .Home-Page .Contaner .NavBar .firstRow .link-container,
+    .Home-Page .Contaner .NavBar .ScoRow .link-container{
+        display: flex; 
+        align-items: center; 
+        margin: 5px 0;
+        height: 24px;
+    }
+    .Home-Page .Contaner .NavBar .firstRow .link-container img,
+    .Home-Page .Contaner .NavBar .ScoRow .link-container img {
+        margin-right: 10px; 
+        height: 24px; 
+        width: auto; 
+    }
+    .Home-Page .Contaner .NavBar  .firstRow .link-container a,
+    .Home-Page .Contaner .NavBar  .ScoRow .link-container a {
+        text-decoration: none;
+        color: inherit;
+    
+    }
+
+/* consultativeTap */
+.Home-Page .Contaner .NavBar .consultativeTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:-4px ;
+    display: flex;
+    direction: rtl;
+    display: none;
+}
+
+.Home-Page .Contaner .NavBar .consultativeTap h4{
+    text-decoration: underline;
+    color: gray;
+}
+.Home-Page .Contaner .NavBar .consultativeTap .firstRow,
+    .Home-Page .Contaner .NavBar .consultativeTap .ScoRow,
+    .Home-Page .Contaner .NavBar .consultativeTap .ThirdRow{
+        width: auto;
+        height: 80%;
+        margin: 18px;
+    }
+    .Home-Page .Contaner .NavBar .consultativeTap .ScoRow{
+        margin-top: 70px;
+    }
+
+
+/* Contractors */
+
+.Home-Page .Contaner .NavBar .ContractorsTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:-4px ;
+    display: flex;
+    direction: rtl;
+    display: none;
+}
+
+.Home-Page .Contaner .NavBar .ContractorsTap h4{
+    text-decoration: underline;
+    color: gray;
+    
+}
+
+.Home-Page .Contaner .NavBar .ContractorsTap .firstRow,
+    .Home-Page .Contaner .NavBar .ContractorsTap .ScoRow,
+    .Home-Page .Contaner .NavBar .ContractorsTap .ThirdRow{
+        width: auto;
+        height: 80%;
+        margin: 18px;
+    }
+    .Home-Page .Contaner .NavBar .ContractorsTap .ScoRow{
+        margin-top: 70px;
+    }
+/* HonestyTap */
+
+.Home-Page .Contaner .NavBar .HonestyTap{
+    width: 80%;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top:-4px ;
+    display: flex;
+    direction: rtl;
+    display: none;
+}
+
+.Home-Page .Contaner .NavBar .HonestyTap h4{
+    text-decoration: underline;
+    color: gray;
+}
+.Home-Page .Contaner .NavBar .HonestyTap .firstRow,
+    .Home-Page .Contaner .NavBar .HonestyTap .ScoRow,
+    .Home-Page .Contaner .NavBar .HonestyTap .ThirdRow{
+        width: auto;
+        height: 80%;
+        margin: 18px;
+    }
+    .Home-Page .Contaner .NavBar .HonestyTap .ScoRow{
+        margin-top: 70px;
+    }
+    
+    .tab-link {
+        cursor: pointer;
+    }
+    .tab-content {
+        display: none; /* Hide all tabs by default */
+    }
+
+
+    
+    .Home-Page .Contaner .NavBar  .firstRow,
+    .Home-Page .Contaner .NavBar  .ScoRow{
+        display: flex; 
+        flex-direction: column; 
+        margin-bottom: 10px;
+    }
+    .Home-Page .Contaner .NavBar .firstRow .link-container,
+    .Home-Page .Contaner .NavBar .ScoRow .link-container{
+        display: flex; 
+        align-items: center; 
+        margin: 5px 0;
+        height: 24px;
+    }
+    .Home-Page .Contaner .NavBar .firstRow .link-container img,
+    .Home-Page .Contaner .NavBar .ScoRow .link-container img {
+        margin-right: 10px; 
+        height: 24px; 
+        width: auto; 
+    }
+    .Home-Page .Contaner .NavBar  .firstRow .link-container a,
+    .Home-Page .Contaner .NavBar  .ScoRow .link-container a {
+        text-decoration: none;
+        color: inherit;
+    
+    }
+    .Home-Page .Contaner .NavBar .ThirdRow  a {
+        display: block;
+        height: 24px;
+    }
+.Home-Page .Contaner .NavBar .OnwerTap  div,
+.Home-Page .Contaner .NavBar .OnwerTap div,
+.Home-Page .Contaner .NavBar .OnwerTap  div,
+.Home-Page .Contaner .NavBar .consultativeTap  div,
+.Home-Page .Contaner .NavBar .consultativeTap  div ,
+.Home-Page .Contaner .NavBar .consultativeTap div ,
+.Home-Page .Contaner .NavBar .ContractorsTap  div ,
+.Home-Page .Contaner .NavBar .ContractorsTap  div ,
+.Home-Page .Contaner .NavBar .ContractorsTap  div,
+.Home-Page .Contaner .NavBar .HonestyTap  div ,
+.Home-Page .Contaner .NavBar .HonestyTap  div ,
+.Home-Page .Contaner .NavBar .HonestyTap  div {
+    font-weight: 400;
+    margin: 22px;
+    cursor: pointer;
+}
+
+.Home-Page .Contaner .NavBar .OnwerTap  div:hover,
+.Home-Page .Contaner .NavBar .OnwerTap div:hover,
+.Home-Page .Contaner .NavBar .OnwerTap  div:hover,
+.Home-Page .Contaner .NavBar .consultativeTap  div:hover,
+.Home-Page .Contaner .NavBar .consultativeTap  div:hover ,
+.Home-Page .Contaner .NavBar .consultativeTap div:hover ,
+.Home-Page .Contaner .NavBar .ContractorsTap  div:hover ,
+.Home-Page .Contaner .NavBar .ContractorsTap .ScoRow div:hover ,
+.Home-Page .Contaner .NavBar .ContractorsTap  div:hover,
+.Home-Page .Contaner .NavBar .HonestyTap  div:hover ,
+.Home-Page .Contaner .NavBar .HonestyTap  div:hover ,
+.Home-Page .Contaner .NavBar .HonestyTap  div:hover {
+    color: #003366; /* Change this to your desired hover color */
+    transition: color 0.3s ease; 
+    position: relative;
+    bottom: 1px;
+}
+
+/* login */
+.Home-Page .Contaner .NavBar .login{
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 12px;
+    border-bottom-left-radius: 33px ;
+    border-bottom-right-radius: 33px ;
+    position: relative;
+    top: -20px;
+    box-shadow: 0px 5.6px 27.6px 0px #0000001F;
+    color: black;
+    font-size: 10px;
+        font-family: "Zain", sans-serif;
+    cursor: pointer;
+}
+.Home-Page .Contaner .NavBar .login-item {
+    display: flex; /* Align image and text in a row */
+    align-items: center; /* Center the items vertically */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.Home-Page .Contaner .NavBar .login-img {
+    width: 30px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    margin-left: 20px   ;
+}
+/* Slider */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.Slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 19px auto;
+    /* margin-left: calc(51.3% - 50vw); */
+    overflow: hidden; 
+    border-radius: 12px;
+}
+
+.ImagesSlider {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 90%;
+}
+
+.ImagesSlider img {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0; 
+    height: 100%;
+}
+
+
+.Slider .pagination {
+    width: 407px;
+    height: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+    background-color: white;
+    padding: 3px;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 2px 5px 0px #574FBB0D;
+}
+
+.Slider .pagination-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: #E5D9FF;
+    height: 6px;
+    width: 50px;
+}
+
+
+    /* Roles */
+
+    .Home-Page .Roles {
+        width: 100%;
+        padding: 20px;
+        direction: rtl;
+    }
+    .Home-Page .Roles .Rolesimg{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: -454px;
+        transform: rotate(-181deg);
+        bottom: -802px;
+        z-index: -1;
+    }
+    .Home-Page .Roles .Rolesimg img{
+        width: 100%;
+        height: 100%;
+    }
+    .Home-Page .Roles .contaner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        flex-direction: row-reverse;
+    }
+    
+    .Home-Page .Roles .contaner div {
+        width: 330px;
+        height: 430px;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .Home-Page .Roles h1 {
+        color: #3C2678;
+    }
+    .Home-Page .Roles .contaner div img {
+        width: 90%;
+        height: 78%;
+        margin: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+        border-radius: 12px;
+    }
+    
+    .Home-Page .Roles .contaner div button {
+        width: 60%;
+        background-color: #3C2678;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 10px 0;
+        transition: background-color 0.3s;
+    }
+    
+    .Home-Page .Roles .contaner div button:hover {
+        background-color: #003366;
+    }
+    
+    /* lib */
+
+
+.lib {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: right; 
+}
+
+h1 {
+    color: #3C2678; 
+    margin-bottom: 20px; 
+}
+
+.lib div {
+    font-family: Maven Pro;
+    font-size: 32px; 
+    font-weight: 400;
+    color: #333; 
+}
+
+.lib a {
+    color: #3C2678; 
+    text-decoration: none; 
+}
+
+    /* order */
+
+    .order {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .order .AboutSection{
+        position: absolute;
+        right: 0;
+        border: 0;
+        width: 200px;
+        height: 300px;
+        z-index: -1;
+        display: flex;
+    }
+    
+    .order .AboutSection img {
+        display: block; /* Removes bottom space in case of inline images */
+        width: 100%; /* Adjust as necessary */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .order .AboutSection .overlay-text {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; 
+        background-color: #3C2678;
+        border-radius: 50%;
+    }
+    
+    .order h1 {
+        color: #3C2678;
+        text-align: right;
+    }
+    
+    .order .contaner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    
+    .order .contaner div {
+        text-align: center;
+        width: calc((100% / 4) - 60px);
+        margin: 10px 0;
+        border: 1px solid #E0E0E0;
+        padding: 16px;
+        border-radius: 8px;
+    }
+    
+    .order .contaner div img {
+        width: 100%;
+        height: auto;
+    }
+    .order .contaner div span {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: #3C2678;
+    }
+
+    /* footer */
+
+    .footer {
+        position: relative;
+        display: inline-block;
+        width: 98vw;
+        height: 330px;
+        margin: 19px auto 0 auto;
+        margin-left: calc(51.3% - 50vw);
+    }
+    
+    .footer img {
+        width: 100%;
+    }
+    
+    .footer .footer-text {
+        position: absolute; 
+        transform: translate(-50%, -50%);
+        width: 100%;
+        top: 23%;
+        left: 50%;
+        color: white;
+        text-align: center;
+    }    
+    .footer .footer-text div{
+        font-size:18px ;
+    }
+        /* GLOPAL */
+        a {
+            text-decoration: none; /* Remove underline from all links */
+        }
+.mr-8{
+    margin: 8px;
+}
