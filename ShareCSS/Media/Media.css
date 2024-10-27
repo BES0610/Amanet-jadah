@@ -1,0 +1,33 @@
+.Home-Page{
+    width: 100%; 
+}
+.Home-Page .Media{
+}
+.Media .TopLeft{
+    position: absolute;
+    width: 475px;
+    height: 478px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.Media .TopLeft img{
+    width: 100%;
+    height: 100%;
+}
+.Media .TopRight{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -210px; 
+    right: 950px;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+ .Media .NastedTopRight{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 87px;
+    top: 0px;
+}

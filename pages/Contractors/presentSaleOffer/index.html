@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/Glopal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="presentSaleOffer">
+        <div class="Media" id="Media"></div>
+        <div class="Contaner" style="height: 98vw;">
+            <div  id="navbar"></div>
+            <div class="Links" style="width: 100%; text-align: right; margin: 12px 0;">
+                <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">الاستشاريين  >عروض اسعار ></span>
+                <span style="color: #004693; font-weight: 600; font-size: 20px"> بيانات الطلب</span>
+            </div>
+                <div class="ContentContaner">
+                    <div class="presentSaleCon">
+                        <div id="SearchAndFilter"></div>
+                        <div class="TapleCon">
+                            <div class="Header">
+                                المقاولين
+                            </div>
+                            <div class="Taple">
+                                <div class="Header">
+                                    <div>تاريخ الطلب</div>
+                                    <div>المدة</div>
+                                    <div>رقم الطلب</div>
+                                    <div> المالك</div>
+                                    <div>المشروع</div>
+                                    <div>عرض سعر</div>
+                                    <div >معاينة</div>
+                                </div>
+                                <div class="body">
+                                    <span id="bodyDiv"></span>
+                                </div>
+                            </div>
+                            <div class="pagination" id="pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab" class="tab">
+                        <div class="tab-content'">
+                            <div style="float: right;font-size: 16px;font-weight: 800;color: #3E2984;">عرض السعر</div>
+                            <div class="closeTab" id="closeTab" style="cursor: pointer;"><img class="closeTab" src="../../../assest/Icons/presentSale/X.png" /></div>
+                            <form class="form-container">
+                                <div class="inputCon"> 
+                                    <label>نوع الرخص</label>
+                                    <select type="text" placeholder="اختر" required >
+                                        <option value="">موقع مباني</option>
+                                        <option value="">موقع مباني</option>
+                                        <option value="">موقع مباني</option>
+                                    </select>
+                                </div>
+                                <div class="inputCon">
+                                    <label>رقم الرخصة</label>
+                                    <input type="email"  placeholder="البريد الإلكتروني" required />
+                                    
+                                </div>
+                                <div class="Location">
+                                    <label>الموقع</label>
+                                    <div class="LocationInput">
+                                        <input type="number" id="latitude"  placeholder="Latitude" step="any" required />
+                                        <img  class="select-location-btn" style="cursor: pointer;width: 17px; height: 17px;" onclick="openMap()" src="../../../assest/Icons/OrderDetils/map-marker-Filled.jpg" alt="Icon" class="input-icon" />
+                                        <input type="number" id="longitude"  placeholder="longitude" step="any" required />
+                                        <img  class="select-location-btn" style="cursor: pointer;width: 17px; height: 17px;"c onclick="openMap()" src="../../../assest/Icons/OrderDetils/map-marker-Filled.jpg" alt="Icon" class="input-icon" />
+                                    </div>
+                                </div>
+                                
+                                <div class="DragBoxsContnar">
+                                    <div class="DragBox">
+                                        <label>السجل التجاري</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-license">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-license" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-license"></div>
+                                                <div class="file-size" id="file-size-license"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-license" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>الرخصة</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-report">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-report" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-report" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-report" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-report"></div>
+                                                <div class="file-size" id="file-size-report"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-report" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-report" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-report" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>الضمان البنكي</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-additional1">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-additional1" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-additional1" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-additional1" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-additional1"></div>
+                                                <div class="file-size" id="file-size-additional1"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-additional1" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-additional1" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-additional1" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>هوية المالك</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-additional2">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-additional2" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-additional2" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-additional2" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-additional2"></div>
+                                                <div class="file-size" id="file-size-additional2"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-additional2" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-additional2" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-additional2" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>رخصة المشروع</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-additional3">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-additional3" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-additional3" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-additional3" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-additional3"></div>
+                                                <div class="file-size" id="file-size-additional3"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-additional3" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-additional3" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-additional3" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>الكروكي</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-additional4">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-additional4" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-additional4" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-additional4" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-additional4"></div>
+                                                <div class="file-size" id="file-size-additional4"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-additional4" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-additional4" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-additional4" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>تقرير التربة</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-additional5">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-additional5" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-additional5" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-additional5" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-additional5"></div>
+                                                <div class="file-size" id="file-size-additional5"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-additional5" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-additional5" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-additional5" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="DragBox">
+                                        <label>ارفاق عرض السعر</label>
+                                        <div class="drag-and-drop" data-input-id="file-input-additional6">
+                                            <img src="../../../assest/Icons/OrderDetils/elements.jpg" id="upload-icon-additional6" />
+                                            <div style="width: 100%;">
+                                                <div id="uploadText-additional6" style="text-align: center;">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-additional6" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-additional6"></div>
+                                                <div class="file-size" id="file-size-additional6"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                    <div class="progress-container" id="progress-container-additional6" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-additional6" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-additional6" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inputCon" style="width: 200px;"> 
+                                        <label>المبلغ شامل الضريبة</label>
+                                        <select type="text"  placeholder="اختر" required >
+                                            <option value="">موقع مباني</option>
+                                            <option value="">موقع مباني</option>
+                                            <option value="">موقع مباني</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="footer" style="position: relative; display: inline-block;">
+                    <img src="../../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
+                    <div class="footer-text" >
+                        <div>ابق علي تواصل مع شبكاتنا </div>
+                        <div></div>
+                        <div>جميع الحقوق محفوظة  2024</div>
+                    </div>
+                </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        loadNavbar();
+        loadMedia();
+        loadSearchAndFilter();
+      </script>
+</body>
+</html>

@@ -32,7 +32,32 @@ margin: 12px;
 
 
 /* GLOPAL */
-
+body{
+    font-weight: 300;
+    overflow-x: hidden;
+    height: auto; 
+    font-family: "Helvetica";
+}
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
+.Contaner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fullstope {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%; /* Makes the shape a circle */
+    margin-left: 5px !important; 
+    position: absolute;
+    bottom: -24px;
+}
+

@@ -1,3 +1,40 @@
+// navbar
+function loadNavbar() {
+    fetch('/ShareCom/NavBar/NavBar.html') 
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    
+    //   append fullstope
+    let li = document.getElementById("Home");
+    let aTag = li.querySelector("a");
+
+    let newDiv = document.createElement("span");
+    newDiv.className = "fullstope";
+    aTag.style.fontFamily = "HelveticaBold"
+    aTag.style.position = "absolute"
+    aTag.style.top = "-18px"
+    li.appendChild(newDiv);
+    
+      // Create and append the script element
+      const script = document.createElement('script');
+      script.src = '/ShareJS/NavBar/script.js'; // Adjust the path accordingly
+      document.body.appendChild(script);
+    });
+}
+
+// Media
+function loadMedia() {
+    fetch('/ShareCom/Media/Media.html') 
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('Media').innerHTML = data;
+    });
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const imagesSlider = document.querySelector('.ImagesSlider');
     const slides = imagesSlider.children; // Get all slides
