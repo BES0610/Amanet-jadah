@@ -304,3 +304,125 @@
     font-family: "HelveticaBold";
     color: white;
 }
+
+.TapContenetCon{
+    width: 70%;
+    height: 400px;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: "Helvetica";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    direction: rtl;
+    margin: auto;
+}
+.TapContenetCon h4{
+    color: var(--btn-color);
+}
+.TapContenetCon .AllContra{
+    display: flex;
+    direction: rtl;
+    justify-content: right;
+    align-items: center;
+}
+.TapContenetCon .AllContra input{
+
+}
+.TapContenetCon .AllContra input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 22px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    appearance: none;
+    border: 2px solid #ccc;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.TapContenetCon .AllContra input[type="checkbox"]:checked {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color); 
+}
+.TapContenetCon .AllContra select{
+    width: 300px;
+    height: 45px;
+    font-size: 14px;
+    font-family: "HelveticaBold";
+    border: 0;
+    border-bottom: 1px solid #CFD3D8;
+    direction: rtl;
+    margin: 12px;
+}    
+.TapContenetCon .oneContra{
+    display: flex;
+    direction: rtl;
+    justify-content: right;
+    align-items: center;
+}
+.TapContenetCon .oneContra label span{
+    color: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}   
+.TapContenetCon .oneContra label span img{
+    width: 15px; 
+    height: 15px;
+    margin: 8px;
+}
+.TapContenetCon .oneContra input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 22px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    appearance: none;
+    border: 2px solid #ccc;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.TapContenetCon .oneContra input[type="checkbox"]:checked {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color); 
+}
+.TapContenetCon .duration{
+    display: flex;
+    flex-direction: column;
+    margin: 14px;
+    width: 100%;
+}
+.TapContenetCon .duration label{
+
+}
+.TapContenetCon .duration select{
+        width: 300px;
+        height: 45px;
+        font-size: 14px;
+        font-family: "HelveticaBold";
+        border: 0;
+        border-bottom: 1px solid #CFD3D8;
+        direction: rtl;
+}
+.BTNCon button{
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--btn-color);
+    font-family: "HelveticaBold";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+}

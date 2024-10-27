@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/Glopal.css">
+    <title>pumpingRequest</title>
+</head>
+<body>
+    <div class="pumpingRequest">
+        <div class="Media" id="Media"></div>
+        <div class="Contaner" style="height: 98vw;">
+            <div  id="navbar"></div>
+            <div class="Links" style="width: 100%; text-align: right; margin: 12px 0;">
+                <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">الاستشاريين   </span>
+                <span style="color: #004693; font-weight: 600; font-size: 20px"> >تصاريح الضخ   </span>
+            </div>
+                <div class="ContentContaner">
+                    <div class="pumpingRequestCon">
+                        <div id="SearchAndFilter"></div>
+                        <div class="TapleCon">
+                            <div class="HeaderBtn">
+                                طلب تصريح
+                            </div>
+                            <div class="Taple">
+                                <div class="Header">
+                                    <div> رقم التصريح</div>
+                                    <div>رقم الرخصة</div>
+                                    <div>بداية الضخ</div>
+                                    <div> المالك</div>
+                                    <div>المقاول</div>
+                                    <div >المرفقات</div>
+                                </div>
+                                <div class="body">
+                                    <span id="bodyDiv"></span>
+                                </div>
+                            </div>
+                            <div class="pagination" id="pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab" class="tab">
+                        <div class="tab-content'">
+                            <div class="closeTab" id="closeTab" style="cursor: pointer;"><img class="closeTab" src="../../../assest/Icons/presentSale/X.png" /></div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="footer" style="position: relative; display: inline-block;">
+                    <img src="../../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
+                    <div class="footer-text" >
+                        <div>ابق علي تواصل مع شبكاتنا </div>
+                        <div></div>
+                        <div>جميع الحقوق محفوظة  2024</div>
+                    </div>
+                </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        loadNavbar();
+        loadMedia();
+        loadSearchAndFilter();
+      </script>
+</body>
+</html>

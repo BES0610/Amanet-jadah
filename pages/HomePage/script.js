@@ -71,3 +71,4 @@ document.addEventListener("DOMContentLoaded", function() {
         updateSlider();
     }, 3000); // Change slide every 3 seconds
 });
+console.log('fire')

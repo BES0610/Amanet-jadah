@@ -42,16 +42,13 @@ function loadMedia() {
     .then(response => response.text())
     .then(data => {
       document.getElementById('SearchAndFilter').innerHTML = data;
-          //   append placeholder
-    let input1 = document.getElementById("input1")
-    let input2 = document.getElementById("input2")
-    let input3 = document.getElementById("input3")
+
+
+    let filterElement = document.getElementById("filter");
+    if (filterElement) {
+        filterElement.remove(); // This will remove the div from the DOM
+    }
     
-    input1.setAttribute('placeholder', 'المقاول')
-    input2.setAttribute('placeholder', 'الاستشاري')
-    input3.setAttribute('placeholder', 'حالة المشروع')
-
-
       const script = document.createElement('script');
       script.src = '/ShareJS/SearchAndFilter/script.js'; // Adjust the path accordingly
       document.body.appendChild(script);
@@ -74,15 +71,13 @@ const data = Array.from({ length: totalItems }, (_, index) => {
         number: (12340 + index), // Incrementing number for each row
         name: 'حسن فايز',
         project: 'مشروع التربة',
-        status: getRandomStatus(), // Random status
-        icon: '/assest/Icons/presentSale/Frame 53.png'
+        icon: '/assest/Icons/consultative/folder.png'
     };
 });
 
 // Function to get random status
 function getRandomStatus() {
-    const statuses = ["مرفق", "غير مرفق", "مرفوض", "تجاوز المدة", "مقبول"];
-    return statuses[Math.floor(Math.random() * statuses.length)];
+
 }
 
 // Function to render items based on the current page
@@ -105,7 +100,6 @@ function renderItems(page) {
             <div>${item.number}</div>
             <div>${item.name}</div>
             <div>${item.project}</div>
-            <div class="${getStatusClass(item.status)}">${item.status}</div>
             <div><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.icon}" alt="icon" /></div>
         `;
         bodyDivData.appendChild(bodyDiv);
@@ -119,23 +113,6 @@ function renderItems(page) {
     createPagination(); // Update pagination controls
 }
 
-// Function to get class based on status
-function getStatusClass(status) {
-    switch (status) {
-        case 'مرفق':
-            return 'green';
-        case 'غير مرفق':
-            return 'yellow';
-        case 'مرفوض':
-            return 'red';
-        case 'تجاوز المدة':
-            return 'gray';
-        case 'مقبول':
-            return 'blue';
-        default:
-            return ''; // Fallback class if needed
-    }
-}
 
 // Function to create pagination buttons
 function createPagination() {
@@ -224,63 +201,3 @@ function openTab(item) {
 
 // Initial render
 renderItems(1); // Render the first page
-
-
-// Handle file upload
-function handleFileUpload(input) {
-    const fileIndex = input.id.split('-')[2]; // Extract the index from the input element's ID
-    const fileSizeElement = document.getElementById(`file-size-${fileIndex}`);
-    const progressBar = document.getElementById(`progress-bar-${fileIndex}`);
-    const progressContainer = document.getElementById(`progress-container-${fileIndex}`);
-    const uploadPercentage = document.getElementById(`upload-percentage-${fileIndex}`);
-    const fileNameElement = document.getElementById(`file-name-${fileIndex}`);
-    const uploadIcon = document.getElementById(`upload-icon-${fileIndex}`);
-    const uploadText = document.getElementById(`uploadText-${fileIndex}`);
-    const dragAndDrop = document.getElementsByClassName(`drag-and-drop`);
-    const file = input.files[0];
-
-    if (file) {
-        // Hide the upload text
-        uploadText.style.display = 'none'; 
-
-        // Update file name and size display
-        fileNameElement.textContent = `${file.name}`;
-        const fileSizeInKB = (file.size / 1024).toFixed(2); // File size in KB
-        fileSizeElement.textContent = `${fileSizeInKB} KB / 30 MB`;
-
-        // Change icon for the uploaded file
-        uploadIcon.src = '/assest/Icons/OrderDetils/Icon.jpg'; // New icon for uploaded file
-        uploadIcon.style.display = 'block'; // Ensure the icon is displayed
-        uploadIcon.style.width = '50px';
-        uploadIcon.style.height = '70px';
-        uploadIcon.style.marginLeft = '10px';
-
-        // Show progress container
-        progressContainer.style.display = 'block';
-
-        // Simulate upload progress
-        let uploadProgress = 0;
-        const uploadInterval = setInterval(() => {
-            uploadProgress += 10; // Simulate progress increase
-            progressBar.style.width = `${uploadProgress}%`;
-            uploadPercentage.textContent = `${uploadProgress}%`; // Add % symbol
-
-            if (uploadProgress >= 100) {
-                clearInterval(uploadInterval);
-
-                // Hide loading indicator after upload is complete
-                setTimeout(() => {
-                    progressBar.style.backgroundColor = '#2F7CBE'; // Change color to indicate success
-                }, 500); // Hide shortly after upload completes
-            }
-        }, 500); // Simulate every 500ms
-    } else {
-        // Reset state if no file selected
-        fileNameElement.textContent = '';
-        uploadIcon.src =  '/assest/Icons/OrderDetils/Icon.jpg'; // Reset icon if no file
-        progressContainer.style.display = 'none';
-        uploadText.style.display = 'block'; // Show the upload text again if no file selected
-    }
-}
-
-

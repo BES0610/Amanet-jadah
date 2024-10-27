@@ -232,6 +232,7 @@ function createEllipses() {
 function openTab(item) {
     const tab = document.getElementById('tab');
     const tabContent = document.querySelector('.tab-content');
+    let newTab = document.getElementById('newTab')
 
 
     tab.style.display = 'block'; // Show the tab
@@ -239,6 +240,9 @@ function openTab(item) {
     // Close tab functionality
     document.getElementById('closeTab').addEventListener('click', () => {
         tab.style.display = 'none'; // Hide the tab
+    });
+    document.getElementById('closeTab2').addEventListener('click', () => {
+        newTab.style.display = 'none'; // Hide the tab
     });
 
     // Optional: Close the tab when clicking outside of it
@@ -321,6 +325,14 @@ function selectOnlyOne(checkbox) {
     });
 }
 
+    // Add event listener for "ارسال" button
+    document.getElementById("sendButton").addEventListener("click", function() {
+        // Hide the current tab
+        document.getElementById("tab").style.display = "none";
+
+        // Show the new tab
+        document.getElementById("newTab").style.display = "block"; // Make sure to have the newTab defined in your HTML
+    });
 // create body for the table
 
 // loadTapleCon().then(success => {

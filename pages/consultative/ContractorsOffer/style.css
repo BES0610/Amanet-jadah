@@ -4,11 +4,11 @@ body{
     overflow-x: hidden; 
     height: auto; 
 }
-.presentSaleOffer{
+.ContractorsOffer{
     width: 100%; 
 }
-    /* presentSaleOffer */
-    .presentSaleOffer .ContentContaner{
+    /* ContractorsOffer */
+    .ContractorsOffer .ContentContaner{
         width: 80%;
         background-color: white;
         padding: 44px;
@@ -16,12 +16,12 @@ body{
         height: 80vw;
         margin: 30px;
     }
-    .presentSaleCon {
+    .ContractorsOfferCon {
         width: 100%;
-        height: 100;
+        height: 100%;
     }
 
-    .presentSaleCon .TapleCon{
+    .ContractorsOfferCon .TapleCon{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -29,7 +29,7 @@ body{
         direction: rtl;
         border-radius: 12px;
     } 
-    .presentSaleCon .TapleCon .Header{
+    .ContractorsOfferCon .TapleCon .Header{
         width: 20%;
         height: 50px;
         background-color: #FBF9FF;
@@ -40,7 +40,7 @@ body{
         font-weight: 600;
         color: var(--btn-color);
     }  
-    .presentSaleCon .TapleCon .Taple{
+    .ContractorsOfferCon .TapleCon .Taple{
         width: 100%;
         height: 100%;
         background-color: #FBF9FF;
@@ -50,10 +50,10 @@ body{
         direction: rtl;
         /* justify-content: space-between; */
     } 
-    .presentSaleCon .TapleCon .Taple span{
+    .ContractorsOfferCon .TapleCon .Taple span{
         width: 100%;
     }
-    .presentSaleCon .TapleCon .Taple .Header{
+    .ContractorsOfferCon .TapleCon .Taple .Header{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -63,7 +63,7 @@ body{
         margin-bottom: 10px;
         
     } 
-    .presentSaleCon .TapleCon .Taple .Header div{
+    .ContractorsOfferCon .TapleCon .Taple .Header div{
         flex-grow: 1;
         grid-area: 4;
         font-size: 18px;
@@ -76,7 +76,7 @@ body{
         align-items: center;
         margin: 12px;
     } 
-    .presentSaleCon .TapleCon .Taple .body{
+    .ContractorsOfferCon .TapleCon .Taple .body{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -84,7 +84,7 @@ body{
         justify-content: space-around;
         margin-top: 10px;
     } 
-    .presentSaleCon .TapleCon .Taple .body div{
+    .ContractorsOfferCon .TapleCon .Taple .body div{
         flex: 1;
         grid-area: 4;
         font-size: 16px;
@@ -96,42 +96,12 @@ body{
         align-items: center;
         margin: 4px;
     } 
-    .presentSaleCon .TapleCon .Taple .body div:nth-child(6){
+    .ContractorsOfferCon .TapleCon .Taple .body div:nth-child(6){
         padding: 8px;
     } 
-    .presentSaleCon .TapleCon .Taple .body .green{
-        background-color: #0A9D4C1A;
-        border-radius: 12px;
-        color: #0A9D4C;
-        font-weight: 800;
-    } 
-    .presentSaleCon .TapleCon .Taple .body .yellow{
-        background-color: #FFFAED;
-        border-radius: 12px;
-        color: #F19B02;
-        font-weight: 800;
-    } 
-    .presentSaleCon .TapleCon .Taple .body .red{
-        background-color: #A008131A;
-        border-radius: 12px;
-        color: #A00813;
-        font-weight: 800;
-    } 
-    .presentSaleCon .TapleCon .Taple .body .gray{
-        background-color: #E0E0E0;
-        border-radius: 12px;
-        color: #707070;
-        font-weight: 800;
-    } 
-    .presentSaleCon .TapleCon .Taple .body .blue{
-        background-color: #E2E4F8;
-        border-radius: 12px;
-        color: var(--btn-color);
-        font-weight: 800;
-    } 
 
 
-    .presentSaleCon .pagination {
+    .ContractorsOfferCon .pagination {
         margin-top: 20px; 
         display: flex; 
         justify-content: center; 
@@ -139,7 +109,7 @@ body{
         align-items: center;
         position: relative;
     }
-    .presentSaleCon .pagination-button {
+    .ContractorsOfferCon .pagination-button {
         padding: 5px 10px; 
         border: 1px solid #707070; 
         color: #707070;
@@ -148,13 +118,13 @@ body{
         transition: background-color 0.3s;
         border-radius: 4px;
     }
-    .presentSaleCon .pagination-button.active {
+    .ContractorsOfferCon .pagination-button.active {
         color: black;
         border:2px solid var(--btn-color);
         background-color: #FBF9FF; 
         font-weight: 600;
     }
-    .presentSaleCon .page-select {
+    .ContractorsOfferCon .page-select {
         padding: 5px;
         position: absolute;
         right: 0;
@@ -184,112 +154,115 @@ body{
         text-align: center; /* Center text in the tab */
     }
     
-    /* Form */
-    .form-container{
+    /* TapContenetCon */
+
+    .TapContenetCon{
+        width: 70%;
+        height: 400px;
+        box-shadow: 0px 4px 19.5px 0px #0000001F;
+        border-radius: 12px;
+        padding: 12px;
+        font-family: "Helvetica";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
         direction: rtl;
+        margin: auto;
     }
-    .form-container .inputCon {
-        display: inline-flex;
-        margin: 22px;
-        flex-direction: column;
-        width: calc((100% / 2) - 50px);
+    .TapContenetCon h4{
+        color: var(--btn-color);
     }
-    .form-container .inputCon input{
-        border: 0;
-        background-color: transparent;
-        border-bottom: 1px solid #CFD3D8;
-    }
-    .form-container .inputCon select{
-        border: 0;
-        background-color: transparent;
-        border-bottom: 1px solid #CFD3D8;
-    }
-    .form-container .inputCon label{
-        font-weight: 400;
-        margin: 8px;
-        text-align: justify;
-    }
-    .form-container .inputCon input::placeholder {
-        font-family: "Helvetica", sans-serif;
-        color: #888; /* Color of the placeholder text */
-        font-style: italic; /* Italic style for the placeholder */
-        opacity: 1; /* Set opacity to ensure visibility */
-    }
-    .form-container .Location {
+    .TapContenetCon .AllContra{
         display: flex;
-        flex-direction: column;
-    }
-    .form-container .Location .LocationInput{
-        display: flex;
-        justify-content: space-around;
+        direction: rtl;
+        justify-content: right;
         align-items: center;
     }
-    .form-container .Location .LocationInput input{
-        border: 0;
-        background-color: transparent;
-        border-bottom: 1px solid #CFD3D8;
-        width: 45%;
-    }
+    .TapContenetCon .AllContra input{
 
-
-    .form-container .DragBoxsContnar {
-        text-align: center;
     }
-    .form-container .DragBox{
-        width: calc((100% / 2) - 150px);
-        display: inline-block;
+    .TapContenetCon .AllContra input[type="checkbox"] {
+        margin-right: 10px;
+        margin-left: 22px;
+        width: 21px;
+        height: 21px;
         cursor: pointer;
-        text-align: justify;
-        font-weight: 400;
-        margin: 18px 25px;
+        border-radius: 50%;
+        background-color: white;
+        appearance: none;
+        border: 2px solid #ccc;
+        position: relative;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
     }
-    .form-container .DragBox .drag-and-drop {
-        height: auto;
-        padding: 12px;
-        box-shadow: 0px 4px 16px 0px #0046931A;
-        background-color: #FFFFFF;
-        border-radius: 12px;
+    
+    .TapContenetCon .AllContra input[type="checkbox"]:checked {
+        background-color: var(--btn-color);
+        border-color: var(--btn-color); 
+    }
+    .TapContenetCon .AllContra select{
+        width: 300px;
+        height: 45px;
+        font-size: 14px;
+        font-family: "HelveticaBold";
+        border: 0;
+        border-bottom: 1px solid #CFD3D8;
+        direction: rtl;
+        margin: 12px;
+    }    
+    .TapContenetCon .oneContra{
         display: flex;
-        flex-direction: column; /* Keep the flex direction as row */
+        direction: rtl;
+        justify-content: right;
+        align-items: center;
+    }
+    .TapContenetCon .oneContra label span{
+        color: var(--btn-color);
+        display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: underline;
+    }   
+    .TapContenetCon .oneContra label span img{
+        width: 15px; 
+        height: 15px;
+        margin: 8px;
+    }
+    .TapContenetCon .oneContra input[type="checkbox"] {
+        margin-right: 10px;
+        margin-left: 22px;
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: white;
+        appearance: none;
+        border: 2px solid #ccc;
+        position: relative;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
     }
     
-    .form-container .DragBox .drag-and-drop img {
-        width: 20px; 
-        height: 20px; /* Original height for default state */
+    .TapContenetCon .oneContra input[type="checkbox"]:checked {
+        background-color: var(--btn-color);
+        border-color: var(--btn-color); 
     }
-    
-    .form-container .DragBox .drag-and-drop.uploaded img {
-        width: 50px; /* Updated width when file is uploaded */
-        margin: 10px; /* Margin when file is uploaded */
-    }
-    .form-container .DragBox  .file-size {
-        font-size: 11px;
-        font-weight: 300;
-    }
-    
-    .form-container .DragBox .progress-container {
+    .TapContenetCon .duration{
+        display: flex;
+        flex-direction: column;
+        margin: 14px;
         width: 100%;
-        background-color: #f3f3f3;
-        border-radius: 5px; 
-        overflow: hidden; 
-        display: flex; 
-        height: 10px;
     }
-    
-    .form-container .DragBox .progress-bar {
-        height: 100%; 
-        background-color: #2F7CBE; 
-        width: 0; 
-        transition: width 0.5s; 
+    .TapContenetCon .duration label{
+
     }
-    
-    .form-container .DragBox .upload-percentage {
-        margin-top: 5px;
-        font-size: 14px;
-        text-align: center;
-        direction: rtl; 
+    .TapContenetCon .duration select{
+            width: 300px;
+            height: 45px;
+            font-size: 14px;
+            font-family: "HelveticaBold";
+            border: 0;
+            border-bottom: 1px solid #CFD3D8;
+            direction: rtl;
     }
     .BTNCon button{
         width: 70%;
@@ -304,13 +277,6 @@ body{
         align-items: center;
         margin: 12px auto;
     }
-/* To show file name */
-.file-name {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-}
     /* footer */
 
     .footer {

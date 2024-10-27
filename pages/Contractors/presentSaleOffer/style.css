@@ -299,6 +299,19 @@ body{
     font-weight: bold;
     color: #333;
 }
+.BTNCon button{
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--btn-color);
+    font-family: "HelveticaBold";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+}
     /* footer */
 
     .footer {

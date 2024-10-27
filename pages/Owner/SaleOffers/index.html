@@ -63,7 +63,7 @@
                     <div class="pagination" id="pagination"></div>
                 </div>
             </div>
-            <!-- <div id="tab" class="tab">
+            <div id="tab" class="tab">
                 <div class="Tabletab-content">
                     <div class="closeTab" id="closeTab" style="cursor: pointer"><img class="closeTab" src="../../../assest/Icons/presentSale/X.png" /></div>
                     <div class="img">
@@ -104,10 +104,49 @@
                     </div>
                     
                     <div>
-                        <button>ارسال</button>
+                        <button id="sendButton">ارسال</button> <!-- Add id here for selection -->
                     </div>
                 </div>
-            </div> -->
+            </div> 
+            <div id="newTab" class="tab" style="display: none;">
+                <div class="closeTab" id="closeTab2" style="cursor: pointer"><img class="closeTab" src="/assest/Icons/presentSale/X.png" /></div>
+                <div class="TapContenetCon">
+                    <h4>طلب التعاقد مع:</h4>
+                    <div class="AllContra">
+                        <input
+                        type="checkbox"
+                        name="agreement"
+                        value="ignore"
+                        onclick="selectOnlyOne(this)"
+                    />
+                        <label>اختيار مقاول</label>
+                        <select>
+                            <option value="">خالد</option>
+                            <option value="">راضي</option>
+                            <option value="">راضي</option>
+                        </select>
+                    </div>
+                    <div class="oneContra">
+                        <input
+                        type="checkbox"
+                        name="agreement"
+                        value="ignore"
+                        onclick="selectOnlyOne(this)"
+                    />
+                        <label style="display: flex;">كل المقاولين<span ><img  src="/assest/Icons/OrderDetils/info-circle-Filled@3x.jpg" />المقاولين المعتمدين </span></label>
+                    </div>
+                    <hr />
+                    <div class="duration">
+                        <label for="">المده</label>
+                        <select name="" id="">
+                            <option value="">يوم</option>
+                            <option value="">يومان</option>
+                            <option value="">3 ايام</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="BTNCon"><button >ارسال</button> </div>
+            </div>
         </div>
         <div id="footer"></div>
     </div>

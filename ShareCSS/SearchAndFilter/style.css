@@ -1,4 +1,4 @@
-.presentSaleCon .presentSaleTop {
+ .searchAndFilterTop {
     width: 100%;
     height: 60px;
     display: flex;
@@ -8,7 +8,7 @@
     direction: rtl;
     margin-bottom: 30px;
 } 
-.presentSaleCon .presentSaleTop input{
+ .searchAndFilterTop input{
     flex-grow: 8;
     border-radius: 12px;
     background-color: white;
@@ -18,10 +18,10 @@
     margin: 8px;
     cursor: pointer;
 } 
-.presentSaleCon .presentSaleTop input::placeholder{
+ .searchAndFilterTop input::placeholder{
     font-family:  "Helvetica", sans-serif;
 }
-.presentSaleCon .presentSaleTop button{
+ .searchAndFilterTop button{
     flex-grow: 2    ;
     background-color: var(--btn-color);
     border-radius: 12px;
@@ -33,7 +33,7 @@
     font-family:  "HelveticaBold", sans-serif;
     cursor: pointer;
 } 
-.presentSaleCon .presentSaleTop div{
+ .searchAndFilterTop div{
     flex-grow: 1;
     height: 40px;
     border: 2px solid var(--btn-color);
@@ -45,16 +45,16 @@
     font-family:  "Helvetica", sans-serif;
     cursor: pointer;
 } 
-.presentSaleTop {
-    /* Styles for the presentSaleTop */
+.searchAndFilterTop {
+    /* Styles for the searchAndFilterTop */
 }
 
-.presentSaleTop .filter {
+.searchAndFilterTop .filter {
     cursor: pointer; /* Change cursor on hover */
 }
 
 /* Nested selector for filter active state */
-.presentSaleTop .filter.filter-active {
+.searchAndFilterTop .filter.filter-active {
     background-color: var(--btn-color); 
     color: white;
 }
