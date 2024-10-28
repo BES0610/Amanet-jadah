@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="/Glopal.css" />
-    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="../../../Glopal.css">
+    <link rel="stylesheet" href="../../../ShareCSS/NavBar/NavBar.css">
+    <link rel="stylesheet" href="../../../ShareCSS/Media/Media.css">
+    <link rel="stylesheet" href="../../../ShareCSS/footer/style.css">
+    <link rel="stylesheet" href="../../../ShareCSS/SearchAndFilter/style.css">
 
     <title>Sale Offers</title>
 </head>
 <body>
     <div class="SaleOffers">
         <div class="Media" id="Media"></div>
-        <div class="Contaner" style="height: 98vw;">
-            <div  id="navbar"></div>
+        <div class="Contaner">
+            <div  id="nav"></div>
             <div class="Links" style="width: 100%; text-align: right; margin: 12px 0;">
                 <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">المالك   </span>
                 <span style="color: #004693; font-weight: 600; font-size: 20px"> > عروض اسعار</span>
@@ -67,10 +71,10 @@
                 <div class="Tabletab-content">
                     <div class="closeTab" id="closeTab" style="cursor: pointer"><img class="closeTab" src="../../../assest/Icons/presentSale/X.png" /></div>
                     <div class="img">
-                        <img src="/assest/Media/SaleOffers/Rectangle 955603.png" alt="">
+                        <img src="../../..//assest/Media/SaleOffers/Rectangle 955603.png" alt="">
                     </div>
                     <div >
-                        <img src="/assest/Media/SaleOffers/download-square-svgrepo-com (1) 1.png" alt="" />
+                        <img src="../../../assest/Media/SaleOffers/download-square-svgrepo-com (1) 1.png" alt="" />
                         <span> تحميل عرض الطلب</span>
                     </div>
                     <div >
@@ -109,7 +113,7 @@
                 </div>
             </div> 
             <div id="newTab" class="tab" style="display: none;">
-                <div class="closeTab" id="closeTab2" style="cursor: pointer"><img class="closeTab" src="/assest/Icons/presentSale/X.png" /></div>
+                <div class="closeTab" id="closeTab2" style="cursor: pointer"><img class="closeTab" src="../../..//assest/Icons/presentSale/X.png" /></div>
                 <div class="TapContenetCon">
                     <h4>طلب التعاقد مع:</h4>
                     <div class="AllContra">
@@ -133,7 +137,7 @@
                         value="ignore"
                         onclick="selectOnlyOne(this)"
                     />
-                        <label style="display: flex;">كل المقاولين<span ><img  src="/assest/Icons/OrderDetils/info-circle-Filled@3x.jpg" />المقاولين المعتمدين </span></label>
+                        <label style="display: flex;">كل المقاولين<span ><img  src="../../..//assest/Icons/OrderDetils/info-circle-Filled@3x.jpg" />المقاولين المعتمدين </span></label>
                     </div>
                     <hr />
                     <div class="duration">
@@ -150,13 +154,13 @@
         </div>
         <div id="footer"></div>
     </div>
-    <script src="./script.js"></script>
-    <script>
-        loadNavbar();
-        loadMedia();
-        loadSearchAndFilter();
-        // loadTapleCon();
-        loadFooter();
-      </script>
+</div>
+<script src="./script.js"></script>
+<script src="../../../ShareJS/NavBar/nav.js"></script>
+<script src="../../../ShareJS/SearchAndFilter/SearchAndFilter.js"></script>
+<script src="../../../ShareJS/SearchAndFilter/script.js"></script>
+<script src="../../../ShareJS/NavBar/script.js"></script>
+<script src="../../../ShareJS/Media/Media.js"></script>
+<script src="../../../ShareJS/footer/footer.js"></script>
 </body>
 </html>

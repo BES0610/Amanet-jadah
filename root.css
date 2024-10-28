@@ -6,7 +6,7 @@
 /* Roman Style (Regular) */
 @font-face {
     font-family: 'Helvetica';
-    src: url('/assest/Fonts/HelveticaNeueLTArabic/HelveticaNeueLTArabic-Roman.ttf') format('truetype');
+    src: url('./assest/Fonts/HelveticaNeueLTArabic/HelveticaNeueLTArabic-Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@
 /* Bold Style */
 @font-face {
     font-family: 'HelveticaBold';
-    src: url('/assest/Fonts/HelveticaNeueLTArabic/HelveticaNeueLTArabic-Bold.ttf') format('truetype');
+    src: url('./assest/Fonts/HelveticaNeueLTArabic/HelveticaNeueLTArabic-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }

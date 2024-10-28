@@ -1,5 +1,5 @@
 
-.Contaner .NavBar {
+.NavBar {
     width: 100%;
     height: 90px;
     background: #FFFFFF;
@@ -9,11 +9,11 @@
     margin-top: 110px;
     z-index: 10;
 }
-.Contaner .NavBar .contaner{
+ .NavBar {
     width: 100%;
 }
 
-.Contaner .NavBar ul {
+ .NavBar ul {
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -23,7 +23,7 @@
     margin: 0;
 }
 
-.Contaner .NavBar ul li {
+ .NavBar ul li {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -41,12 +41,12 @@
     color: var(--text-color);
     position: relative;
 }   
-.Contaner .NavBar ul li span{
+ .NavBar ul li span{
     margin-left: 8px;
 }
 /* OnwerTap */
 
-.Contaner .NavBar .OnwerTap{
+ .NavBar .OnwerTap{
     width: 80%;
     height: 300px;
     background-color: #f9f9f9;
@@ -57,53 +57,53 @@
     position: relative;
     z-index: 1;
 }
-.Contaner .NavBar .OnwerTap h4{
+ .NavBar .OnwerTap h4{
     text-decoration: underline;
     color: gray;
 }
-.Contaner .NavBar .OnwerTap .firstRow,
-    .Contaner .NavBar .OnwerTap .ScoRow,
-    .Contaner .NavBar .OnwerTap .ThirdRow{
+ .NavBar .OnwerTap .firstRow,
+     .NavBar .OnwerTap .ScoRow,
+     .NavBar .OnwerTap .ThirdRow{
         width: 270px;
         height: 80%;
         margin: 18px;
     }
-    .Contaner .NavBar .OnwerTap .ScoRow{
+     .NavBar .OnwerTap .ScoRow{
         margin-top: 80px;
     }
 
-    .Contaner .NavBar  .firstRow,
-    .Contaner .NavBar  .ScoRow{
+     .NavBar  .firstRow,
+     .NavBar  .ScoRow{
         display: flex; 
         flex-direction: column; 
         margin-bottom: 10px;
     }
-    .Contaner .NavBar .firstRow .link-container,
-    .Contaner .NavBar .ScoRow .link-container{
+     .NavBar .firstRow .link-container,
+     .NavBar .ScoRow .link-container{
         display: flex; 
         align-items: center; 
         margin: 5px 0;
         height: 24px;
     }
-    .Contaner .NavBar .firstRow .link-container img,
-    .Contaner .NavBar .ScoRow .link-container img {
+     .NavBar .firstRow .link-container img,
+     .NavBar .ScoRow .link-container img {
         margin-right: 10px; 
         height: 24px; 
         width: auto; 
     }
-    .Contaner .NavBar  .firstRow .link-container a,
-    .Contaner .NavBar  .ScoRow .link-container a {
+     .NavBar  .firstRow .link-container a,
+     .NavBar  .ScoRow .link-container a {
         text-decoration: none;
         color: inherit;
     
     }
 
-    .Contaner .NavBar  .link-container{
+     .NavBar  .link-container{
         width: 100%;
     }
 
 /* consultativeTap */
-.Contaner .NavBar .consultativeTap{
+ .NavBar .consultativeTap{
     width: 80%;
     height: 300px;
     background-color: #f9f9f9;
@@ -116,25 +116,25 @@
     z-index: 1;
 }
 
-.Contaner .NavBar .consultativeTap h4{
+ .NavBar .consultativeTap h4{
     text-decoration: underline;
     color: gray;
 }
-.Contaner .NavBar .consultativeTap .firstRow,
-    .Contaner .NavBar .consultativeTap .ScoRow,
-    .Contaner .NavBar .consultativeTap .ThirdRow{
+ .NavBar .consultativeTap .firstRow,
+     .NavBar .consultativeTap .ScoRow,
+     .NavBar .consultativeTap .ThirdRow{
         width: auto;
         height: 80%;
         margin: 18px;
     }
-    .Contaner .NavBar .consultativeTap .ScoRow{
+     .NavBar .consultativeTap .ScoRow{
         margin-top: 70px;
     }
 
 
 /* Contractors */
 
-.Contaner .NavBar .ContractorsTap{
+ .NavBar .ContractorsTap{
     width: 80%;
     height: 300px;
     background-color: #f9f9f9;
@@ -147,25 +147,25 @@
     z-index: 1;
 }
 
-.Contaner .NavBar .ContractorsTap h4{
+ .NavBar .ContractorsTap h4{
     text-decoration: underline;
     color: gray;
     
 }
 
-.Contaner .NavBar .ContractorsTap .firstRow,
-    .Contaner .NavBar .ContractorsTap .ScoRow,
-    .Contaner .NavBar .ContractorsTap .ThirdRow{
+ .NavBar .ContractorsTap .firstRow,
+     .NavBar .ContractorsTap .ScoRow,
+     .NavBar .ContractorsTap .ThirdRow{
         width: auto;
         height: 80%;
         margin: 18px;
     }
-    .Contaner .NavBar .ContractorsTap .ScoRow{
+     .NavBar .ContractorsTap .ScoRow{
         margin-top: 70px;
     }
 /* HonestyTap */
 
-.Contaner .NavBar .HonestyTap{
+ .NavBar .HonestyTap{
     width: 80%;
     height: 300px;
     background-color: #f9f9f9;
@@ -178,18 +178,18 @@
     z-index: 1;
 }
 
-.Contaner .NavBar .HonestyTap h4{
+ .NavBar .HonestyTap h4{
     text-decoration: underline;
     color: gray;
 }
-.Contaner .NavBar .HonestyTap .firstRow,
-    .Contaner .NavBar .HonestyTap .ScoRow,
-    .Contaner .NavBar .HonestyTap .ThirdRow{
+ .NavBar .HonestyTap .firstRow,
+     .NavBar .HonestyTap .ScoRow,
+     .NavBar .HonestyTap .ThirdRow{
         width: auto;
         height: 80%;
         margin: 18px;
     }
-    .Contaner .NavBar .HonestyTap .ScoRow{
+     .NavBar .HonestyTap .ScoRow{
         margin-top: 70px;
     }
     
@@ -202,66 +202,66 @@
 
 
     
-    .Contaner .NavBar  .firstRow,
-    .Contaner .NavBar  .ScoRow{
+     .NavBar  .firstRow,
+     .NavBar  .ScoRow{
         display: flex; 
         flex-direction: column; 
         margin-bottom: 10px;
     }
-    .Contaner .NavBar .firstRow .link-container,
-    .Contaner .NavBar .ScoRow .link-container{
+     .NavBar .firstRow .link-container,
+     .NavBar .ScoRow .link-container{
         display: flex; 
         align-items: center; 
         margin: 5px 0;
         height: 24px;
     }
-    .Contaner .NavBar .firstRow .link-container img,
-    .Contaner .NavBar .ScoRow .link-container img {
+     .NavBar .firstRow .link-container img,
+     .NavBar .ScoRow .link-container img {
         margin-right: 10px; 
         height: 24px; 
         width: auto; 
     }
-    .Contaner .NavBar  .firstRow .link-container a,
-    .Contaner .NavBar  .ScoRow .link-container a {
+     .NavBar  .firstRow .link-container a,
+     .NavBar  .ScoRow .link-container a {
         text-decoration: none;
         color: inherit;
     
     }
-    .Contaner .NavBar .ThirdRow {
+     .NavBar .ThirdRow {
         position: absolute;
         left: 0;
         height: 50px;
         text-align: right;
     }
-.Contaner .NavBar .OnwerTap  div,
-.Contaner .NavBar .OnwerTap div,
-.Contaner .NavBar .OnwerTap  div,
-.Contaner .NavBar .consultativeTap  div,
-.Contaner .NavBar .consultativeTap  div ,
-.Contaner .NavBar .consultativeTap div ,
-.Contaner .NavBar .ContractorsTap  div ,
-.Contaner .NavBar .ContractorsTap  div ,
-.Contaner .NavBar .ContractorsTap  div,
-.Contaner .NavBar .HonestyTap  div ,
-.Contaner .NavBar .HonestyTap  div ,
-.Contaner .NavBar .HonestyTap  div {
+ .NavBar .OnwerTap  div,
+ .NavBar .OnwerTap div,
+ .NavBar .OnwerTap  div,
+ .NavBar .consultativeTap  div,
+ .NavBar .consultativeTap  div ,
+ .NavBar .consultativeTap div ,
+ .NavBar .ContractorsTap  div ,
+ .NavBar .ContractorsTap  div ,
+ .NavBar .ContractorsTap  div,
+ .NavBar .HonestyTap  div ,
+ .NavBar .HonestyTap  div ,
+ .NavBar .HonestyTap  div {
     font-weight: 400;
     margin: 22px;
     cursor: pointer;
 }
 
-.Contaner .NavBar .OnwerTap  .link-container:hover,
-.Contaner .NavBar .OnwerTap .link-container:hover,
-.Contaner .NavBar .OnwerTap  .link-container:hover,
-.Contaner .NavBar .consultativeTap  .link-container:hover,
-.Contaner .NavBar .consultativeTap  .link-container:hover ,
-.Contaner .NavBar .consultativeTap .link-container:hover ,
-.Contaner .NavBar .ContractorsTap  .link-container:hover ,
-.Contaner .NavBar .ContractorsTap  .link-container:hover ,
-.Contaner .NavBar .ContractorsTap  .link-container:hover,
-.Contaner .NavBar .HonestyTap  .link-container:hover ,
-.Contaner .NavBar .HonestyTap  .link-container:hover ,
-.Contaner .NavBar .HonestyTap  .link-container:hover {
+ .NavBar .OnwerTap  .link-container:hover,
+ .NavBar .OnwerTap .link-container:hover,
+ .NavBar .OnwerTap  .link-container:hover,
+ .NavBar .consultativeTap  .link-container:hover,
+ .NavBar .consultativeTap  .link-container:hover ,
+ .NavBar .consultativeTap .link-container:hover ,
+ .NavBar .ContractorsTap  .link-container:hover ,
+ .NavBar .ContractorsTap  .link-container:hover ,
+ .NavBar .ContractorsTap  .link-container:hover,
+ .NavBar .HonestyTap  .link-container:hover ,
+ .NavBar .HonestyTap  .link-container:hover ,
+ .NavBar .HonestyTap  .link-container:hover {
     color: #003366; /* Change this to your desired hover color */
     transition: color 0.3s ease; 
     position: relative;
@@ -269,7 +269,7 @@
 }
 
 /* login */
-.Contaner .NavBar .login{
+ .NavBar .login{
     background-color: #FFFFFF;
     width: 500px;
     height: 200px;
@@ -289,13 +289,13 @@
     position: relative;
     z-index: 1;
 }
-.Contaner .NavBar .login-item {
+ .NavBar .login-item {
     display: flex; 
     align-items: center; 
     margin-bottom: 10px; 
 }
 
-.Contaner .NavBar .login-img {
+ .NavBar .login-img {
     width: 30px; 
     height: auto; 
     margin-right: 20px; 

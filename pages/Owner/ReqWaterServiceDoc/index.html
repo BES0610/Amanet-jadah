@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="/root.css">
-    <link rel="stylesheet" href="/Glopal.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="../../../Glopal.css">
+    <link rel="stylesheet" href="../../../ShareCSS/NavBar/NavBar.css">
+    <link rel="stylesheet" href="../../../ShareCSS/Media/Media.css">
+    <link rel="stylesheet" href="../../../ShareCSS/footer/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="ReqWaterServiceDoc">
         <div class="Media" id="Media"></div>
         <div class="Contaner">
-            <div  id="navbar"></div>
+            <div  id="nav"></div>
             <div class="ContentContaner">
                 <div class="Links" style="width: 100%; text-align: right; margin: 12px 0; ">
                     <span style="color: #80A3C9; font-weight: 400;font-size: 18px; margin-left: 10px;">المالك  > </span>
@@ -42,26 +45,19 @@
                             />
                         </label>
                     </div>
-                    <a href="../ReqWaterServiceDoc2" style="width: 26%;">
+                    <a href="../ReqWaterServiceDoc2/index.html" style="width: 26%;">
                         <button class="service-button" id="serviceButton" disabled>التالي</button>
                     </a>
                 </div>
                 
                 </div>
-            <div class="footer" style="position: relative; display: inline-block;">
-                <img src="../../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
-                <div class="footer-text" >
-                    <div>ابق علي تواصل مع شبكاتنا </div>
-                    <div></div>
-                    <div>جميع الحقوق محفوظة  2024</div>
-                </div>
-            </div>
+                <div id="footer"></div>
         </div>
     </div>
     <script src="./script.js"></script>
-    <script>
-        loadNavbar();
-        loadMedia();
-      </script>
+    <script src="../../../ShareJS/NavBar/nav.js"></script>
+    <script src="../../../ShareJS/NavBar/script.js"></script>
+    <script src="../../../ShareJS/Media/Media.js"></script>
+    <script src="../../../ShareJS/footer/footer.js"></script>
 </body>
 </html>

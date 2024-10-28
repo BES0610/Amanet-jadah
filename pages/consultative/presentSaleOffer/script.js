@@ -1,62 +1,3 @@
-// navbar
-function loadNavbar() {
-    fetch('/ShareCom/NavBar/NavBar.html') 
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-        
-      //   append fullstope
-    let li = document.getElementById("consultative");
-    let span = li.querySelector("span");
-    let icon = li.querySelector("icon");
-    
-    let newDiv = document.createElement("span");
-    newDiv.className = "fullstope";
-    span.style.fontFamily = "HelveticaBold";
-    span.style.position = "absolute";
-    span.style.top = "-26px";
-    
-    icon.style.position = "absolute";
-    icon.style.left = "-5px";
-    icon.style.top = "-18px";
-
-    li.appendChild(newDiv);
-      // Create and append the script element
-      const script = document.createElement('script');
-      script.src = '/ShareJS/NavBar/script.js'; // Adjust the path accordingly
-      document.body.appendChild(script);
-    });
-}
-
-// Media
-function loadMedia() {
-    fetch('/ShareCom/Media/Media.html') 
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('Media').innerHTML = data;
-    });
-}
-  // SearchAndFilter
-  function loadSearchAndFilter() {
-    fetch('/ShareCom/SearchAndFilter/index.html') 
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('SearchAndFilter').innerHTML = data;
-          //   append placeholder
-    let input1 = document.getElementById("input1")
-    let input2 = document.getElementById("input2")
-    let input3 = document.getElementById("input3")
-    
-    input1.setAttribute('placeholder', 'المقاول')
-    input2.setAttribute('placeholder', 'الاستشاري')
-    input3.setAttribute('placeholder', 'حالة المشروع')
-
-
-      const script = document.createElement('script');
-      script.src = '/ShareJS/SearchAndFilter/script.js'; // Adjust the path accordingly
-      document.body.appendChild(script);
-    });
-  }
 
 const bodyDivData = document.getElementById('bodyDiv');
 const paginationDiv = document.getElementById('pagination');
@@ -75,7 +16,7 @@ const data = Array.from({ length: totalItems }, (_, index) => {
         name: 'حسن فايز',
         project: 'مشروع التربة',
         status: getRandomStatus(), // Random status
-        icon: '/assest/Icons/presentSale/Frame 53.png'
+        icon: './../../../assest/Icons/presentSale/Frame 53.png'
     };
 });
 
@@ -249,7 +190,7 @@ function handleFileUpload(input) {
         fileSizeElement.textContent = `${fileSizeInKB} KB / 30 MB`;
 
         // Change icon for the uploaded file
-        uploadIcon.src = '/assest/Icons/OrderDetils/Icon.jpg'; // New icon for uploaded file
+        uploadIcon.src = '../../..//assest/Icons/OrderDetils/Icon.jpg'; // New icon for uploaded file
         uploadIcon.style.display = 'block'; // Ensure the icon is displayed
         uploadIcon.style.width = '50px';
         uploadIcon.style.height = '70px';
@@ -277,7 +218,7 @@ function handleFileUpload(input) {
     } else {
         // Reset state if no file selected
         fileNameElement.textContent = '';
-        uploadIcon.src =  '/assest/Icons/OrderDetils/Icon.jpg'; // Reset icon if no file
+        uploadIcon.src =  '../../..//assest/Icons/OrderDetils/Icon.jpg'; // Reset icon if no file
         progressContainer.style.display = 'none';
         uploadText.style.display = 'block'; // Show the upload text again if no file selected
     }

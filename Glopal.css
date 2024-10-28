@@ -37,7 +37,9 @@ body{
     overflow-x: hidden;
     height: auto; 
     font-family: "Helvetica";
+
 }
+
 a {
     text-decoration: none;
     color: var(--text-color);

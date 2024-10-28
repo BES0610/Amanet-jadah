@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Glopal.css">
-    <link rel="stylesheet" href="/root.css">
-    <link rel="stylesheet" href="/ShareCSS/SearchAndFilter/style.css">
 
-    <title>Document</title>
-</head>
-<body>
+let SearchAndFilter = document.getElementById("SearchAndFilter");
+
+SearchAndFilter.innerHTML = `
     <div class="searchAndFilterTop">
         <input type="search" placeholder="بحث" />
         <button>بحث</button>
@@ -21,6 +13,4 @@
         <input type="text" class="input-field" id="input2" />
         <input type="text" class="input-field" id="input3" />
     </div>
-
-</body>
-</html>
+    `

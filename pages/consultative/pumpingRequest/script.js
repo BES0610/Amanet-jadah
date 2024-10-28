@@ -1,59 +1,4 @@
-// navbar
-function loadNavbar() {
-    fetch('/ShareCom/NavBar/NavBar.html') 
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-        
-      //   append fullstope
-    let li = document.getElementById("consultative");
-    let span = li.querySelector("span");
-    let icon = li.querySelector("icon");
-    
-    let newDiv = document.createElement("span");
-    newDiv.className = "fullstope";
-    span.style.fontFamily = "HelveticaBold";
-    span.style.position = "absolute";
-    span.style.top = "-26px";
-    
-    icon.style.position = "absolute";
-    icon.style.left = "-5px";
-    icon.style.top = "-18px";
 
-    li.appendChild(newDiv);
-      // Create and append the script element
-      const script = document.createElement('script');
-      script.src = '/ShareJS/NavBar/script.js'; // Adjust the path accordingly
-      document.body.appendChild(script);
-    });
-}
-
-// Media
-function loadMedia() {
-    fetch('/ShareCom/Media/Media.html') 
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('Media').innerHTML = data;
-    });
-}
-  // SearchAndFilter
-  function loadSearchAndFilter() {
-    fetch('/ShareCom/SearchAndFilter/index.html') 
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('SearchAndFilter').innerHTML = data;
-
-
-    let filterElement = document.getElementById("filter");
-    if (filterElement) {
-        filterElement.remove(); // This will remove the div from the DOM
-    }
-    
-      const script = document.createElement('script');
-      script.src = '/ShareJS/SearchAndFilter/script.js'; // Adjust the path accordingly
-      document.body.appendChild(script);
-    });
-  }
 
 const bodyDivData = document.getElementById('bodyDiv');
 const paginationDiv = document.getElementById('pagination');
@@ -71,7 +16,7 @@ const data = Array.from({ length: totalItems }, (_, index) => {
         number: (12340 + index), // Incrementing number for each row
         name: 'حسن فايز',
         project: 'مشروع التربة',
-        icon: '/assest/Icons/consultative/folder.png'
+        icon: './../../../assest/Icons/consultative/folder.png'
     };
 });
 

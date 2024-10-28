@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="/root.css">
-    <link rel="stylesheet" href="/Glopal.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="../../../Glopal.css">
+    <link rel="stylesheet" href="../../../ShareCSS/NavBar/NavBar.css">
+    <link rel="stylesheet" href="../../../ShareCSS/Media/Media.css">
+    <link rel="stylesheet" href="../../../ShareCSS/footer/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="orderDetils">
-            <div class="Media" id="Media"></div>
-            <div class="Contaner" style="height: 98vw;">
-                <div  id="navbar"></div>
+        <div class="Media" id="Media"></div>
+        <div class="Contaner">
+            <div  id="nav"></div>
                 <div class="ContentContaner">
                     <div class="Links" style="width: 100%; text-align: right; margin: 12px 0">
                         <span style="color: #004693; font-weight: 600; font-size: 20px"><span style="color: #80A3C9;">المالك  ></span> طلب خدمة ضخ مياة </span>
@@ -203,24 +206,18 @@
                         </div>
                     </form>
                     <div class="Btnscontainer">
-                        <a href="/pages/reqcontract" style="width: 26%;">
+                        <a href="../reqcontract/index.html" style="width: 26%;">
                             <button class="service-button" id="serviceButton">التالي</button>
                         </a>
                     </div>
                 </div>
-                <div class="footer" style="position: relative; display: inline-block;">
-                    <img src="../../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
-                    <div class="footer-text" >
-                        <div>ابق علي تواصل مع شبكاتنا </div>
-                        <div></div>
-                        <div>جميع الحقوق محفوظة  2024</div>
-                    </div>
-                </div>
-            </div>
+                <div id="footer"></div>
+        </div>
+    </div>
     <script src="./script.js"></script>
-    <script>
-        loadNavbar();
-        loadMedia();
-      </script>
+    <script src="../../../ShareJS/NavBar/nav.js"></script>
+    <script src="../../../ShareJS/NavBar/script.js"></script>
+    <script src="../../../ShareJS/Media/Media.js"></script>
+    <script src="../../../ShareJS/footer/footer.js"></script>
 </body>
 </html>

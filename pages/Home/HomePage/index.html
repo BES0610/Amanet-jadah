@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="/root.css">
-    <link rel="stylesheet" href="/Glopal.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="../../../Glopal.css">
+    <link rel="stylesheet" href="../../../ShareCSS/NavBar/NavBar.css">
+    <link rel="stylesheet" href="../../../ShareCSS/Media/Media.css">
+    <link rel="stylesheet" href="../../../ShareCSS/footer/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="Home-Page">
         <div class="Media" id="Media"></div>
-        <div class="Contaner" style="height: 98vw;">
-            <div  id="navbar"></div>
+        <div class="Contaner">
+            <div  id="nav"></div>
             <div class="Slider">
                 <div class="ImagesSlider">
-                    <img src="../../assest/Media/HomePage/Slider/Rectangle 955580 (1).png" alt="Image 1" />
-                    <img src="../../assest/Media/HomePage/Slider/Rectangle 955580.png" alt="Image 1" />
-                    <img src="../../assest/Media/HomePage/Slider/إدارة الحلول العاجله لتصريف مياة الامطار3.png" alt="Image 1" />
-                    <img src="../../assest/Media/HomePage/Slider/اصدار تصريح نزح مياة 3  (1).png" alt="Image 2" />
-                    <img src="../../assest/Media/HomePage/Slider/نقدم فرصًا لتوسيع نطاق 1.png" alt="Image 3" />
+                    <img src="../../../assest/Media/HomePage/Slider/Rectangle 955580 (1).png" alt="Image 1" />
+                    <img src="../../../assest/Media/HomePage/Slider/Rectangle 955580.png" alt="Image 1" />
+                    <img src="../../../assest/Media/HomePage/Slider/إدارة الحلول العاجله لتصريف مياة الامطار3.png" alt="Image 1" />
+                    <img src="../../../assest/Media/HomePage/Slider/اصدار تصريح نزح مياة 3  (1).png" alt="Image 2" />
+                    <img src="../../../assest/Media/HomePage/Slider/نقدم فرصًا لتوسيع نطاق 1.png" alt="Image 3" />
                 </div>
                 <div class="pagination">
                     <button class="pagination-button" data-index="0"></button>
@@ -73,26 +76,18 @@
                         <span>تصريح ضخ المياه عن منظومة تصريف مياه الامطار</span>
                     </div>
                     <span class="AboutSection">
-                        <img src="../../assest/Media/HomePage/AboutSection.jpg" alt="TopLeft" />
+                        <img src="../../../assest/Media/HomePage/AboutSection.jpg" alt="TopLeft" />
                         <span class="overlay-text"></span>
                     </span>
                 </div>
             </div>
-            <div class="footer" style="position: relative; display: inline-block;">
-                <img src="../../assest/Media/HomePage/Footer.jpg" alt="TopLeft" style="width: 100%;" />
-                <div class="footer-text" >
-                    <div>ابق علي تواصل مع شبكاتنا </div>
-                    <div></div>
-                    <div>جميع الحقوق محفوظة  2024</div>
-                </div>
-            </div>
-            
+            <div id="footer"></div>
         </div>
     </div>
     <script src="./script.js"></script>
-    <script>
-        loadNavbar();
-        loadMedia();
-      </script>
+    <script src="../../../ShareJS/NavBar/nav.js"></script>
+    <script src="../../../ShareJS/NavBar/script.js"></script>
+    <script src="../../../ShareJS/Media/Media.js"></script>
+    <script src="../../../ShareJS/footer/footer.js"></script>
 </body>
 </html>
