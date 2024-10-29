@@ -1,0 +1,183 @@
+.presentSaleCon {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 30px;
+    padding: 24px;
+    border-radius: 12px;
+}
+.TapleCon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    border-radius: 12px;
+} 
+ .TapleCon .Header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+ .TapleCon .Header span{
+    width: 20%;
+    height: 100%;
+    display: flex;
+}  
+.TapleCon .Header button{
+    width: 50%;
+    height: 100%;
+    font-family: "HelveticaBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--btn-color);
+    border: 0;
+    background-color: transparent;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+}
+.activbutton{
+    background-color: #FBF9FF !important ; 
+}
+
+.TapleCon .Header .AddBtn{
+    width: 13%;
+    height: 83%;
+    background-color: var(--btn-color);
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .TapleCon .Taple{
+    width: 100%;
+    height: 100%;
+    background-color: #FBF9FF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    /* justify-content: space-between; */
+} 
+ .TapleCon .Taple span{
+    width: 100%;
+}
+ .TapleCon .Taple .TapleHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: space-around;
+    border-bottom: 2px solid  var(--btn-color);
+    margin-bottom: 10px;
+    
+} 
+ .TapleCon .Taple .TapleHeader div{
+    flex-grow: 1;
+    grid-area: 4;
+    font-size: 18px;
+    font-weight: 800;
+    font-family:  "HelveticaBold", sans-serif;
+    color: var(--btn-color) ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+} 
+ .TapleCon .Taple .body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: space-around;
+    margin-top: 10px;
+} 
+ .TapleCon .Taple .body div{
+    /* width: calc(100% / 8); */
+    flex: 1;
+    grid-area: 4;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:  "Helvetica", sans-serif;
+    color: #002195 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+} 
+ .TapleCon .Taple .body div:nth-child(6){
+    padding: 8px;
+} 
+ .TapleCon .Taple .body .green{
+    background-color: #0A9D4C1A;
+    border-radius: 12px;
+    color: #0A9D4C;
+    font-weight: 800;
+} 
+ .TapleCon .Taple .body .yellow{
+    background-color: #FFFAED;
+    border-radius: 12px;
+    color: #F19B02;
+    font-weight: 800;
+} 
+ .TapleCon .Taple .body .red{
+    background-color: #A008131A;
+    border-radius: 12px;
+    color: #A00813;
+    font-weight: 800;
+} 
+ .TapleCon .Taple .body .gray{
+    background-color: #E0E0E0;
+    border-radius: 12px;
+    color: #707070;
+    font-weight: 800;
+} 
+ .TapleCon .Taple .body .blue{
+    background-color: #E2E4F8;
+    border-radius: 12px;
+    color: var(--btn-color);
+    font-weight: 800;
+} 
+
+
+ .pagination {
+    margin-top: 20px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 5px;
+    align-items: center;
+    position: relative;
+}
+ .pagination-button {
+    padding: 5px 10px; 
+    border: 1px solid #707070; 
+    color: #707070;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+ .pagination-button.active {
+    color: black;
+    border:2px solid var(--btn-color);
+    background-color: #FBF9FF; 
+    font-weight: 600;
+}
+ .page-select {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color:var(--btn-color) ;
+    border: 1px solid #CFD3D8;
+    border-radius: 6px;
+}

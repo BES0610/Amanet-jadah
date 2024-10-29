@@ -37,12 +37,13 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 600;
         color: white;
         padding: 12px;
         margin: 8px;
         border-radius: 12px;
+        cursor: pointer;
     }  
     .pumpingRequestCon .TapleCon .Taple{
         width: 100%;
@@ -68,7 +69,7 @@ body{
         
     } 
     .pumpingRequestCon .TapleCon .Taple .Header div{
-        flex-grow: 1;
+        flex: 1;
         grid-area: 4;
         font-size: 18px;
         font-weight: 800;
@@ -155,7 +156,115 @@ body{
         overflow-y: scroll;
     }
     .tab-content {
-        text-align: center; /* Center text in the tab */
+        text-align: center; 
+    }
+
+    .tab .TapContaner{
+        width: 80%;
+        height: 70%;
+        box-shadow: 0px 4px 19.5px 0px #0000001F;
+        border-radius: 12px;
+        direction: rtl;
+        padding: 12px;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 13px;
+      }
+      table{
+        width: 100%;
+        text-align: center;
+      }
+      th{
+        background-color: #d9d9d99c;
+      }
+    .tab .TapContaner .FirstSection{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        margin: 12px;
+    }
+    .tab .TapContaner .FirstSection div:nth-child(1){ 
+        flex: 3;
+        font-family: "HelveticaBold";
+        font-size: 12px;
+        text-align: center;
+    }
+    .tab .TapContaner .FirstSection div:nth-child(2){ 
+        flex: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tab .TapContaner .FirstSection div:nth-child(2) .title{ 
+        font-family: "HelveticaBold";
+        text-decoration: underline;
+    }
+    .tab .TapContaner .FirstSection div:nth-child(2) .FirstSectionTaple{ 
+        width: 100%;
+        height: 60%;
+    }
+    .tab .TapContaner .FirstSection div:nth-child(3){ 
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab .TapContaner .ScoSection{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tab .TapContaner .ScoSection .img{
+        flex: 1;
+    }
+    .tab .TapContaner .ScoSection .ScoSectionTaples{
+        flex: 1;
+    }
+    .tab .TapContaner .ScoSection .ScoSectionTaples .FirstTaple{
+        width: 90%;
+    }   
+    .tab .TapContaner .ScoSection .ScoSectionTaples .ScoTaple{
+        width: 90%;
+        
+    }
+    .tab .TapContaner .ScoSection .ScoSectionTaples .ThirdTaple{
+        width: 90%;
+
+    }
+    .tab .TapContaner .ThirdSection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .tab .TapContaner .ThirdSection .requrments{
+    }
+    .tab .TapContaner .ThirdSection .seal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-color);
+        padding: 0 6px;
+        border: 1px solid var(--text-color);
+        position: absolute;
+        top: 21px;
+        left: 38%;
+        transform: rotate(-13deg);
+    }
+    .tab .TapContaner .ThirdSection .QRcode{
+        width: 37%;
+        display: flex;
+    }
+    .tab .TapContaner .ThirdSection .QRcode .code{
+
+    }
+    .tab .TapContaner .ThirdSection .QRcode .text{
+
     }
         /* footer */
 

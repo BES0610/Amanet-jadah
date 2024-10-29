@@ -64,7 +64,7 @@ body{
         
     } 
     .presentSaleCon .TapleCon .Taple .Header div{
-        flex-grow: 1;
+        flex: 1;
         grid-area: 4;
         font-size: 18px;
         font-weight: 800;

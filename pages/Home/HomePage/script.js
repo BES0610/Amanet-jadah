@@ -38,3 +38,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+setTimeout(() => {
+    let navele = document.getElementById("Home");
+
+    let aTag = navele.querySelector("a");
+
+    let newDiv = document.createElement("span");
+    newDiv.className = "fullstope";
+    aTag.style.fontFamily = "HelveticaBold"
+    aTag.style.position = "absolute"
+    aTag.style.top = "-18px"
+    navele.appendChild(newDiv);
+
+}, 1)

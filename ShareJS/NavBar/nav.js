@@ -45,7 +45,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/Group 1171275061.jpg" alt="" />
-                        <a>استعلام عن معامله</a>
+                        <a href="../../../pages/Owner/Transactioninquiry/index.html" >استعلام عن معامله</a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/Group 1171275061 (2).jpg" alt="" />
@@ -56,7 +56,7 @@ navber.innerHTML = `
                 <div class="ScoRow">
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/polisher 1.jpg" alt="" />
-                        <a>مشاريعي</a>
+                        <a href="../../../pages/Owner/projects/index.html">مشاريعي</a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/sea 1.jpg" alt="" />
@@ -108,7 +108,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061 (1).jpg" alt="" />
-                        <div>استعلام عن معامله</div>
+                        <a href="../../../pages/consultative/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061 (1).jpg" alt="" />
@@ -157,7 +157,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275061.jpg" alt="" />
-                        <div>استعلام عن معامله</div>
+                        <a href="../../../pages/Contractors/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
                     </div>
                 </div>
                 

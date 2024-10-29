@@ -1,5 +1,7 @@
 
-const bodyDivData = document.getElementById('bodyDiv');
+
+  // append the body for taple 1
+  const bodyDivData = document.getElementById('bodyDiv1');
 const paginationDiv = document.getElementById('pagination');
 
 const itemsPerPage = 12; // Number of items per page
@@ -11,19 +13,16 @@ let currentPage = 1; // Initialize current page
 const data = Array.from({ length: totalItems }, (_, index) => {
     return {
         date: `21/05/2024`,
-        duration: '7 ايام',
-        number: (12340 + index), // Incrementing number for each row
-        name: 'حسن فايز',
-        project: 'مشروع التربة',
-        status: getRandomStatus(), // Random status
-        icon: '../../../assest/Icons/presentSale/Frame 53.png'
+        owner: 'حسن فايز',
+        consultav: "حسن فايز", // Incrementing number for each row
+        contra: 'حسن فايز',
+        project: 'حفر المضخات',
+        icon: '../../../assest/Icons/Owner/Vector.png'
     };
 });
 
 // Function to get random status
 function getRandomStatus() {
-    const statuses = ["مرفق", "غير مرفق", "مرفوض", "تجاوز المدة", "مقبول"];
-    return statuses[Math.floor(Math.random() * statuses.length)];
 }
 
 // Function to render items based on the current page
@@ -42,11 +41,10 @@ function renderItems(page) {
         // Populate the body div with content
         bodyDiv.innerHTML = `
             <div>${item.date}</div>
-            <div>${item.duration}</div>
-            <div>${item.number}</div>
-            <div>${item.name}</div>
+            <div>${item.owner}</div>
+            <div>${item.consultav}</div>
+            <div>${item.contra}</div>
             <div>${item.project}</div>
-            <div class="${getStatusClass(item.status)}">${item.status}</div>
             <div><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.icon}" alt="icon" /></div>
         `;
         bodyDivData.appendChild(bodyDiv);
@@ -60,23 +58,6 @@ function renderItems(page) {
     createPagination(); // Update pagination controls
 }
 
-// Function to get class based on status
-function getStatusClass(status) {
-    switch (status) {
-        case 'مرفق':
-            return 'green';
-        case 'غير مرفق':
-            return 'yellow';
-        case 'مرفوض':
-            return 'red';
-        case 'تجاوز المدة':
-            return 'gray';
-        case 'مقبول':
-            return 'blue';
-        default:
-            return ''; // Fallback class if needed
-    }
-}
 
 // Function to create pagination buttons
 function createPagination() {
@@ -146,6 +127,7 @@ function createEllipses() {
 function openTab(item) {
     const tab = document.getElementById('tab');
     const tabContent = document.querySelector('.tab-content');
+    let newTab = document.getElementById('newTab')
 
 
     tab.style.display = 'block'; // Show the tab
@@ -153,6 +135,9 @@ function openTab(item) {
     // Close tab functionality
     document.getElementById('closeTab').addEventListener('click', () => {
         tab.style.display = 'none'; // Hide the tab
+    });
+    document.getElementById('closeTab2').addEventListener('click', () => {
+        newTab.style.display = 'none'; // Hide the tab
     });
 
     // Optional: Close the tab when clicking outside of it
@@ -167,67 +152,25 @@ function openTab(item) {
 renderItems(1); // Render the first page
 
 
-// Handle file upload
-function handleFileUpload(input) {
-    const fileIndex = input.id.split('-')[2]; // Extract the index from the input element's ID
-    const fileSizeElement = document.getElementById(`file-size-${fileIndex}`);
-    const progressBar = document.getElementById(`progress-bar-${fileIndex}`);
-    const progressContainer = document.getElementById(`progress-container-${fileIndex}`);
-    const uploadPercentage = document.getElementById(`upload-percentage-${fileIndex}`);
-    const fileNameElement = document.getElementById(`file-name-${fileIndex}`);
-    const uploadIcon = document.getElementById(`upload-icon-${fileIndex}`);
-    const uploadText = document.getElementById(`uploadText-${fileIndex}`);
-    const dragAndDrop = document.getElementsByClassName(`drag-and-drop`);
-    const file = input.files[0];
+// toggle btn 
 
-    if (file) {
-        // Hide the upload text
-        uploadText.style.display = 'none'; 
+// Get all buttons with the class 'toggle-button'
+const buttons = document.querySelectorAll('.toggle-button');
 
-        // Update file name and size display
-        fileNameElement.textContent = `${file.name}`;
-        const fileSizeInKB = (file.size / 1024).toFixed(2); // File size in KB
-        fileSizeElement.textContent = `${fileSizeInKB} KB / 30 MB`;
-
-        // Change icon for the uploaded file
-        uploadIcon.src = '/assest/Icons/OrderDetils/Icon.jpg'; // New icon for uploaded file
-        uploadIcon.style.display = 'block'; // Ensure the icon is displayed
-        uploadIcon.style.width = '50px';
-        uploadIcon.style.height = '70px';
-        uploadIcon.style.marginLeft = '10px';
-
-        // Show progress container
-        progressContainer.style.display = 'block';
-
-        // Simulate upload progress
-        let uploadProgress = 0;
-        const uploadInterval = setInterval(() => {
-            uploadProgress += 10; // Simulate progress increase
-            progressBar.style.width = `${uploadProgress}%`;
-            uploadPercentage.textContent = `${uploadProgress}%`; // Add % symbol
-
-            if (uploadProgress >= 100) {
-                clearInterval(uploadInterval);
-
-                // Hide loading indicator after upload is complete
-                setTimeout(() => {
-                    progressBar.style.backgroundColor = '#2F7CBE'; // Change color to indicate success
-                }, 500); // Hide shortly after upload completes
-            }
-        }, 500); // Simulate every 500ms
-    } else {
-        // Reset state if no file selected
-        fileNameElement.textContent = '';
-        uploadIcon.src = '/assest/Icons/OrderDetils/Icon.jpg'; // Reset icon if no file
-        progressContainer.style.display = 'none';
-        uploadText.style.display = 'block'; // Show the upload text again if no file selected
-    }
-}
-
+// Add click event listener to each button
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove 'activbutton' class from all buttons
+        buttons.forEach(btn => btn.classList.remove('activbutton'));
+        
+        // Add 'activbutton' class to the clicked button
+        button.classList.add('activbutton');
+    });
+});
 
 
 setTimeout(() => {
-    let li = document.getElementById("Contractors");
+    let li = document.getElementById("Owner");
     let span = li.querySelector("span");
     let icon = li.querySelector("icon");
     
@@ -238,7 +181,7 @@ setTimeout(() => {
     span.style.top = "-26px";
     
     icon.style.position = "absolute";
-    icon.style.left = "0px";
+    icon.style.left = "18px";
     icon.style.top = "-18px";
 
     li.appendChild(newDiv);

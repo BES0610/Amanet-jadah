@@ -1,5 +1,32 @@
+    setTimeout(() => {
+        // append header 
 
+let header = document.getElementsByClassName("Header")[0]; // Select the first element with the class "Header"
 
+// Create <th> elements and set text for each one
+let th1 = document.createElement("th");
+th1.textContent = "رقم المعاملة";
+
+let th2 = document.createElement("th");
+th2.textContent = "المقاول";
+
+let th3 = document.createElement("th");
+th3.textContent = "المشروع";
+
+let th4 = document.createElement("th");
+th4.textContent = "الاستشاري";
+
+let th5 = document.createElement("th");
+th5.textContent = "الاجراءات";
+
+// Append each <th> element to the header
+header.appendChild(th1);
+header.appendChild(th2);
+header.appendChild(th3);
+header.appendChild(th4);
+header.appendChild(th5);
+
+// append body 
 const bodyDivData = document.getElementById('bodyDiv');
 const paginationDiv = document.getElementById('pagination');
 
@@ -11,13 +38,11 @@ let currentPage = 1; // Initialize current page
 // Sample data array with 100 objects
 const data = Array.from({ length: totalItems }, (_, index) => {
     return {
-        startdate: `21/05/2024`,
-        enddate: `21/05/2024`,
-        permitnumber: (12340 + index), // Incrementing number for each row
-        licensenumber: (12340 + index), // Incrementing number for each row
-        ownername: 'حسن فايز',
-        Contraproject: 'مشروع التربة',
-        icon: './../../../assest/Icons/consultative/folder.png'
+        number: `12340`,
+        project: `مدينة الملك فهد`,
+        consult: "عبدالوهاب خالد", // Incrementing number for each row
+        contra: "خالد ابراهيم", // Incrementing number for each row
+        icon: './../../../assest/Icons/consultative/Gear.png'
     };
 });
 
@@ -36,18 +61,16 @@ function renderItems(page) {
 
     for (let i = startIndex; i < endIndex; i++) {
         const item = data[i];
-        const bodyDiv = document.createElement('div');
+        const bodyDiv = document.createElement('tr');
         bodyDiv.className = 'body';
 
         // Populate the body div with content
         bodyDiv.innerHTML = `
-            <div>${item.permitnumber}</div>
-            <div>${item.licensenumber}</div>
-            <div>${item.startdate}</div>
-            <div>${item.enddate}</div>
-            <div>${item.ownername}</div>
-            <div>${item.Contraproject}</div>
-            <div><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.icon}" alt="icon" /></div>
+            <td>${item.number}</td>
+            <td>${item.project}</td>
+            <td>${item.consult}</td>
+            <td>${item.contra}</td>
+            <td><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.icon}" alt="icon" /></td>
         `;
         bodyDivData.appendChild(bodyDiv);
 
@@ -62,6 +85,7 @@ function renderItems(page) {
 
 
 // Function to create pagination buttons
+
 function createPagination() {
     paginationDiv.innerHTML = ''; // Clear existing pagination
 
@@ -106,7 +130,7 @@ function createPagination() {
     paginationDiv.appendChild(select);
 }
 
-// Function to create pagination button
+
 function createButton(page) {
     const button = document.createElement('div');
     button.className = 'pagination-button';
@@ -125,7 +149,6 @@ function createEllipses() {
     return ellipses;
 }
 
-// Function to open the tab and display item details
 function openTab(item) {
     const tab = document.getElementById('tab');
     const tabContent = document.querySelector('.tab-content');
@@ -149,21 +172,30 @@ function openTab(item) {
 // Initial render
 renderItems(1); // Render the first page
 
-setTimeout(() => {
-    let li = document.getElementById("consultative");
-    let span = li.querySelector("span");
-    let icon = li.querySelector("icon");
-    
-    let newDiv = document.createElement("span");
-    newDiv.className = "fullstope";
-    span.style.fontFamily = "HelveticaBold";
-    span.style.position = "absolute";
-    span.style.top = "-26px";
-    
-    icon.style.position = "absolute";
-    icon.style.left = "-7px";
-    icon.style.top = "-18px";
 
-    li.appendChild(newDiv);
+let li = document.getElementById("Owner");
+let span = li.querySelector("span");
+let icon = li.querySelector("icon");
 
-}, 1)
+let newDiv = document.createElement("span");
+newDiv.className = "fullstope";
+span.style.fontFamily = "HelveticaBold";
+span.style.position = "absolute";
+span.style.top = "-26px";
+
+icon.style.position = "absolute";
+icon.style.left = "-7px";
+icon.style.top = "-18px";
+
+li.appendChild(newDiv);
+
+    }, 100)
+
+
+    function selectOnlyOne(checkbox) {
+        const checkboxes = document.getElementsByName('agreement');
+        checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked = false;
+        });
+    }
+    

@@ -1,5 +1,5 @@
 setTimeout(() => {
-    let li = document.getElementById("Owner");
+    let li = document.getElementById("consultative");
     let span = li.querySelector("span");
     let icon = li.querySelector("icon");
     
@@ -10,7 +10,7 @@ setTimeout(() => {
     span.style.top = "-26px";
     
     icon.style.position = "absolute";
-    icon.style.left = "18px";
+    icon.style.left = "-7px";
     icon.style.top = "-18px";
 
     li.appendChild(newDiv);

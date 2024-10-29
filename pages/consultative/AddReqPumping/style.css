@@ -1,0 +1,85 @@
+body{
+    font-family: Helvetica;
+}
+.Addreqpumping .ContentContaner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Addreqpumping .form-container{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    background-color: white;
+    direction: rtl;
+    padding: 12px;
+    border-radius: 12px;
+}
+.Addreqpumping .form-container .FirstSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.Addreqpumping .form-container .ScoSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.Addreqpumping .form-container .ThirdSecion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    }
+.Addreqpumping .form-container .ThirdSecion .NastedForm{
+    box-shadow: 0px 4px 11px 0px #00000014;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    }
+.Addreqpumping  button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--btn-color);
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-family: "HelveticaBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px auto;
+    }
+
+.Addreqpumping .form-container .inputCon {
+    display: inline-flex;
+    margin: 13px;
+    flex-direction: column;
+    /* width: calc((100% / 2) - 50px); */
+}
+.Addreqpumping .form-container .inputCon input{
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #CFD3D8;
+}
+.Addreqpumping .form-container .inputCon label{
+    font-weight: 400;
+    margin: 8px;
+}
+.Addreqpumping .form-container .inputCon input::placeholder {
+    font-family: "Helvetica", sans-serif;
+    color: #888; /* Color of the placeholder text */
+    font-style: italic; /* Italic style for the placeholder */
+    opacity: 1; /* Set opacity to ensure visibility */
+    margin: 8px;
+}
+.form-container .inputCon select{
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #CFD3D8;
+}

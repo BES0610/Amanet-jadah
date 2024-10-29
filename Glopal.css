@@ -62,4 +62,6 @@ a {
     position: absolute;
     bottom: -24px;
 }
-
+#table{
+    width: 100%;
+}
