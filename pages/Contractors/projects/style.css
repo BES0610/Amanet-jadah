@@ -1,0 +1,167 @@
+.projects .ContentContaner{
+    width: 80%;
+    background-color: white;
+    padding: 44px;
+    border-radius: 12px;
+    height: 80vw;
+    margin: 30px;
+}
+.projectsCon {
+    width: 100%;
+    height: 100;
+}
+
+.projectsCon .TapleCon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    direction: rtl;
+    border-radius: 12px;
+    align-items: baseline;
+} 
+.projectsCon .TapleCon .HeaderBtn{
+    width: 126px;
+    height: 18px;    
+    background-color: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}  
+.projectsCon .TapleCon .HeadTable{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectsCon .TapleCon .HeadTable .TilteTable{
+    width: 18%;
+    height: 100%;
+    font-family: "HelveticaBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--btn-color);
+    border: 0;
+    background-color: transparent;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+    background-color: #FBF9FF ; 
+}
+
+.tab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.tab-content {
+    text-align: center; 
+}
+
+.tab .TapContaner{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    direction: rtl;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+}
+.tab .TapContaner .tabContent{
+    display: flex;
+    flex-direction: column;
+}
+.tab .TapContaner .tabContent span{
+    margin: 18px;
+    display: flex;
+    align-items: center;
+}
+.tab .TapContaner label {
+    display: flex; 
+    align-items: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab .TapContaner input[type="checkbox"] {
+    margin-right: 10px; 
+    margin-left: 22px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white; /* Default unchecked background */
+    appearance: none; /* Remove default checkbox style */
+    border: 2px solid #ccc; /* Add a border */
+    position: relative; /* Make it relative for ::before positioning */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab .TapContaner input[type="checkbox"]:checked {
+    background-color: var(--btn-color); 
+    border-color: var(--btn-color);
+}
+
+.tab .TapContaner input[type="checkbox"]::before {
+    content: ''; /* Initially empty */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: white;
+    display: none; /* Hidden by default */
+}
+.tab .TapContaner input[type="checkbox"]:checked::before {
+    content: '✔'; /* Checkmark symbol */
+    display: block;
+}
+.tab .TapContaner select{
+    width: 300px;
+    height: 50px;
+    display: inline;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #CFD3D8;
+}
+.tab  button{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "HelveticaBold";
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--btn-color);
+    color: white;
+    margin: 24px;
+}

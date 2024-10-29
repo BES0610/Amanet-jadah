@@ -104,7 +104,7 @@ navber.innerHTML = `
                 <div class="ScoRow">
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275060.jpg" alt="" />
-                        <div>مشاريعي</div>
+                        <a href="../../../pages/consultative/projects/index.html"><div>مشاريعي</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061 (1).jpg" alt="" />
@@ -135,14 +135,14 @@ navber.innerHTML = `
             </div> 
             <div class="tab-content ContractorsTap" id="ContractorsTap">
                 <div class="firstRow">
-                    <h4>القاولين</h4>
+                    <h4>المقاولين</h4>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275059.jpg" alt="" />
                         <a href="../../../pages/Contractors/presentSaleOffer/index.html"><div>تقديم عروض الاسعار</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275060.jpg" alt="" />
-                        <div>مشاريعي</div>
+                        <a href="../../../pages/Contractors/projects/index.html"><div>مشاريعي</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275061 (1).jpg" alt="" />
