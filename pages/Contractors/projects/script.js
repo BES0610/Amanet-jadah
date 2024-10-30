@@ -178,7 +178,7 @@ window.addEventListener('click', (event) => {
 renderItems(1); // Render the first page
 
 
-let li = document.getElementById("consultative");
+let li = document.getElementById("Contractors");
 let span = li.querySelector("span");
 let icon = li.querySelector("icon");
 

@@ -5,21 +5,37 @@ let header = document.getElementsByClassName("Header")[0]; // Select the first e
 
 // Create <th> elements and set text for each one
 let th1 = document.createElement("th");
-th1.textContent = "تاريخ المعاملة";
+th1.textContent = "رقم المعاملة";
 
 let th2 = document.createElement("th");
-th2.textContent = "رقم المعاملة";
+th2.textContent = "المشروع";
 
 let th3 = document.createElement("th");
 th3.textContent = " المالك";
 
 let th4 = document.createElement("th");
-th4.textContent = "المشروع";
+th4.textContent = "الاستشاري";
+
 let th5 = document.createElement("th");
-th5.textContent = "المرفقات";
+th5.textContent = "المقاول";
 
 let th6 = document.createElement("th");
-th6.textContent = "مرفقات اضافية";
+th6.textContent = "طول الخط البديل";
+// th6.style.flex = "2"
+
+let th7 = document.createElement("th");
+th7.textContent = "الموقع";
+
+let th8 = document.createElement("th");
+th8.textContent = "مرفقات";
+
+let th9 = document.createElement("th");
+th9.textContent = "الحالة";
+
+let th10 = document.createElement("th");
+th10.textContent = "التقرير";
+
+
 
 // Append each <th> element to the header
 header.appendChild(th1);
@@ -28,6 +44,10 @@ header.appendChild(th3);
 header.appendChild(th4);
 header.appendChild(th5);
 header.appendChild(th6);
+header.appendChild(th7);
+header.appendChild(th8);
+header.appendChild(th9);
+header.appendChild(th10);
 
 // append body 
 const bodyDivData = document.getElementById('bodyDiv');
@@ -41,12 +61,16 @@ let currentPage = 1; // Initialize current page
 // Sample data array with 100 objects
 const data = Array.from({ length: totalItems }, (_, index) => {
 return {
-    date: "21/05/2024",
     number: `12340`,
     project: `مدينة الملك فهد`,
-    owner: "عبدالوهاب خالد", // Incrementing number for each row
-    Attachments: "../../../assest/Icons/Owner/presentSale/Frame 53.png", // Incrementing number for each row
-    moreAttachments: './../../../assest/Icons/consultative/folder.png'
+    owner: "حسن فايز", // Incrementing number for each row
+    Consultiv: "حسن فايز", // Incrementing number for each row
+    Contra: "حسن فايز", // Incrementing number for each row
+    linenumber: `12340`,
+    location: "جده ", // Incrementing number for each row
+    arrow: " ./../../../assest/Icons/Honesty/arrowdown.png", // Incrementing number for each row
+    status: "تسليم المشروع",
+    gear: '../../../assest/Icons/consultative/Gear.png'
 };
 });
 
@@ -70,12 +94,16 @@ for (let i = startIndex; i < endIndex; i++) {
 
     // Populate the body div with content
     bodyDiv.innerHTML = `
-        <td>${item.date}</td>
-        <td>${item.number}</td>
+        <td style="cursor: pointer;" id="forthopenTabIcon-${i}">${item.number}</td>
         <td>${item.project}</td>
         <td>${item.owner}</td>
-        <td><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.Attachments}" alt="icon" /></td>
-        <td><img style="cursor: pointer;" id="ScoopenTabIcon-${i}" src="${item.moreAttachments}" alt="icon" /></td>
+        <td>${item.Consultiv}</td>
+        <td>${item.Contra}</td>
+        <td>${item.linenumber}</td>
+        <td class="location" style="cursor: pointer;" id="thirdopenTabIcon-${i}"><img style="position: relative;top: 6px;"  src="../../../assest/Icons/Honesty/location.png" alt="icon" />${item.location}</td>
+        <td><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.arrow}" alt="icon" /></td>
+        <td class="status">${item.status}<img src="${item.arrow}" alt="icon" /></td>
+        <td><img style="cursor: pointer;" id="ScoopenTabIcon-${i}" src="${item.gear}" alt="icon" /></td>
     `;
     bodyDivData.appendChild(bodyDiv);
 
@@ -85,6 +113,13 @@ for (let i = startIndex; i < endIndex; i++) {
     });
     document.getElementById(`ScoopenTabIcon-${i}`).addEventListener('click', () => {
         scoopenTab(item); // Open tab with the item details
+    });
+    document.getElementById(`thirdopenTabIcon-${i}`).addEventListener('click', () => {
+        thirdopentab(item); // Open tab with the item details
+    });
+    document.getElementById(`forthopenTabIcon-${i}`).addEventListener('click', () => {
+        fortheoptab(item); 
+        console.log("ss")
     });
 }
 
@@ -157,50 +192,12 @@ ellipses.innerText = '...';
 return ellipses;
 }
 
-function openTab(item) {
-const tab = document.getElementById('tab');
-const tabContent = document.querySelector('.tab-content');
-
-
-tab.style.display = 'block'; // Show the tab
-
-// Close tab functionality
-document.getElementById('closeTab').addEventListener('click', () => {
-    tab.style.display = 'none'; // Hide the tab
-});
-
-// Optional: Close the tab when clicking outside of it
-window.addEventListener('click', (event) => {
-    if (event.target === tab) {
-        tab.style.display = 'none'; // Hide the tab if clicked outside
-    }
-});
-}
-function scoopenTab(item) {
-const tab = document.getElementById('scotab');
-const tabContent = document.querySelector('.tab-content');
-
-
-tab.style.display = 'block'; // Show the tab
-
-// Close tab functionality
-document.getElementById('ScocloseTab').addEventListener('click', () => {
-    tab.style.display = 'none'; // Hide the tab
-});
-
-// Optional: Close the tab when clicking outside of it
-window.addEventListener('click', (event) => {
-    if (event.target === tab) {
-        tab.style.display = 'none'; // Hide the tab if clicked outside
-    }
-});
-}
 
 // Initial render
 renderItems(1); // Render the first page
 
 
-let li = document.getElementById("consultative");
+let li = document.getElementById("Honesty");
 let span = li.querySelector("span");
 let icon = li.querySelector("icon");
 
@@ -215,6 +212,7 @@ icon.style.left = "-7px";
 icon.style.top = "-18px";
 
 li.appendChild(newDiv);
+
 
 }, 100)
 
@@ -294,3 +292,81 @@ function handleFileUpload(input) {
     }
 }
 
+
+
+function openTab(item) {
+    const tab = document.getElementById('tab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('closeTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
+    });
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
+    }
+    function scoopenTab(item) {
+    const tab = document.getElementById('scotab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('ScocloseTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
+    });
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
+    }
+    function thirdopentab(item) {
+    const tab = document.getElementById('thirdtab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('thirdloseTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
+    });
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
+    }
+    function fortheoptab(item) {
+    const tab = document.getElementById('forthtab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('forthcloseTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
+    });
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
+    }
+    

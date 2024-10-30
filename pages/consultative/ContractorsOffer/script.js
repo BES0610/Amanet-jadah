@@ -14,7 +14,7 @@ const data = Array.from({ length: totalItems }, (_, index) => {
         number: (12340 + index), // Incrementing number for each row
         name: 'حسن فايز',
         project: 'مشروع التربة',
-        icon: '../../../assest/Icons/presentSale/Frame 53.png',
+        icon: '../../../assest/Icons/Owner/presentSale/Frame 53.png',
         icon1: './../../../assest/Icons/consultative/Gear.png',
     };
 });

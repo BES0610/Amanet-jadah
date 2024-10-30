@@ -22,40 +22,42 @@
                 <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;">الاستشاريين</span>
                 <span style="color: #004693; font-weight: 600; font-size: 20px"> > استعلام عن معاملة </span>
             </div>
-            <div class="presentSaleCon" >
-                <div id="SearchAndFilter"></div>
-                <div class="TapleCon">
-                    <div id="tablesContainer">
-                        <div class="Taple" id="consultantTable">
-                            <div class="TapleHeader">
-                                <div>تاريخ المعاملة</div>
-                                <div>المالك</div>
-                                <div>الاستشاري</div>
-                                <div>المقاول</div>
-                                <div>المشروع</div>
-                                <div>المرفقات</div>
+            <div class="ContentContaner">                
+                <div class="presentSaleCon" >
+                    <div id="SearchAndFilter"></div>
+                    <div class="TapleCon">
+                        <div id="tablesContainer">
+                            <div class="Taple" id="consultantTable">
+                                <div class="TapleHeader">
+                                    <div>تاريخ المعاملة</div>
+                                    <div>المالك</div>
+                                    <div>الاستشاري</div>
+                                    <div>المقاول</div>
+                                    <div>المشروع</div>
+                                    <div>المرفقات</div>
+                                </div>
+                                <div class="body">
+                                    <span id="bodyDiv1"></span> <!-- Use different IDs for multiple bodies -->
+                                </div>
                             </div>
-                            <div class="body">
-                                <span id="bodyDiv1"></span> <!-- Use different IDs for multiple bodies -->
+                        
+                            <div class="Taple" id="contractorTable" style="display: none;">
+                                <div class="TapleHeader">
+                                    <div>تاريخ الطلب</div>
+                                    <div>المدة</div>
+                                    <div>رقم الطلب</div>
+                                    <div>المالك</div>
+                                    <div>المشروع</div>
+                                    <div>عرض سعر</div>
+                                    <div>معاينة</div>
+                                </div>
+                                <div class="body">
+                                    <span id="bodyDiv2"></span> <!-- Use different IDs for multiple bodies -->
+                                </div>
                             </div>
                         </div>
-                    
-                        <div class="Taple" id="contractorTable" style="display: none;">
-                            <div class="TapleHeader">
-                                <div>تاريخ الطلب</div>
-                                <div>المدة</div>
-                                <div>رقم الطلب</div>
-                                <div>المالك</div>
-                                <div>المشروع</div>
-                                <div>عرض سعر</div>
-                                <div>معاينة</div>
-                            </div>
-                            <div class="body">
-                                <span id="bodyDiv2"></span> <!-- Use different IDs for multiple bodies -->
-                            </div>
-                        </div>
+                        <div class="pagination" id="pagination"></div>
                     </div>
-                    <div class="pagination" id="pagination"></div>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ const data = Array.from({ length: totalItems }, (_, index) => {
         name: 'حسن فايز',
         project: 'مشروع التربة',
         status: getRandomStatus(), // Random status
-        icon: '../../../assest/Icons/presentSale/Frame 53.png'
+        icon: '../../../assest/Icons/Owner/presentSale/Frame 53.png'
     };
 });
 

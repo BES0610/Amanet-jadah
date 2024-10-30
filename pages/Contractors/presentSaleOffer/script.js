@@ -16,7 +16,7 @@ const data = Array.from({ length: totalItems }, (_, index) => {
         name: 'حسن فايز',
         project: 'مشروع التربة',
         status: getRandomStatus(), // Random status
-        icon: '../../../assest/Icons/presentSale/Frame 53.png'
+        icon: '../../../assest/Icons/Owner/presentSale/Frame 53.png'
     };
 });
 
@@ -190,7 +190,7 @@ function handleFileUpload(input) {
         fileSizeElement.textContent = `${fileSizeInKB} KB / 30 MB`;
 
         // Change icon for the uploaded file
-        uploadIcon.src = '/assest/Icons/OrderDetils/Icon.jpg'; // New icon for uploaded file
+        uploadIcon.src = '/assest/Icons/Owner/OrderDetils/Icon.jpg'; // New icon for uploaded file
         uploadIcon.style.display = 'block'; // Ensure the icon is displayed
         uploadIcon.style.width = '50px';
         uploadIcon.style.height = '70px';
@@ -218,7 +218,7 @@ function handleFileUpload(input) {
     } else {
         // Reset state if no file selected
         fileNameElement.textContent = '';
-        uploadIcon.src = '/assest/Icons/OrderDetils/Icon.jpg'; // Reset icon if no file
+        uploadIcon.src = '/assest/Icons/Owner/OrderDetils/Icon.jpg'; // Reset icon if no file
         progressContainer.style.display = 'none';
         uploadText.style.display = 'block'; // Show the upload text again if no file selected
     }

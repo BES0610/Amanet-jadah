@@ -60,3 +60,9 @@ document.addEventListener('click', function() {
 
 // Hide all tabs on initial load
 hideAllTabs(); // Ensure no tabs are displayed by default
+
+
+function toggleDropdown() {
+    const linkContainer = document.querySelector('#smalltap');
+    linkContainer.classList.toggle('active');
+}

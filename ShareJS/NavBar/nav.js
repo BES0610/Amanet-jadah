@@ -204,9 +204,17 @@ navber.innerHTML = `
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061 (1).jpg" alt="" />
                         <div>المشاريع</div>
                     </div>
-                    <div class="link-container">
+                    <div class="link-container" id="smalltap" style="position: relative;" onclick="toggleDropdown()">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061.jpg" alt="" />
                         <div>الاستشاري</div>
+                        <icon>
+                            <img style="width: 7px; height: 7px; margin-right: -23px;" src="../../../assest/Media/Genral/arrow.jpg" alt="Arrow" />
+                        </icon>
+                        <!-- Hidden dropdown content -->
+                        <div class="dropdown-content">
+                            <a href="../../../pages/Honesty/ConsultTap1/index.html"><div>تعميد خط بديل</div></a>
+                            <a href="../../../pages/Honesty/ConsultTap2/index.html"><div style="margin-top: 25px;color:var(--text-color) ">الجولات الرقابيه</div></a>
+                        </div>
                     </div>
                 </div>
                 

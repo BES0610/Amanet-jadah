@@ -51,7 +51,7 @@
     height: 300px;
     background-color: #f9f9f9;
     margin: auto;
-    margin-top: -15px ;
+    margin-top: -8px ;
     direction: rtl;
     display: flex;
     position: relative;
@@ -67,9 +67,6 @@
         width: 270px;
         height: 80%;
         margin: 18px;
-    }
-     .NavBar .OnwerTap .ScoRow{
-        margin-top: 80px;
     }
 
      .NavBar  .firstRow,
@@ -127,9 +124,8 @@
         height: 80%;
         margin: 18px;
     }
-     .NavBar .consultativeTap .ScoRow{
-        margin-top: 70px;
-    }
+
+
 
 
 /* Contractors */
@@ -160,9 +156,6 @@
         height: 80%;
         margin: 18px;
     }
-     .NavBar .ContractorsTap .ScoRow{
-        margin-top: 70px;
-    }
 /* HonestyTap */
 
  .NavBar .HonestyTap{
@@ -189,9 +182,6 @@
         height: 80%;
         margin: 18px;
     }
-     .NavBar .HonestyTap .ScoRow{
-        margin-top: 70px;
-    }
     
     .tab-link {
         cursor: pointer;
@@ -213,7 +203,7 @@
         display: flex; 
         align-items: center; 
         margin: 5px 0;
-        height: 24px;
+        height: 37px;
     }
      .NavBar .firstRow .link-container img,
      .NavBar .ScoRow .link-container img {
@@ -225,7 +215,13 @@
      .NavBar  .ScoRow .link-container a {
         text-decoration: none;
         color: inherit;
-    
+    }
+
+    .NavBar .OnwerTap  .ScoRow,
+    .NavBar .consultativeTap  .ScoRow,
+    .NavBar .ContractorsTap  .ScoRow,
+    .NavBar .HonestyTap  .ScoRow{
+        margin-top: 88px;
     }
      .NavBar .ThirdRow {
         position: absolute;
@@ -300,4 +296,28 @@
     height: auto; 
     margin-right: 20px; 
     margin-left: 20px   ;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 44%;
+    right: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 204px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    border-radius: 11px;
+}
+
+.link-container.active .dropdown-content {
+    display: block;
+}
+.link-container.active .dropdown-content  div{
+    display: block;
+    margin: 0; height: 10px; margin-top: 0px; margin-left: 93px;
+    font-family: "Helvetica";
+
 }

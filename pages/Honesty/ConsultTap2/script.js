@@ -5,21 +5,34 @@ let header = document.getElementsByClassName("Header")[0]; // Select the first e
 
 // Create <th> elements and set text for each one
 let th1 = document.createElement("th");
-th1.textContent = "تاريخ المعاملة";
+th1.textContent = "التاريخ";
 
 let th2 = document.createElement("th");
-th2.textContent = "رقم المعاملة";
+th2.textContent = "المشروع";
 
 let th3 = document.createElement("th");
 th3.textContent = " المالك";
 
 let th4 = document.createElement("th");
-th4.textContent = "المشروع";
+th4.textContent = "الاستشاري";
+
 let th5 = document.createElement("th");
-th5.textContent = "المرفقات";
+th5.textContent = "المقاول";
 
 let th6 = document.createElement("th");
-th6.textContent = "مرفقات اضافية";
+th6.textContent = "المهندس";
+// th6.style.flex = "2"
+
+let th7 = document.createElement("th");
+th7.textContent = "المهمة";
+
+let th8 = document.createElement("th");
+th8.textContent = "الحي";
+
+let th9 = document.createElement("th");
+th9.textContent = "المرفقات";
+
+
 
 // Append each <th> element to the header
 header.appendChild(th1);
@@ -28,6 +41,9 @@ header.appendChild(th3);
 header.appendChild(th4);
 header.appendChild(th5);
 header.appendChild(th6);
+header.appendChild(th7);
+header.appendChild(th8);
+header.appendChild(th9);
 
 // append body 
 const bodyDivData = document.getElementById('bodyDiv');
@@ -41,12 +57,16 @@ let currentPage = 1; // Initialize current page
 // Sample data array with 100 objects
 const data = Array.from({ length: totalItems }, (_, index) => {
 return {
-    date: "21/05/2024",
+    date: `12/08/2024`,
     number: `12340`,
     project: `مدينة الملك فهد`,
-    owner: "عبدالوهاب خالد", // Incrementing number for each row
-    Attachments: "../../../assest/Icons/Owner/presentSale/Frame 53.png", // Incrementing number for each row
-    moreAttachments: './../../../assest/Icons/consultative/folder.png'
+    owner: "حسن فايز", // Incrementing number for each row
+    Consultiv: "حسن فايز", // Incrementing number for each row
+    Contra: "حسن فايز", // Incrementing number for each row
+    ENG: `12340`,
+    task: "ضخ وحفر ", // Incrementing number for each row
+    neb: "جده ", // Incrementing number for each row
+    arrow: " ./../../../assest/Icons/Honesty/arrowdown.png" 
 };
 });
 
@@ -74,18 +94,17 @@ for (let i = startIndex; i < endIndex; i++) {
         <td>${item.number}</td>
         <td>${item.project}</td>
         <td>${item.owner}</td>
-        <td><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.Attachments}" alt="icon" /></td>
-        <td><img style="cursor: pointer;" id="ScoopenTabIcon-${i}" src="${item.moreAttachments}" alt="icon" /></td>
+        <td>${item.Consultiv}</td>
+        <td>${item.Contra}</td>
+        <td>${item.ENG}</td>
+        <td>${item.task}</td>
+        <td class="location"><img style="position: relative;top: 6px;"  src="../../../assest/Icons/Honesty/location.png" alt="icon" />${item.neb}</td>
+        <td><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.arrow}" alt="icon" /></td>
     `;
     bodyDivData.appendChild(bodyDiv);
 
     // Attach event listener for opening the tab for the current item
-    document.getElementById(`openTabIcon-${i}`).addEventListener('click', () => {
-        openTab(item); // Open tab with the item details
-    });
-    document.getElementById(`ScoopenTabIcon-${i}`).addEventListener('click', () => {
-        scoopenTab(item); // Open tab with the item details
-    });
+
 }
 
 createPagination(); // Update pagination controls
@@ -157,50 +176,11 @@ ellipses.innerText = '...';
 return ellipses;
 }
 
-function openTab(item) {
-const tab = document.getElementById('tab');
-const tabContent = document.querySelector('.tab-content');
-
-
-tab.style.display = 'block'; // Show the tab
-
-// Close tab functionality
-document.getElementById('closeTab').addEventListener('click', () => {
-    tab.style.display = 'none'; // Hide the tab
-});
-
-// Optional: Close the tab when clicking outside of it
-window.addEventListener('click', (event) => {
-    if (event.target === tab) {
-        tab.style.display = 'none'; // Hide the tab if clicked outside
-    }
-});
-}
-function scoopenTab(item) {
-const tab = document.getElementById('scotab');
-const tabContent = document.querySelector('.tab-content');
-
-
-tab.style.display = 'block'; // Show the tab
-
-// Close tab functionality
-document.getElementById('ScocloseTab').addEventListener('click', () => {
-    tab.style.display = 'none'; // Hide the tab
-});
-
-// Optional: Close the tab when clicking outside of it
-window.addEventListener('click', (event) => {
-    if (event.target === tab) {
-        tab.style.display = 'none'; // Hide the tab if clicked outside
-    }
-});
-}
-
 // Initial render
 renderItems(1); // Render the first page
 
 
-let li = document.getElementById("consultative");
+let li = document.getElementById("Honesty");
 let span = li.querySelector("span");
 let icon = li.querySelector("icon");
 

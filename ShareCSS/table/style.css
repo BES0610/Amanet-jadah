@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: column;
     direction: rtl;
-    /* justify-content: space-between; */
-} 
+    padding: 12px;
+    } 
  .TapleCon .table span{
     width: 100%;
 }
