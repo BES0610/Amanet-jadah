@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="../../../Glopal.css">
+    <link rel="stylesheet" href="../../../ShareCSS/NavBar/NavBar.css">
+    <link rel="stylesheet" href="../../../ShareCSS/Media/Media.css">
+    <link rel="stylesheet" href="../../../ShareCSS/footer/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="../../../assest/dist/custom-bootstrap.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css"
+    />
+
+    <style>
+      .accordion {
+        border-radius: 2px !important;
+      }
+
+      .accordion-item {
+        border: none;
+        padding: 1%;
+      }
+
+      .accordion-button {
+        background: #3e2984 !important;
+        color: #fff;
+        border: none;
+        margin: 1px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .grid-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      input[type="file"] {
+        color: #004693;
+        text-align: end;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="date"]:focus,
+      input[type="file"]:focus {
+        outline: none;
+      }
+
+      input[type="text"]:hover,
+      input[type="email"]:hover,
+      input[type="date"]:hover,
+      input[type="file"]:hover {
+        color: #004693;
+      }
+
+      input[type="text"]:hover::placeholder,
+      input[type="email"]:hover::placeholder,
+      input[type="date"]:hover::placeholder,
+      input[type="file"]:hover::placeholder {
+        color: #004693;
+      }
+
+      .file-upload {
+        position: relative;
+        display: inline-block;
+      }
+
+      .file-upload input[type="file"] {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      .file-name {
+        margin-left: 10px;
+        color: black;
+      }
+
+      .file-icon {
+        color: #004693;
+        margin-left: 5px;
+      }
+
+      .footer {
+        position: relative;
+        display: inline-block;
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Login">
+    <div class="Media" id="Media"></div>
+    <div class="Contaner">
+    <div  id="nav"></div>
+
+    <main class="my-4">
+      <div class="m-5">
+        <h2>نموذج البيانات</h2>
+        <div class="contaner">
+          <div class="row">
+            <div class="col-10 m-auto">
+              <div class="bg-white m-3 rounded p-3">
+                <div class="grid-container">
+                  <div class="grid-item border-0">
+                    <label for="ownerName">اسم المالك:</label><br />
+                    <input
+                      type="text"
+                      class="border-0 border-bottom"
+                      id="ownerName"
+                    />
+                  </div>
+
+
+                  <div class="grid-item border-0">
+                    <label for="idNumber">رقم الهوية:</label><br />
+                    <input
+                      type="text"
+                      class="border-0 border-bottom"
+                      id="idNumber"
+                    />
+                  </div>
+
+
+                  <div class="grid-item border-0">
+                    <label for="phoneNumber">رقم الجوال:</label><br />
+                    <input
+                      type="text"
+                      class="border-0 border-bottom"
+                      id="phoneNumber"
+                    />
+                  </div>                    
+
+                  <div class="grid-item border-0">
+                    <label for="birthDate">تاريخ الميلاد:</label><br />
+                    <input
+                      type="date"
+                      class="border-0 border-bottom"
+                      id="birthDate"
+                    />
+                  </div>
+
+                  <div class="grid-item border-0">
+                    <label for="email">البريد الالكتروني:</label> <br/>
+                    <input
+                      type="email"
+                      class="border-0 border-bottom"
+                      id="email"
+                    />
+                  </div>
+
+                  <div class="grid-item border-0">
+                    <label for="commercialRegister">السجل التجاري:</label>
+                    <div class="input-group mb-3">
+                      <input
+                        type="file"
+                        class="border-0 border-bottom d-none"
+                        id="commercialRegister"
+                        onchange="updateFileIcon()"
+                      />
+                      <label
+                        for="commercialRegister"
+                        class="w-100 p-1 input-group-prepend"
+                        style="margin-left: 100px !important"
+                      >
+                        <div
+                          class="border p-2 rounded text-primary text-center d-flex align-items-center"
+                          style="
+                            cursor: pointer;
+                            display: flex;
+                            flex-direction: column;
+                            /* تأكد من وضع العناصر في عمود */
+                            align-items: center;
+                            /* محاذاة العناصر بشكل مركزي */
+                            width: 166px;
+                          "
+                        >
+                          <i
+                            id="uploadIcon"
+                            class="fa-light fa-file-plus-minus"
+                          ></i>
+                          <span
+                            id="fileName"
+                            class="file-name ms-2"
+                            style="color: #222222 !important; font-size: 10px"
+                            >اضغط للارفاق</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  
+                </div>
+                <button id="saveButton" class="btn btn-primary w-100">
+                  حفظ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+</div>
+</div>
+<script src="./script.js"></script>
+<script src="../../../ShareJS/NavBar/nav.js"></script>
+<script src="../../../ShareJS/NavBar/script.js"></script>
+<script src="../../../ShareJS/Media/Media.js"></script>
+<script src="../../../ShareJS/footer/footer.js"></script>
+<script>
+  const saveButton = document.getElementById("saveButton");
+
+  saveButton.addEventListener("click", function () {
+    alert("تم حفظ البيانات بنجاح");
+  });
+
+  document
+    .getElementById("commercialRegister")
+    .addEventListener("change", function () {
+      const fileName = this.files[0] ? this.files[0].name : "";
+      const fileNameSpan = document.querySelector(".file-name");
+      const uploadIcon = document.getElementById("uploadIcon");
+
+      fileNameSpan.textContent = fileName;
+
+      if (this.files[0]) {
+        fileNameSpan.style.display = "inline";
+        uploadIcon.style.display = "none"; // قم بإخفاء الأيقونة الأصلية
+      } else {
+        fileNameSpan.style.display = "none";
+        uploadIcon.style.display = "inline"; // اعرض الأيقونة الأصلية مرة أخرى
+      }
+    });
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+</body>
+</html>

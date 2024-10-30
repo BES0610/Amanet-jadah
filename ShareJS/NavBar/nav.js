@@ -67,16 +67,16 @@ navber.innerHTML = `
                 <div class="ThirdRow">
                     <h4>الخدمات الاكثر استخداما</h4>
                     <div class="link-container" style="height: 10px;">
-                        <a>انشاء حساب</a>
+                        <a href="../../../pages/Owner/login/index.html">انشاء حساب</a>
                     </div>
                     <div class="link-container" style="height: 10px;">
                         <a>الاستعلام عن معامله</a>
                     </div>
                     <div class="link-container" style="height: 10px;">
-                        <a>الاستعلام عن استشاري</a>
+                        <a href="../../../pages/Owner/inquiryconsultative/index.html">الاستعلام عن استشاري</a>
                     </div>
                     <div class="link-container" style="height: 10px;">
-                        <a>الاستعلام عن مقاوي</a>
+                        <a href="../../../pages/Owner/inquiryContractors/index.html">الاستعلام عن مقاوي</a>
                     </div>
                 </div>
             </div> 
@@ -112,7 +112,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061 (1).jpg" alt="" />
-                        <div>طلب اعتماد او تحديث</div>
+                        <a href="../../../pages/consultative/ReqAdoption/index.html"><div>طلب اعتماد او تحديث</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061.jpg" alt="" />
@@ -198,7 +198,7 @@ navber.innerHTML = `
                 <div class="ScoRow">
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060.jpg" alt="" />
-                        <div>استعلام عن معامله</div>
+                        <a href="../../../pages/Honesty/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061 (1).jpg" alt="" />
@@ -213,7 +213,7 @@ navber.innerHTML = `
                 <div class="ThirdRow">
                     <h4>الخدمات الاكثر استخداما</h4>
                     <div class="link-container" style="height: 10px;">
-                        <div>استعلام عن معامله</div>
+                        <a href="../../../pages/Honesty/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
                     </div>
                     <div class="link-container" style="height: 10px;">
                         <div>عن مالك</div>
