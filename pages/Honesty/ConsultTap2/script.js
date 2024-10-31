@@ -198,79 +198,52 @@ li.appendChild(newDiv);
 
 }, 100)
 
-
-function enableButton() {
-    const button = document.getElementById('serviceButton');
-    button.disabled = false;
+function Drop() {
+    let drag = document.getElementById("dropDown");
+    drag.classList.toggle("activedrag")
 }
 
-// Add click event listeners to each drag-and-drop area
-document.querySelectorAll('.drag-and-drop').forEach(dragDrop => {
-    const uploadText = dragDrop.querySelector('div[id^="uploadText-"]');
-
-    uploadText.addEventListener('click', () => {
-        uploadText.style.display = 'none'; // Hide the text
-        const fileInput = dragDrop.querySelector('input[type="file"]');
-        dragDrop.style.flexDirection = 'row';
-        dragDrop.style.justifyContent = 'start';
-        fileInput.click();
+function openTab(item) {
+    const tab = document.getElementById('tab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('closeTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
     });
-});
-
-// Handle file upload
-function handleFileUpload(input) {
-    const fileIndex = input.id.split('-')[2]; // Extract the index from the input element's ID
-    const fileSizeElement = document.getElementById(`file-size-${fileIndex}`);
-    const progressBar = document.getElementById(`progress-bar-${fileIndex}`);
-    const progressContainer = document.getElementById(`progress-container-${fileIndex}`);
-    const uploadPercentage = document.getElementById(`upload-percentage-${fileIndex}`);
-    const fileNameElement = document.getElementById(`file-name-${fileIndex}`);
-    const uploadIcon = document.getElementById(`upload-icon-${fileIndex}`);
-    const uploadText = document.getElementById(`uploadText-${fileIndex}`);
-    const dragAndDrop = document.getElementsByClassName(`drag-and-drop`);
-    const file = input.files[0];
-
-    if (file) {
-        // Hide the upload text
-        uploadText.style.display = 'none'; 
-
-        // Update file name and size display
-        fileNameElement.textContent = `${file.name}`;
-        const fileSizeInKB = (file.size / 1024).toFixed(2); // File size in KB
-        fileSizeElement.textContent = `${fileSizeInKB} KB / 30 MB`;
-
-        // Change icon for the uploaded file
-        uploadIcon.src = "../../../assest/Icons/Owner/OrderDetils/Icon.jpg"; // New icon for uploaded file
-        uploadIcon.style.display = 'block'; // Ensure the icon is displayed
-        uploadIcon.style.width = '50px';
-        uploadIcon.style.height = '70px';
-        uploadIcon.style.marginLeft = '10px';
-
-        // Show progress container
-        progressContainer.style.display = 'block';
-
-        // Simulate upload progress
-        let uploadProgress = 0;
-        const uploadInterval = setInterval(() => {
-            uploadProgress += 10; // Simulate progress increase
-            progressBar.style.width = `${uploadProgress}%`;
-            uploadPercentage.textContent = `${uploadProgress}%`; // Add % symbol
-
-            if (uploadProgress >= 100) {
-                clearInterval(uploadInterval);
-
-                // Hide loading indicator after upload is complete
-                setTimeout(() => {
-                    progressBar.style.backgroundColor = '#2F7CBE'; // Change color to indicate success
-                }, 500); // Hide shortly after upload completes
-            }
-        }, 500); // Simulate every 500ms
-    } else {
-        // Reset state if no file selected
-        fileNameElement.textContent = '';
-        uploadIcon.src =  '../../../assest/Icons/Owner/OrderDetils/Icon.jpg'; // Reset icon if no file
-        progressContainer.style.display = 'none';
-        uploadText.style.display = 'block'; // Show the upload text again if no file selected
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
     }
-}
+    function scoopenTab() {
+    const tab = document.getElementById('scotab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('ScocloseTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
+    });
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
+    }
 
+        document.getElementById(`tap1`).addEventListener('click', () => {
+            openTab();
+        });
+        document.getElementById(`tap2`).addEventListener('click', () => {
+            scoopenTab();
+        });

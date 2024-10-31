@@ -15,7 +15,7 @@
     <title>tap 1</title>
 </head>
 <body>
-    <div class="projects">
+    <div class="ConsultTap2">
         <div class="Media" id="Media"></div>
         <div class="Contaner">
             <div  id="nav"></div>
@@ -24,13 +24,321 @@
                 <span style="color: #004693; font-weight: 600; font-size: 20px"> > الجولات الرقابيه</span>
             </div>
             <div class="ContentContaner" style="width: 85%;">
-                <div class="projectsCon">
+                <div class="ConsultTap2Con">
                     <div id="SearchAndFilter"></div>
+                    <div class="DropDownContaner">
+                        <button onclick="Drop()" id="AddBtn" class="AddBtn">اضافة جولة رقابية</button>
+                        <div id="dropDown" class="dropDown">
+                            <div id="tap1">جوله موقع الضخ</div>
+                            <div id="tap2">جوله موقع خط بديل</div>
+                        </div>
+                    </div>
                     <div class="TapleCon">
                         <div id="table"></div>
                     </div>
                 </div>
-            
+
+                <div id="tab" class="tab">
+                    <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <div class="closeTab" id="closeTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                        <h3 style="width: 100%;direction: rtl;color: var(--btn-color);">الجولات الرقابيه - موقع خط بديل</h3>
+                        <div class="form-container">
+                            <div class="topSection">
+                                <div>
+                                    <div class="inputCon">
+                                        <label>اسم الموظف</label>
+                                        <input type="text" class="input-field" placeholder="اسم الموظف" required />
+                                    </div>
+                                    <div class="inputCon">
+                                        <label>التاريخ</label>
+                                        <input type="text" class="input-field" placeholder="التاريخ" required />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="inputCon">
+                                        <label>الاستشاري</label>
+                                        <input type="text" class="input-field" placeholder="الاستشاري" required />
+                                    </div>
+                                    <div class="inputCon">
+                                        <label>المقاول</label>
+                                        <input type="text" class="input-field" placeholder="المقاول" required />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="inputCon">
+                                        <label>اسم المشروع</label>
+                                        <input type="text" class="input-field" placeholder="اسم المشروع" required />
+                                    </div>
+                                    <div class="inputCon">
+                                        <label>الموقع</label>
+                                        <input type="text" class="input-field" placeholder="الموقع" required />
+                                    </div>
+                                </div>
+                                <div>
+                            </div>
+                            </div>
+                            <div class="BottomSection">
+                                <div>
+                                <span style="flex: 1;">هل الخط</span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">جوفيه</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">امطار</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">ضخ رأسي</label>
+                                </span>
+                                <span style="flex: 2;">
+                                    <div class="inputCon">
+                                        <label style="margin-left: auto;">الملاحظات</label>
+                                        <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                    </div>
+                                </span>
+                                </div>
+                                <div>
+                                <span style="flex: 1;">طول خط الحفر</span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">مطابق</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">غير مطابق</label>
+                                </span>
+                                <span style="flex: 3;">
+                                    <div class="inputCon">
+                                        <label style="margin-left: auto;">الملاحظات</label>
+                                        <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                    </div>
+                                </span>
+                                </div>
+                                <div>
+                                <span style="flex: 1;">طول المواسير الممددة</span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">مطابق</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">غير مطابق</label>
+                                </span>
+                                <span style="flex: 3;">
+                                    <div class="inputCon">
+                                        <label style="margin-left: auto;">الملاحظات</label>
+                                        <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                    </div>
+                                </span>
+                                </div>
+                                <div>
+                                <span style="flex: 1;">عدد المناهيل المنفذه</span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">مطابق</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">غير مطابق</label>
+                                </span>
+                                <span style="flex: 3;">
+                                    <div class="inputCon">
+                                        <label style="margin-left: auto;">الملاحظات</label>
+                                        <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                    </div>
+                                </span>
+                                </div>
+                                <div>
+                                <span style="flex: 1;">عدد المصائد المنفذه</span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">مطابق</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">غير مطابق</label>
+                                </span>
+                                <span style="flex: 3;">
+                                    <div class="inputCon">
+                                        <label style="margin-left: auto;">الملاحظات</label>
+                                        <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                    </div>
+                                </span>
+                                </div>
+                                <div>
+                                <span style="flex: 1;">طول السفلتة المنفذه</span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">مطابق</label>
+                                </span>
+                                <span style="flex: 1;">
+                                    <input type="checkbox">
+                                    <label for="">غير مطابق</label>
+                                </span>
+                                <span style="flex: 3;">
+                                    <div class="inputCon">
+                                        <label style="margin-left: auto;">الملاحظات</label>
+                                        <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                    </div>
+                                </span>
+                                </div>
+                            </div>
+                            <button>حفظ</button>
+                        </div>
+                </div>
+            </div>
+            <div id="scotab" class="scotab">
+                <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <div class="ScocloseTab" id="ScocloseTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                    <h3 style="width: 100%;direction: rtl;color: var(--btn-color);">الجولات الرقابيه موقع الضخ</h3>
+                    <div class="form-container">
+                        <div class="topSection">
+                            <div>
+                                <div class="inputCon">
+                                    <label>اسم الموظف</label>
+                                    <input type="text" class="input-field" placeholder="اسم الموظف" required />
+                                </div>
+                                <div class="inputCon">
+                                    <label>التاريخ</label>
+                                    <input type="text" class="input-field" placeholder="التاريخ" required />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="inputCon">
+                                    <label>الاستشاري</label>
+                                    <input type="text" class="input-field" placeholder="الاستشاري" required />
+                                </div>
+                                <div class="inputCon">
+                                    <label>المقاول</label>
+                                    <input type="text" class="input-field" placeholder="المقاول" required />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="inputCon">
+                                    <label>اسم المشروع</label>
+                                    <input type="text" class="input-field" placeholder="اسم المشروع" required />
+                                </div>
+                                <div class="inputCon">
+                                    <label>الموقع</label>
+                                    <input type="text" class="input-field" placeholder="الموقع" required />
+                                </div>
+                            </div>
+                            <div>
+                        </div>
+                        </div>
+                        <div class="BottomSection">
+                            <div>
+                            <span style="flex: 1;">هل الخط</span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">جوفيه</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">امطار</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">ضخ رأسي</label>
+                            </span>
+                            <span style="flex: 2;">
+                                <div class="inputCon">
+                                    <label style="margin-left: auto;">الملاحظات</label>
+                                    <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                </div>
+                            </span>
+                            </div>
+                            <div>
+                            <span style="flex: 1;">طول خط الحفر</span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">مطابق</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">غير مطابق</label>
+                            </span>
+                            <span style="flex: 3;">
+                                <div class="inputCon">
+                                    <label style="margin-left: auto;">الملاحظات</label>
+                                    <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                </div>
+                            </span>
+                            </div>
+                            <div>
+                            <span style="flex: 1;">طول المواسير الممددة</span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">مطابق</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">غير مطابق</label>
+                            </span>
+                            <span style="flex: 3;">
+                                <div class="inputCon">
+                                    <label style="margin-left: auto;">الملاحظات</label>
+                                    <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                </div>
+                            </span>
+                            </div>
+                            <div>
+                            <span style="flex: 1;">عدد المناهيل المنفذه</span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">مطابق</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">غير مطابق</label>
+                            </span>
+                            <span style="flex: 3;">
+                                <div class="inputCon">
+                                    <label style="margin-left: auto;">الملاحظات</label>
+                                    <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                </div>
+                            </span>
+                            </div>
+                            <div>
+                            <span style="flex: 1;">عدد المصائد المنفذه</span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">مطابق</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">غير مطابق</label>
+                            </span>
+                            <span style="flex: 3;">
+                                <div class="inputCon">
+                                    <label style="margin-left: auto;">الملاحظات</label>
+                                    <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                </div>
+                            </span>
+                            </div>
+                            <div>
+                            <span style="flex: 1;">طول السفلتة المنفذه</span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">مطابق</label>
+                            </span>
+                            <span style="flex: 1;">
+                                <input type="checkbox">
+                                <label for="">غير مطابق</label>
+                            </span>
+                            <span style="flex: 3;">
+                                <div class="inputCon">
+                                    <label style="margin-left: auto;">الملاحظات</label>
+                                    <input type="text" class="input-field" placeholder=" الملاحظات" required />
+                                </div>
+                            </span>
+                            </div>
+                        </div>
+                        <button>حفظ</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="footer"></div>
