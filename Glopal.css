@@ -62,17 +62,4 @@ a {
     position: absolute;
     bottom: -24px;
 }
-#table{
-    width: 100%;
-}
-.elevated-card {
-    border-radius: 8px;
-    background: #ffffff;
-    box-shadow: 0px 5.6px 16.81px 0px #0000001f;
-  }
-.ContentContaner{
-    width: 80%;
-}
-.Links{
-    width: 88% !important;
-}
+

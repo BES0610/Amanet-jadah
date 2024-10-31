@@ -45,7 +45,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/Group 1171275061.jpg" alt="" />
-                        <a href="../../../pages/Owner/Transactioninquiry/index.html" >استعلام عن معامله</a>
+                        <a>استعلام عن معامله</a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/Group 1171275061 (2).jpg" alt="" />
@@ -56,7 +56,7 @@ navber.innerHTML = `
                 <div class="ScoRow">
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/polisher 1.jpg" alt="" />
-                        <a href="../../../pages/Owner/projects/index.html">مشاريعي</a>
+                        <a>مشاريعي</a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Owner/sea 1.jpg" alt="" />
@@ -67,16 +67,16 @@ navber.innerHTML = `
                 <div class="ThirdRow">
                     <h4>الخدمات الاكثر استخداما</h4>
                     <div class="link-container" style="height: 10px;">
-                        <a href="../../../pages/Owner/login/index.html">انشاء حساب</a>
+                        <a>انشاء حساب</a>
                     </div>
                     <div class="link-container" style="height: 10px;">
                         <a>الاستعلام عن معامله</a>
                     </div>
                     <div class="link-container" style="height: 10px;">
-                        <a href="../../../pages/Owner/inquiryconsultative/index.html">الاستعلام عن استشاري</a>
+                        <a>الاستعلام عن استشاري</a>
                     </div>
                     <div class="link-container" style="height: 10px;">
-                        <a href="../../../pages/Owner/inquiryContractors/index.html">الاستعلام عن مقاوي</a>
+                        <a>الاستعلام عن مقاوي</a>
                     </div>
                 </div>
             </div> 
@@ -104,15 +104,15 @@ navber.innerHTML = `
                 <div class="ScoRow">
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275060.jpg" alt="" />
-                        <a href="../../../pages/consultative/projects/index.html"><div>مشاريعي</div></a>
+                        <div>مشاريعي</div>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061 (1).jpg" alt="" />
-                        <a href="../../../pages/consultative/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
+                        <div>استعلام عن معامله</div>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061 (1).jpg" alt="" />
-                        <a href="../../../pages/consultative/ReqAdoption/index.html"><div>طلب اعتماد او تحديث</div></a>
+                        <div>طلب اعتماد او تحديث</div>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061.jpg" alt="" />
@@ -135,14 +135,14 @@ navber.innerHTML = `
             </div> 
             <div class="tab-content ContractorsTap" id="ContractorsTap">
                 <div class="firstRow">
-                    <h4>المقاولين</h4>
+                    <h4>القاولين</h4>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275059.jpg" alt="" />
                         <a href="../../../pages/Contractors/presentSaleOffer/index.html"><div>تقديم عروض الاسعار</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275060.jpg" alt="" />
-                        <a href="../../../pages/Contractors/projects/index.html"><div>مشاريعي</div></a>
+                        <div>مشاريعي</div>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275061 (1).jpg" alt="" />
@@ -157,7 +157,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275061.jpg" alt="" />
-                        <a href="../../../pages/Contractors/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
+                        <div>استعلام عن معامله</div>
                     </div>
                 </div>
                 
@@ -198,30 +198,22 @@ navber.innerHTML = `
                 <div class="ScoRow">
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060.jpg" alt="" />
-                        <a href="../../../pages/Honesty/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
+                        <div>استعلام عن معامله</div>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061 (1).jpg" alt="" />
                         <div>المشاريع</div>
                     </div>
-                    <div class="link-container" id="smalltap" style="position: relative;" onclick="toggleDropdown()">
+                    <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061.jpg" alt="" />
                         <div>الاستشاري</div>
-                        <icon>
-                            <img style="width: 7px; height: 7px; margin-right: -23px;" src="../../../assest/Media/Genral/arrow.jpg" alt="Arrow" />
-                        </icon>
-                        <!-- Hidden dropdown content -->
-                        <div class="dropdown-content">
-                            <a href="../../../pages/Honesty/ConsultTap1/index.html"><div>تعميد خط بديل</div></a>
-                            <a href="../../../pages/Honesty/ConsultTap2/index.html"><div style="margin-top: 25px;color:var(--text-color) ">الجولات الرقابيه</div></a>
-                        </div>
                     </div>
                 </div>
                 
                 <div class="ThirdRow">
                     <h4>الخدمات الاكثر استخداما</h4>
                     <div class="link-container" style="height: 10px;">
-                        <a href="../../../pages/Honesty/Transactioninquiry/index.html"><div>استعلام عن معامله</div></a>
+                        <div>استعلام عن معامله</div>
                     </div>
                     <div class="link-container" style="height: 10px;">
                         <div>عن مالك</div>
