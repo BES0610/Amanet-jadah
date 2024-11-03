@@ -1,8 +1,5 @@
 
-function enableButton() {
-        const button = document.getElementById('serviceButton');
-        button.disabled = !button.disabled;
-    }
+
 
     setTimeout(() => {
         let li = document.getElementById("Owner");

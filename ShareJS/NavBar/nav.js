@@ -202,7 +202,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061 (1).jpg" alt="" />
-                        <div>المشاريع</div>
+                        <a href="../../../pages/Honesty/Dashboard/index.html"><div>المشاريع</div></a>
                     </div>
                     <div class="link-container" id="smalltap" style="position: relative;" onclick="toggleDropdown()">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061.jpg" alt="" />
