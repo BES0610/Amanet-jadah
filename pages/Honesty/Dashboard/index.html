@@ -63,7 +63,7 @@
                             <div class="modal-content">
                                 <span class="close-button" onclick="closeModal()">&times;</span>
                                 <p style="text-align: right;color: var(--btn-color);">المشاريع المنتهيه</p>
-                                <div class="charts">
+                                <div class="charts" style="width: 100%;">
                                     <div class="CahrtsCon" style="flex-direction: column;">
                                         <div style="display: flex;align-items: center;">
                                             <div class="Chart" style="width: 130px; height: 130px;">
@@ -108,7 +108,7 @@
                         <div class="Card">
                             <div class="topSection"> المشاريع المنتهيه <span>3500</span></div>
                             <div class="charts">
-                                <diV class="Link">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
+                                <diV class="Link" onclick="openModal2()">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
                                 <div class="CahrtsCon">
                                     <div class="Chart"><canvas id="emptyCircleChart4" width="140" height="140"></canvas></div>
                                     <div class="Chart"><canvas id="emptyCircleChart5" width="140" height="140"></canvas></div>
@@ -123,6 +123,50 @@
                                 <div>اجمالي خطوط  البديله<span>2500</span></div>
                             </div>
                             <div class="AllBtn"><a>الكل</a></div>
+                            <div id="modal2" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal2()">close;</span>
+                                    <p style="text-align: right;color: var(--btn-color);">المشاريع المنتهيه</p>
+                                    <div class="charts" style="width: 100%;">
+                                        <div class="CahrtsCon" style="flex-direction: column;">
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="Chart" style="width: 130px; height: 130px;">
+                                                    <canvas id="modalEmptyCircleChart4" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>اطوال الخطوط البديله</div>
+                                                        <div>اطوال خطوط الضخ</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 130px; height: 130px;">
+                                                    <canvas id="modalEmptyCircleChart5" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>م1</div>
+                                                        <div>م2</div>
+                                                        <div>3م</div>
+                                                        <div>م4</div>
+                                                        <div>م5</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 130px; height: 130px;">
+                                                    <canvas id="modalEmptyCircleChart6" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>البساتين</div>
+                                                        <div>النزهه</div>
+                                                        <div>الفيصليه</div>
+                                                        <div>الصفا</div>
+                                                        <div>البوادي</div>
+                                                        <div>البلد</div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
                 <div class="cardContaner">

@@ -265,6 +265,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .tab .Tabletab-content div:nth-child(4) div input{
     /* width: calc(100% / 3); */
 }

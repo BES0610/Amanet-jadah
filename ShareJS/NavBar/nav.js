@@ -187,7 +187,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060 (1).jpg" alt="" />
-                        <div>اعتماد</div>
+                        <a href="../../../pages/Honesty/trusted/index.html"><div>اعتماد</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060 (2).jpg" alt="" />
