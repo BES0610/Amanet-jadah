@@ -95,9 +95,18 @@ createEmptyCircleChart('modalEmptyCircleChart3', [10, 40, 20, 30], "الاحيا
 createEmptyCircleChart('modalEmptyCircleChart4', [10, 40, 20, 30], "الاحياء");
 createEmptyCircleChart('modalEmptyCircleChart5', [10, 40, 20, 30], "الاحياء");
 createEmptyCircleChart('modalEmptyCircleChart6', [10, 40, 20, 30], "الاحياء");
+createEmptyCircleChart('modalEmptyCircleChart7', [10, 40, 20, 30], "الاحياء");
+createEmptyCircleChart('modalEmptyCircleChart8', [10, 40, 20, 30], "الاحياء");
+createEmptyCircleChart('modalEmptyCircleChart9', [10, 40, 20, 30], "الاحياء");
 createEmptyCircleChart('modalEmptyCircleChart10', [10, 40, 20, 30], "الاحياء")
 createEmptyCircleChart('modalEmptyCircleChart11', [10, 40, 20, 30], "الاحياء")
 createEmptyCircleChart('modalEmptyCircleChart12',[10, 40, 20, 30], "الاحياء")
+createEmptyCircleChart('modalEmptyCircleChart13', [10, 40, 20, 30], "الاحياء");
+createEmptyCircleChart('modalEmptyCircleChart14', [10, 40, 20, 30], "الاحياء")
+createEmptyCircleChart('modalEmptyCircleChart15', [10, 40, 20, 30], "الاحياء")
+createEmptyCircleChart('modalEmptyCircleChart16',[10, 40, 20, 30], "الاحياء")
+createEmptyCircleChart('modalEmptyCircleChart17', [10, 40, 20, 30], "الاحياء");
+createEmptyCircleChart('modalEmptyCircleChart18', [10, 40, 20, 30], "الاحياء")
 
 
 function openModal() {
@@ -115,11 +124,32 @@ function closeModal2() {
     document.getElementById("modal2").style.display = "none";
 }
 
+function openModal3() {
+    document.getElementById("modal4").style.display = "flex";
+}
+
+function closeModal3() {
+    document.getElementById("modal4").style.display = "none";
+}
 function openModal4() {
     document.getElementById("modal4").style.display = "flex";
 }
 
 function closeModal4() {
+    document.getElementById("modal4").style.display = "none";
+}
+function openModal5() {
+    document.getElementById("modal4").style.display = "flex";
+}
+
+function closeModal5() {
+    document.getElementById("modal4").style.display = "none";
+}
+function openModal6() {
+    document.getElementById("modal4").style.display = "flex";
+}
+
+function closeModal6() {
     document.getElementById("modal4").style.display = "none";
 }
 
@@ -131,11 +161,23 @@ window.onclick = function(event) {
     }
     const modal2 = document.getElementById("modal2");
     if (event.target === modal2) {
-        closeModal();
+        closeModal2();
+    }
+    const modal3 = document.getElementById("modal3");
+    if (event.target === modal3) {
+        closeModal3();
     }
     const modal4 = document.getElementById("modal4");
     if (event.target === modal4) {
-        closeModal();
+        closeModal4();
+    }
+    const modal5 = document.getElementById("modal5");
+    if (event.target === modal5) {
+        closeModal5();
+    }
+    const modal6 = document.getElementById("modal6");
+    if (event.target === modal6) {
+        closeModal6();
     }
 };
 

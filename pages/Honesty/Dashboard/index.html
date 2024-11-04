@@ -106,7 +106,7 @@
                     </div>
                     
                         <div class="Card">
-                            <div class="topSection"> المشاريع المنتهيه <span>3500</span></div>
+                            <div class="topSection"> المشاريع تحت التنفيذ <span>3500</span></div>
                             <div class="charts">
                                 <diV class="Link" onclick="openModal2()">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
                                 <div class="CahrtsCon">
@@ -116,16 +116,20 @@
                                 </div>
                                 
                             </div>
-                            <div class="mainData">الخطوط <span>الاطوال</span></div>
+                            <div class="mainData">
+                                <spa>اسم المشروع</spa>
+                                <span>طول خط الضخ</span>
+                                <span>طول خط البديل</span>
+                            </div>
                             <div class="ScoData">
-                                <div>اجمالي الخطوط المنفذه <span>4300</span></div>
-                                <div>اجمالي خطوط الضخ<span>1800</span></div>
-                                <div>اجمالي خطوط  البديله<span>2500</span></div>
+                                <div>عنوان المشروع<span>12</span><span>1700</span></div>
+                                <div>مشروع الرخصة <span>20</span><span>1200</span></div>
+                                <div>مشروع ضخ المياه <span>90</span><span>786</span></div>
                             </div>
                             <div class="AllBtn"><a>الكل</a></div>
                             <div id="modal2" class="modal">
                                 <div class="modal-content">
-                                    <span class="close-button" onclick="closeModal2()">close;</span>
+                                    <span class="close-button" onclick="closeModal2()">&times;</span>
                                     <p style="text-align: right;color: var(--btn-color);">المشاريع المنتهيه</p>
                                     <div class="charts" style="width: 100%;">
                                         <div class="CahrtsCon" style="flex-direction: column;">
@@ -171,9 +175,9 @@
                 </div>
                 <div class="cardContaner">
                         <div class="Card">
-                            <div class="topSection"> المشاريع المنتهيه <span>3500</span></div>
+                            <div class="topSection"> المشاريع المستهدفه <span>3500</span></div>
                             <div class="charts">
-                                <diV class="Link">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
+                                <diV class="Link" onclick="openModal3()">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
                                 <div class="CahrtsCon">
                                     <div class="Chart"><canvas id="emptyCircleChart7" width="140" height="140"></canvas></div>
                                     <div class="Chart"><canvas id="emptyCircleChart8" width="140" height="140"></canvas></div>
@@ -181,13 +185,60 @@
                                 </div>
                                 
                             </div>
-                            <div class="mainData">الخطوط <span>الاطوال</span></div>
+                            <div class="mainData">
+                                <spa>اسم المشروع</spa>
+                                <span>طول خط الضخ</span>
+                                <span>طول خط البديل</span>
+                            </div>
                             <div class="ScoData">
-                                <div>اجمالي الخطوط المنفذه <span>4300</span></div>
-                                <div>اجمالي خطوط الضخ<span>1800</span></div>
-                                <div>اجمالي خطوط  البديله<span>2500</span></div>
+                                <div>عنوان المشروع<span>12</span><span>1700</span></div>
+                                <div>مشروع الرخصة <span>20</span><span>1200</span></div>
+                                <div>مشروع ضخ المياه <span>90</span><span>786</span></div>
                             </div>
                             <div class="AllBtn"><a>الكل</a></div>
+                            <div id="modal3" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal3()">&times;</span>
+                                    <p style="text-align: right;color: var(--btn-color);">تصاريح الضخ</p>
+                                    <div class="charts" style="width: 100%;">
+                                        <div class="CahrtsCon" style="flex-direction: column;">
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart7" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>ساريه</div>
+                                                        <div>تحت الاجراء</div>
+                                                        <div>منتهيه</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart8" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>2022</div>
+                                                        <div>2021</div>
+                                                        <div>2023</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart9" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>يناير</div>
+                                                        <div>فبراير</div>
+                                                        <div>مارس</div>
+                                                        <div>ابريل</div>
+                                                        <div>مايو</div>
+                                                        <div>يونيو</div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="Card">
                             <div class="topSection"> تصاريح الضخ<span>6100</span></div>
@@ -261,7 +312,7 @@
                         <div class="Card">
                             <div class="topSection"> المشاريع المنتهيه <span>3500</span></div>
                             <div class="charts">
-                                <diV class="Link">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
+                                <diV class="Link" onclick="openModal5()">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
                                 <div class="CahrtsCon">
                                     <div class="Chart"><canvas id="emptyCircleChart13" width="140" height="140"></canvas></div>
                                     <div class="Chart"><canvas id="emptyCircleChart14" width="140" height="140"></canvas></div>
@@ -269,18 +320,61 @@
                                 </div>
                                 
                             </div>
-                            <div class="mainData">الخطوط <span>الاطوال</span></div>
+                            <div class="mainData">اسم المشروع <span>رقم الرخصه</span></div>
                             <div class="ScoData">
                                 <div>اجمالي الخطوط المنفذه <span>4300</span></div>
                                 <div>اجمالي خطوط الضخ<span>1800</span></div>
                                 <div>اجمالي خطوط  البديله<span>2500</span></div>
                             </div>
                             <div class="AllBtn"><a>الكل</a></div>
+                            <div id="modal5" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal5()">&times;</span>
+                                    <p style="text-align: right;color: var(--btn-color);">تصاريح الضخ</p>
+                                    <div class="charts" style="width: 100%;">
+                                        <div class="CahrtsCon" style="flex-direction: column;">
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart13" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>ساريه</div>
+                                                        <div>تحت الاجراء</div>
+                                                        <div>منتهيه</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart14" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>2022</div>
+                                                        <div>2021</div>
+                                                        <div>2023</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart15" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>يناير</div>
+                                                        <div>فبراير</div>
+                                                        <div>مارس</div>
+                                                        <div>ابريل</div>
+                                                        <div>مايو</div>
+                                                        <div>يونيو</div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="Card">
                             <div class="topSection"> المشاريع المنتهيه <span>3500</span></div>
                             <div class="charts">
-                                <diV class="Link">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
+                                <diV class="Link" onclick="openModal6()">عرض التفاصيل <img style="width: 15px;" src="../../../assest/Icons/Honesty/Link.png" alt="link" /></diV>
                                 <div class="CahrtsCon">
                                     <div class="Chart"><canvas id="emptyCircleChart16" width="140" height="140"></canvas></div>
                                     <div class="Chart"><canvas id="emptyCircleChart17" width="140" height="140"></canvas></div>
@@ -288,13 +382,56 @@
                                 </div>
                                 
                             </div>
-                            <div class="mainData">الخطوط <span>الاطوال</span></div>
+                            <div class="mainData">اسم المشروع <span>رقم الرخصه</span></div>
                             <div class="ScoData">
                                 <div>اجمالي الخطوط المنفذه <span>4300</span></div>
                                 <div>اجمالي خطوط الضخ<span>1800</span></div>
                                 <div>اجمالي خطوط  البديله<span>2500</span></div>
                             </div>
                             <div class="AllBtn"><a>الكل</a></div>
+                            <div id="modal6" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal6()">&times;</span>
+                                    <p style="text-align: right;color: var(--btn-color);">تصاريح الضخ</p>
+                                    <div class="charts" style="width: 100%;">
+                                        <div class="CahrtsCon" style="flex-direction: column;">
+                                            <div style="display: flex;align-items: center;">
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart16" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>ساريه</div>
+                                                        <div>تحت الاجراء</div>
+                                                        <div>منتهيه</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart17" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>2022</div>
+                                                        <div>2021</div>
+                                                        <div>2023</div>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                <div class="Chart" style="width: 150px; height: 150px;">
+                                                    <canvas id="modalEmptyCircleChart18" width="140" height="140"></canvas>
+                                                </div>
+                                                    <div class="Tiltes">
+                                                        <div>يناير</div>
+                                                        <div>فبراير</div>
+                                                        <div>مارس</div>
+                                                        <div>ابريل</div>
+                                                        <div>مايو</div>
+                                                        <div>يونيو</div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
             </div>
