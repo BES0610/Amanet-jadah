@@ -183,7 +183,7 @@ navber.innerHTML = `
                     <h4>الامانه</h4>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275059.jpg" alt="" />
-                        <div>تصريح ضخ</div>
+                        <a href="../../../pages/Honesty/pumpingRequest/index.html"><div>تصريح ضخ</div></a>
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060 (1).jpg" alt="" />

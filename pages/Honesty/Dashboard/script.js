@@ -1,49 +1,103 @@
-// Select the canvas context
-const ctx = document.getElementById('emptyCircleChart').getContext('2d');
-
-// Initialize the chart
-const emptyCircleChart = new Chart(ctx, {
-    type: 'doughnut', // Use doughnut to create a ring or hollow circle
-    data: {
-        labels: ['Blue Segment', 'Dark Blue Segment', 'Yellow Segment', 'Orange Segment', 'Purple Segment'], // Labels for each segment
-        datasets: [{
-            data: [20, 30, 15, 25, 10], // Values representing percentages for each segment
-            backgroundColor: ['#3B82F6', '#004693', '#FACC15', '#F59E0B', '#6366F1'], // Colors for each segment
-            borderWidth: 0 // Remove any border around the circle
-        }]
-    },
-    options: {
-        responsive: true,
-        cutout: '80%', // Adjusts the thickness of the ring, higher value means thinner ring
-        plugins: {
-            legend: {
-                display: true, // Show the legend with labels
-                position: 'top'
-            },
-            datalabels: {
-                color: 'white', // Text color for the numbers
-                font: {
-                    weight: 'bold',
-                    size: 14
+// Function to create a chart with specified data and canvas ID
+function createEmptyCircleChart(canvasId, data) {
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: data, // Values representing percentages for each segment
+                backgroundColor: ['#3B82F6', '#004693', '#FACC15', '#F59E0B', '#6366F1'],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            cutout: '50%',
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
                 },
-                formatter: (value) => `${value}%`, // Show percentage inside each segment
-                anchor: 'center', // Position the text in the center of each segment
-                align: 'center'
-            },
-            tooltip: {
-                callbacks: {
-                    label: function(context) {
-                        let label = context.label || '';
-                        let value = context.raw || 0;
-                        return `${label}: ${value}%`;
+                datalabels: {
+                    color: 'white',
+                    font: {
+                        weight: "100",
+                        size: 10
+                    },
+                    formatter: () => `1800`, // Adjust as needed
+                    anchor: 'right',
+                    align: 'right'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            let value = context.raw || 0;
+                            return `${label}: ${value}%`;
+                        }
                     }
                 }
             }
-        }
-    },
-    plugins: [ChartDataLabels] // Register the datalabels plugin
-});
+        },
+        plugins: [ChartDataLabels]
+    });
+}
 
+createEmptyCircleChart('emptyCircleChart1', [20, 30, 15, 25, 10]);
+createEmptyCircleChart('emptyCircleChart2', [25, 25, 25, 25]);
+createEmptyCircleChart('emptyCircleChart3', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart4', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart5', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart6', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart7', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart8', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart9', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart10', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart11', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart12', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart13', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart14', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart15', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart16', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart17', [10, 40, 20, 30]);
+createEmptyCircleChart('emptyCircleChart18', [10, 40, 20, 30]);
+
+
+// Initialize each chart in the 
+createEmptyCircleChart('modalEmptyCircleChart1', [20, 30, 15, 25, 10]);
+createEmptyCircleChart('modalEmptyCircleChart2', [25, 25, 25, 25]);
+createEmptyCircleChart('modalEmptyCircleChart3', [10, 40, 20, 30]);
+createEmptyCircleChart('modalEmptyCircleChart10', [20, 30, 15, 25, 10]);
+createEmptyCircleChart('modalEmptyCircleChart11', [25, 25, 25, 25]);
+createEmptyCircleChart('modalEmptyCircleChart12', [10, 40, 20, 30]);
+
+
+function openModal() {
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+function openModal4() {
+    document.getElementById("modal4").style.display = "flex";
+}
+
+function closeModal4() {
+    document.getElementById("modal4").style.display = "none";
+}
+
+// Close the modal if user clicks outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    if (event.target === modal) {
+        closeModal();
+    }
+    const modal4 = document.getElementById("modal4");
+    if (event.target === modal) {
+        closeModal();
+    }
+};
 
 setTimeout(() => {
     let li = document.getElementById("Honesty");
@@ -63,3 +117,4 @@ setTimeout(() => {
     li.appendChild(newDiv);
 
 }, 1)
+
