@@ -1,0 +1,212 @@
+body{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 300;
+    overflow-x: hidden; 
+    height: auto; 
+}
+.ReqAdoptionDash{
+    width: 100%; 
+}
+    /* ReqAdoptionDash */
+    .ReqAdoptionDash .ContentContaner{
+        width: 80%;
+        background-color: white;
+        padding: 44px;
+        border-radius: 12px;
+        height: 80vw;
+        margin: 30px;
+    }
+    .ReqAdoptionDashCon {
+        width: 100%;
+        height: 100;
+    }
+
+    .ReqAdoptionDashCon .TapleCon{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        direction: rtl;
+        border-radius: 12px;
+        align-items: baseline;
+    } 
+    .ReqAdoptionDashCon .TapleCon .HeaderBtn{
+        width: 126px;
+        height: 18px;    
+        background-color: var(--btn-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        padding: 12px;
+        margin: 8px;
+        border-radius: 12px;
+        cursor: pointer;
+    }  
+    .ReqAdoptionDashCon .TapleCon .Taple{
+        width: 100%;
+        height: 100%;
+        background-color: #FBF9FF;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        /* justify-content: space-between; */
+    } 
+    .ReqAdoptionDashCon .TapleCon .Taple span{
+        width: 100%;
+    }
+    .ReqAdoptionDashCon .TapleCon .Taple .Header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        justify-content: space-around;
+        border-bottom: 2px solid  var(--btn-color);
+        margin-bottom: 10px;
+        
+    } 
+    .ReqAdoptionDashCon .TapleCon .Taple .Header div{
+        flex: 1;
+        grid-area: 4;
+        font-size: 18px;
+        font-weight: 800;
+        font-family:  "HelveticaBold", sans-serif;
+        color: var(--btn-color) ;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+    } 
+    .ReqAdoptionDashCon .TapleCon .Taple .body{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        justify-content: space-around;
+        margin-top: 10px;
+    } 
+    .ReqAdoptionDashCon .TapleCon .Taple .body div{
+        flex: 1;
+        grid-area: 4;
+        font-size: 16px;
+        font-weight: 500;
+        font-family:  "Helvetica", sans-serif;
+        color: #002195 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+    } 
+    .ReqAdoptionDashCon .TapleCon .Taple .body div:nth-child(6){
+        padding: 8px;
+    } 
+
+
+    .ReqAdoptionDashCon .pagination {
+        margin-top: 20px; 
+        display: flex; 
+        justify-content: center; 
+        gap: 5px;
+        align-items: center;
+        position: relative;
+    }
+    .ReqAdoptionDashCon .pagination-button {
+        padding: 5px 10px; 
+        border: 1px solid #707070; 
+        color: #707070;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        transition: background-color 0.3s;
+        border-radius: 4px;
+    }
+    .ReqAdoptionDashCon .pagination-button.active {
+        color: black;
+        border:2px solid var(--btn-color);
+        background-color: #FBF9FF; 
+        font-weight: 600;
+    }
+    .ReqAdoptionDashCon .page-select {
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        color:var(--btn-color) ;
+        border: 1px solid #CFD3D8;
+        border-radius: 6px;
+    }
+    .TapleCon .Taple .body .green{
+        background-color: #0A9D4C1A;
+        border-radius: 12px;
+        color: #0A9D4C;
+        font-weight: 800;
+    } 
+     .TapleCon .Taple .body .yellow{
+        background-color: #FFFAED;
+        border-radius: 12px;
+        color: #F19B02;
+        font-weight: 800;
+    } 
+
+     .TapleCon .Taple .body .gray{
+        background-color: #E0E0E0;
+        border-radius: 12px;
+        color: #707070;
+        font-weight: 800;
+    } 
+    .tab {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the tab */
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 1000; /* Make sure it appears above other content */
+        padding: 20px;
+        border-radius: 8px;
+        width: 70%;
+        height: 600px;
+        overflow-y: scroll;
+    }
+    .tab-content {
+        text-align: center; 
+    }
+    .TapContaner{
+        width: 80%;
+        margin-right: 32px;
+    }
+    .Sco{
+        width: 100%;
+       display: flex;
+       flex-direction: column;
+        justify-content: start;
+    }
+    .Sco .section{
+        width: 100%;
+        box-shadow: 0px 4px 19.5px 0px #0000001F;
+        border-radius: 12px;
+        padding: 12px;
+        margin: 6px;
+        direction: rtl;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .saveBtn{
+        width: 75%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        margin: 12px;
+        border-radius: 12px;
+        background-color: var(--btn-color);
+        color: white;
+        font-family: "HelveticaBold";
+    }

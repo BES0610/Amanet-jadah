@@ -219,7 +219,7 @@ li.appendChild(newDiv);
 
 function enableButton() {
     const button = document.getElementById('serviceButton');
-    button.disabled = false;
+    button.disabled = !button.disabled;
 }
 
 // Add click event listeners to each drag-and-drop area

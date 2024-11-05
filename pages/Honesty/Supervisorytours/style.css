@@ -1,0 +1,366 @@
+.Supervisorytours .ContentContaner{
+    width: 80%;
+    background-color: white;
+    padding: 44px;
+    border-radius: 12px;
+    height: 80vw;
+    margin: 30px;
+}
+.SupervisorytoursCon {
+    width: 100%;
+    height: 100;
+}
+
+.SupervisorytoursCon .TapleCon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    direction: rtl;
+    border-radius: 12px;
+    align-items: baseline;
+} 
+.SupervisorytoursCon .TapleCon .HeaderBtn{
+    width: 126px;
+    height: 18px;    
+    background-color: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}  
+.SupervisorytoursCon .TapleCon .HeadTable{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SupervisorytoursCon .TapleCon .HeadTable .TilteTable{
+    width: 18%;
+    height: 100%;
+    font-family: "HelveticaBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--btn-color);
+    border: 0;
+    background-color: transparent;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+    background-color: #FBF9FF ; 
+}
+.SupervisorytoursCon .DropDownContaner{
+position: relative;
+width: 150px;
+height: 100px;
+}
+.SupervisorytoursCon .DropDownContaner .AddBtn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D63DD;
+    color: white;
+    border: 1px solid #6D63DD;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 4px;
+    font-family: "HelveticaBold";
+}
+
+.SupervisorytoursCon .DropDownContaner .dropDown{
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.activedrag{
+    display: flex !important;
+}
+.SupervisorytoursCon .DropDownContaner  .dropDown div{
+    display: block;
+    margin: 0;
+     margin-top: 0px;
+    font-family: "Helvetica";
+    cursor: pointer;
+}
+.SupervisorytoursCon .DropDownContaner div:hover{
+    color: var(--text-color);
+}
+
+
+.SupervisorytoursCon .hidden {
+    display: none;
+}
+
+/* New class for active filter inputs */
+.SupervisorytoursCon .filter-active-inputs {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space inputs evenly */
+    align-items: center; /* Center align items */
+}
+
+.SupervisorytoursCon .input-field {
+    width: calc((100% / 3) - 100px);
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid var(--btn-color);
+    padding: 8px 32px;
+    height: 30px;
+    margin: 8px;
+    cursor: pointer;
+    direction: rtl;
+}
+.tab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.tab-content {
+    text-align: center; 
+}
+
+.tab  button{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "HelveticaBold";
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--btn-color);
+    color: white;
+    margin: 24px;
+}
+
+.scotab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.scotab .tab-content {
+    text-align: center; 
+}
+
+
+.scotab  button{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "HelveticaBold";
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--btn-color);
+    color: white;
+    margin: 24px;
+}
+.TapContaner{
+    width: 70%;
+    margin-right: 32px;
+}
+.Sco{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    justify-content: start;
+}
+.Sco .section{
+    width: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 6px;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+.saveBtn{
+    width: 75%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+    background-color: var(--btn-color);
+    color: white;
+    font-family: "HelveticaBold";
+}
+
+.form-container{
+    width: 87%;
+    height: auto;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    background-color: white;
+    direction: rtl;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topSection{
+    width: 90%;
+}
+.topSection div{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: auto;
+}
+.BottomSection{
+    width: 82%;
+    background-color: #FBF9FF;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+.BottomSection div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.BottomSection div span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.BottomSection div .inputCon{
+    width: 100%;
+}
+.form-container .inputCon {
+    display: inline-flex;
+    margin: 22px;
+    flex-direction: column;
+    width: calc((100% / 2) - 50px);
+}
+.form-container .inputCon input{
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--btn-color);
+    height: 30px;
+    cursor: pointer;
+    direction: rtl;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #CFD3D8;
+}
+.form-container .inputCon label{
+    font-weight: 400;
+    margin: 8px;
+}
+.form-container .inputCon input::placeholder {
+    font-family: "Helvetica", sans-serif;
+    color: #888;
+    font-style: italic; 
+    opacity: 1;
+}
+
+
+ input[type="checkbox"] {
+    margin-right: 10px; 
+    margin-left: 22px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white; /* Default unchecked background */
+    appearance: none; /* Remove default checkbox style */
+    border: 2px solid #ccc; /* Add a border */
+    position: relative; /* Make it relative for ::before positioning */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+ input[type="checkbox"]:checked {
+    background-color: var(--btn-color); /* Change to blue when checked */
+    border-color: var(--btn-color);
+}
+
+ input[type="checkbox"]::before {
+    content: ''; /* Initially empty */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: white;
+    display: none; /* Hidden by default */
+}
+
+ input[type="checkbox"]:checked::before {
+    content: '✔'; /* Checkmark symbol */
+    display: block;
+}
+
+/* To show file name */
+.file-name {
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+}
+.status{
+    padding: 4px;
+    border-radius: 13px;
+    border: 1px solid #CFD3D8;
+    font-size: 11px;
+    height: 28px;
+}
+.status img{
+    width: 16px;
+    height: 16px;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 5px;
+}
