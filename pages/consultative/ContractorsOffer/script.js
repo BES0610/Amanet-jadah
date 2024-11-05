@@ -43,14 +43,18 @@ function renderItems(page) {
             <div>${item.number}</div>
             <div>${item.name}</div>
             <div>${item.project}</div>
-            <div><img style="cursor: pointer;"src="${item.icon}" alt="icon" /></div>
-            <div><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.icon1}" alt="icon" /></div>
+            <div id="thirdopenTabIcon-${i}"><img style="cursor: pointer;"src="${item.icon}" alt="icon" /></div>
+            <div id="openTabIcon-${i}"><img style="cursor: pointer;" src="${item.icon1}" alt="icon" /></div>
         `;
         bodyDivData.appendChild(bodyDiv);
 
         // Attach event listener for opening the tab for the current item
         document.getElementById(`openTabIcon-${i}`).addEventListener('click', () => {
             openTab(item); // Open tab with the item details
+        });
+                // Attach event listener for opening the tab for the current item
+        document.getElementById(`thirdopenTabIcon-${i}`).addEventListener('click', () => {
+            thirdTab(item); // Open tab with the item details
         });
     }
 
@@ -172,3 +176,22 @@ setTimeout(() => {
     li.appendChild(newDiv);
 
 }, 1)
+function thirdTab(item) {
+    const tab = document.getElementById('thirdtab');
+    const tabContent = document.querySelector('.tab-content');
+    
+    
+    tab.style.display = 'block'; // Show the tab
+    
+    // Close tab functionality
+    document.getElementById('thirdcloseTab').addEventListener('click', () => {
+        tab.style.display = 'none'; // Hide the tab
+    });
+    
+    // Optional: Close the tab when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === tab) {
+            tab.style.display = 'none'; // Hide the tab if clicked outside
+        }
+    });
+    }

@@ -154,6 +154,64 @@ body{
         text-align: center; /* Center text in the tab */
     }
     
+
+    .thirdtab {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the tab */
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000; /* Make sure it appears above other content */
+        padding: 20px;
+        border-radius: 8px;
+        width: 70%;
+        height: 600px;
+        overflow-y: scroll;
+    }
+    .tab-content {
+        text-align: center; 
+    }
+    
+    .thirdtab  button{
+        width: 80%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: "HelveticaBold";
+        border-radius: 12px;
+        padding: 12px;
+        background-color: #E2E8F0;
+        color: var(--btn-color);
+        margin: 24px;
+    }
+    .ContanerPDF{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+        width: 80%;
+        direction: rtl;
+    }
+    .ContanerPDF .PDF{
+        display: flex;flex-direction: column;justify-content: center;
+        width: 200px;
+        flex: 0 1 22%; /* Each child takes 25% of the row */
+        box-sizing: border-box;
+        margin: 8px;
+    }
+    .ContanerPDF .PDF div{
+        display: flex;    
+        margin: auto;
+        width: 100%;
+    }
+    .ContanerPDF .PDF div input[type="checkbox"]{
+        border-color: var(--text-color);
+    }
+    
     /* TapContenetCon */
 
     .TapContenetCon{

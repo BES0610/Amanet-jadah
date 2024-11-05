@@ -97,7 +97,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275059.jpg" alt="" />
-                        <div>تعميد خط بديل</div>
+                        <a href="../../../pages/consultative/alternativeline/index.html"><div>تعميد خط بديل</div></a>
                     </div>
                 </div>
                 
@@ -116,7 +116,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/consultative/Group 1171275061.jpg" alt="" />
-                        <div>الجولات الرقابيه</div>
+                        <a href="../../../pages/consultative/Supervisoryrounds/index.html"><div>الجولات الرقابيه</div></a>
                     </div>
                 </div>
                 
@@ -146,7 +146,7 @@ navber.innerHTML = `
                     </div>
                     <div class="link-container">
                         <img src="../../../assest/Icons/HomePage/Contractors/Group 1171275061 (1).jpg" alt="" />
-                        <div>تعميد خط بديل</div>
+                        <a href="../../../pages/Contractors/alternativeline/index.html"><div>تعميد خط بديل</div></a>
                     </div>
                 </div>
                 

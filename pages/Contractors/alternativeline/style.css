@@ -1,0 +1,555 @@
+.alternativeline .ContentContaner{
+    width: 80%;
+    background-color: white;
+    padding: 44px;
+    border-radius: 12px;
+    height: 80vw;
+    margin: 30px;
+}
+
+ .TapleCon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    direction: rtl;
+    border-radius: 12px;
+    align-items: baseline;
+} 
+ .TapleCon .HeaderBtn{
+    width: 126px;
+    height: 18px;    
+    background-color: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}  
+ .TapleCon .HeadTable{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .TapleCon .HeadTable .TilteTable{
+    width: 18%;
+    height: 100%;
+    font-family: "HelveticaBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--btn-color);
+    border: 0;
+    background-color: transparent;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+    background-color: #FBF9FF ; 
+}
+
+.tab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.tab-content {
+    text-align: center; 
+}
+
+.tab  button{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "HelveticaBold";
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #E2E8F0;
+    color: var(--btn-color);
+    margin: 24px;
+}
+.ContanerPDF{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    width: 80%;
+    direction: rtl;
+}
+.ContanerPDF .PDF{
+    display: flex;flex-direction: column;justify-content: center;
+    width: 200px;
+    flex: 0 1 22%; /* Each child takes 25% of the row */
+    box-sizing: border-box;
+    margin: 8px;
+}
+.ContanerPDF .PDF div{
+    display: flex;    
+    margin: auto;
+    width: 100%;
+}
+.ContanerPDF .PDF div input[type="checkbox"]{
+    border-color: var(--text-color);
+}
+
+
+ input[type="checkbox"] {
+    margin-right: 10px; 
+    margin-left: 22px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    background-color: white; /* Default unchecked background */
+    appearance: none; /* Remove default checkbox style */
+    border: 1px solid var(--text-color); /* Add a border */
+    position: relative; /* Make it relative for ::before positioning */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 4px;
+}
+
+ input[type="checkbox"]:checked {
+    background-color: white;
+    border-color: var(--btn-color);
+}
+
+ input[type="checkbox"]::before {
+    content: ''; /* Initially empty */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: var(--text-color);
+    display: none; /* Hidden by default */
+}
+
+ input[type="checkbox"]:checked::before {
+    content: '✔'; /* Checkmark symbol */
+    display: block;
+}
+
+
+.scotab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.scotab .tab-content {
+    text-align: center; 
+}
+
+.scotab .TapContaner{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    direction: rtl;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+}
+
+.scotab  button{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "HelveticaBold";
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--btn-color);
+    color: white;
+    margin: 24px;
+}
+.DragAndDropContaner{
+    width: 90%;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+
+}
+.scotab .DragBoxsContnar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    direction: rtl;
+}
+
+.scotab .DragBox{
+    width: 44%;
+    display: flex;
+    cursor: pointer;
+    text-align: justify;
+    font-weight: 400;
+    margin: 18px 25px;
+    flex-direction: column;
+}
+.scotab .DragBox label{ 
+    flex: 3;
+}
+.scotab .DragBox .drag-and-drop {
+    height: auto;
+    padding: 12px;
+    box-shadow: 0px 4px 16px 0px #0046931A;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Keep the flex direction as row */
+    justify-content: center;
+    align-items: center;
+    flex: 8;
+}
+
+.scotab .DragBox .drag-and-drop img {
+    width: 20px; 
+    height: 20px; /* Original height for default state */
+}
+
+.scotab .DragBox .drag-and-drop.uploaded img {
+    width: 50px; /* Updated width when file is uploaded */
+    margin: 10px; /* Margin when file is uploaded */
+}
+.scotab .DragBox  .file-size {
+    font-size: 11px;
+    font-weight: 300;
+    direction: ltr;
+    display: flex;
+    justify-content: end;
+}
+
+.scotab .DragBox .progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px; 
+    overflow: hidden; 
+    display: flex; 
+    height: 10px;
+}
+
+.scotab .DragBox .progress-bar {
+    height: 100%; 
+    background-color: #2F7CBE; 
+    width: 0; 
+    transition: width 0.5s; 
+}
+
+.scotab .DragBox .upload-percentage {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    direction: rtl; 
+}
+
+
+.thirdtab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.thirdtab .tab-content {
+    text-align: center; 
+}
+
+.forthtab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    overflow-y: scroll;
+}
+.forthtab .tab-content {
+    text-align: center; 
+}
+
+.forthtab .TapContaner{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    direction: rtl;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+}
+.forthtab .TopBtn{
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px;
+    color: white;
+    background-color:var(--btn-color);
+    cursor: pointer;
+}
+
+.nastedTbale{
+    width: 90%;
+
+}
+.nastedTbale tr{
+    display: flex;
+    width: 100%;
+}
+/* To show file name */
+.file-name {
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+}
+.status{
+    padding: 4px;
+    border-radius: 13px;
+    border: 1px solid #CFD3D8;
+    font-size: 11px;
+    height: 28px;
+}
+.status img{
+    width: 16px;
+    height: 16px;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 5px;
+}
+
+.fifthtab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.fifthtab .tab-content {
+    text-align: center; 
+}
+
+.fifthtab .TapContaner{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    direction: rtl;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+}
+
+
+.sixtab {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tab */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.sixtab .tab-content {
+    text-align: center; 
+}
+
+.sixtab .TapContaner{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    direction: rtl;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+}
+
+.Sco{
+    width:89%;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+}
+.Sco .section{
+    width: 100%;
+    box-shadow: 0px 4px 19.5px 0px #0000001F;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 6px;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+    /* Form */
+    .form-container{
+        direction: rtl;
+    }
+    .form-container .inputCon {
+        display: inline-flex;
+        margin: 22px;
+        flex-direction: column;
+        width: calc((100% / 2) - 50px);
+    }
+    .form-container .inputCon input{
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #CFD3D8;
+    }
+    .form-container .inputCon label{
+        font-weight: 400;
+        margin: 8px;
+        text-align: justify;
+    }
+    .form-container .inputCon input::placeholder {
+        font-family: "Helvetica", sans-serif;
+        color: #888; /* Color of the placeholder text */
+        font-style: italic; /* Italic style for the placeholder */
+        opacity: 1; /* Set opacity to ensure visibility */
+    }
+
+    .form-container .DragBoxsContnar {
+        text-align: center;
+    }
+    .form-container .DragBox{
+        width: 90%;
+        display: inline-block;
+        cursor: pointer;
+        text-align: justify;
+        font-weight: 400;
+        margin: 18px 25px;
+    }
+    .form-container .DragBox .drag-and-drop {
+        height: auto;
+        padding: 12px;
+        box-shadow: 0px 4px 16px 0px #0046931A;
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column; /* Keep the flex direction as row */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-container .DragBox .drag-and-drop img {
+        width: 20px; 
+        height: 20px; /* Original height for default state */
+    }
+    
+    .form-container .DragBox .drag-and-drop.uploaded img {
+        width: 50px; /* Updated width when file is uploaded */
+        margin: 10px; /* Margin when file is uploaded */
+    }
+    .form-container .DragBox  .file-size {
+        font-size: 11px;
+        font-weight: 300;
+    }
+    
+    .form-container .DragBox .progress-container {
+        width: 100%;
+        background-color: #f3f3f3;
+        border-radius: 5px; 
+        overflow: hidden; 
+        display: flex; 
+        height: 10px;
+    }
+    
+    .form-container .DragBox .progress-bar {
+        height: 100%; 
+        background-color: #2F7CBE; 
+        width: 0; 
+        transition: width 0.5s; 
+    }
+    
+    .form-container .DragBox .upload-percentage {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+        direction: rtl; 
+    }
+    

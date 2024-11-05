@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../../root.css">
+    <link rel="stylesheet" href="../../../Glopal.css">
+    <link rel="stylesheet" href="../../../ShareCSS/NavBar/NavBar.css">
+    <link rel="stylesheet" href="../../../ShareCSS/Media/Media.css">
+    <link rel="stylesheet" href="../../../ShareCSS/footer/style.css">
+    <link rel="stylesheet" href="../../../ShareCSS/SearchAndFilter/style.css">
+    <link rel="stylesheet" href="../../../ShareCSS/table/style.css">
+
+    <title>tap 1</title>
+</head>
+<body>
+    <div class="alternativeline">
+        <div class="Media" id="Media"></div>
+        <div class="Contaner">
+            <div  id="nav"></div>
+            <div class="Links" style="width: 100%; text-align: right; margin: 12px 0;">
+                <span style="color: #80A3C9; font-weight: 400; font-size: 18px; margin-left: 10px;"> الاستشاري    </span>
+                <span style="color: #004693; font-weight: 600; font-size: 20px"> > تعميد خط بديل</span>
+            </div>
+            <div class="ContentContaner" style="width: 85%;">
+                <div class="alternativelineCon">
+                    <div id="SearchAndFilter"></div>
+                    <div class="TapleCon">
+                        <div id="table"></div>
+                    </div>
+                </div>
+                
+                <div id="tab" class="tab">
+                    <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <div class="closeTab" id="closeTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                        <div style="width: 100%;direction: rtl;color: var(--btn-color);">اضافه مرفقات</div>
+                        <div class="ContanerPDF" >
+                            <div class="PDF">
+                                <div>
+                                    <label><input type="checkbox" name="agreement" value="agree"/></label>
+                                    <span><img src="../../../assest/Media/consultative/pdf.png" /></span>
+                                </div>
+                                <div style="color: var(--text-color);">تقديم عروض الاسعار</div>
+                            </div>
+                            <div class="PDF">
+                                <div>
+                                    <label><input type="checkbox" name="agreement" value="agree"/></label>
+                                    <span><img src="../../../assest/Media/consultative/pdf.png" /></span>
+                                </div>
+                                <div style="color: var(--text-color);">تقديم عروض الاسعار</div>
+                            </div>
+                            <div class="PDF">
+                                <div>
+                                    <label><input type="checkbox" name="agreement" value="agree"/></label>
+                                    <span><img src="../../../assest/Media/consultative/pdf.png" /></span>
+                                </div>
+                                <div style="color: var(--text-color);">تقديم عروض الاسعار</div>
+                            </div>
+                            <div class="PDF">
+                                <div>
+                                    <label><input type="checkbox" name="agreement" value="agree"/></label>
+                                    <span><img src="../../../assest/Media/consultative/pdf.png" /></span>
+                                </div>
+                                <div style="color: var(--text-color);">تقديم عروض الاسعار</div>
+                            </div>
+                            <div class="PDF">
+                                <div>
+                                    <label><input type="checkbox" name="agreement" value="agree"/></label>
+                                    <span><img src="../../../assest/Media/consultative/pdf.png" /></span>
+                                </div>
+                                <div style="color: var(--text-color);">تقديم عروض الاسعار</div>
+                            </div>
+                            <div class="PDF">
+                                <div>
+                                    <label><input type="checkbox" name="agreement" value="agree"/></label>
+                                    <span><img src="../../../assest/Media/consultative/pdf.png" /></span>
+                                </div>
+                                <div style="color: var(--text-color);">تقديم عروض الاسعار</div>
+                            </div>
+                        </div>
+                        <button>تحميل<img src="../../../assest/Icons/consultative/download.png"> </button>
+                    </div>
+                </div>
+                <div id="scotab" class="scotab">
+                    <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <div class="ScocloseTab" id="ScocloseTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                        <div class="DragAndDropContaner">
+                            <h3 style="width: 100%;direction: rtl;color: var(--btn-color);">اتخاذ اجراء</h3>
+                            <div class="DragBoxsContnar">
+                                <div class="DragBox">
+                                    <label>اعتماد المواد</label>
+                                    <div class="drag-and-drop" data-input-id="file-input-license">
+                                        <img src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                        <div style="width: 100%;">
+                                            <div id="uploadText-license" style="text-align: center;">اضغط للارفاق</div>
+                                            <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                            <div class="file-name" id="file-name-license"></div>
+                                            <div class="file-size" id="file-size-license"></div>
+                                            <div style="display: flex; flex-direction: row; align-items: center;width: 50%;">
+                                                <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                    <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                </div>
+                                                <div id="upload-percentage-license" class="upload-percentage"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="DragBox">
+                                    <label>تصريح الحفر</label>
+                                    <div class="drag-and-drop" data-input-id="file-input-license">
+                                        <img src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                        <div style="width: 100%;">
+                                            <div id="uploadText-license" style="text-align: center;">اضغط للارفاق</div>
+                                            <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                            <div class="file-name" id="file-name-license"></div>
+                                            <div class="file-size" id="file-size-license"></div>
+                                            <div style="display: flex; flex-direction: row; align-items: center;width: 50%;">
+                                                <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                    <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                </div>
+                                                <div id="upload-percentage-license" class="upload-percentage"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="DragBoxsContnar">
+                                <div class="DragBox">
+                                    <label>موافقة التشوين</label>
+                                    <div class="drag-and-drop" data-input-id="file-input-license">
+                                        <img src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                        <div style="width: 100%;">
+                                            <div id="uploadText-license" style="text-align: center;">اضغط للارفاق</div>
+                                            <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                            <div class="file-name" id="file-name-license"></div>
+                                            <div class="file-size" id="file-size-license"></div>
+                                            <div style="display: flex; flex-direction: row; align-items: center;width: 50%;">
+                                                <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                    <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                </div>
+                                                <div id="upload-percentage-license" class="upload-percentage"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputCon" style="width: 300px;flex-direction: column;display: flex;margin-top: auto;">
+                                    <label>طول الخط البديل</label>
+                                    <input type="number" class="input-field" style="width: 371px ;border: 0;border-bottom: 1px solid #CFD3D8;" placeholder="طول الخط البديل" required  />
+                                </div>
+                            </div>
+                        </div>
+                        <button>حفظ</button>
+                    </div>
+                </div>
+                <div id="thirdtab" class="thirdtab">
+                    <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <div class="thirdloseTab" id="thirdloseTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                        <h3 style="width: 100%;direction: rtl;color: var(--btn-color);">الموقع</h3>
+                        <div style="width: 63%"><img  src="../../../assest/Media/Honesty/map.png" style="width: 100%;height: 100%;" /></div>
+                    </div>
+                </div>
+                <div style="z-index: 2;" id="forthtab" class="forthtab">
+                    <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <div class="forthcloseTab" id="forthcloseTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                        <h3 style="width: 100%;direction: rtl;color: var(--btn-color);">رقم المعامله 1234</h3>
+                        <div class="nastedTbale">
+                            <div class="searchAndFilterTop">
+                                <input type="search" placeholder="بحث" />
+                                <button>بحث</button>
+                                <div id="filter" class="filter">فلتر</div>
+                            </div>
+                            
+                            <div id="filterInputs" class="hidden"> 
+                                <input type="text" class="input-field" id="input1"  />
+                                <input type="text" class="input-field" id="input2" />
+                                <input type="text" class="input-field" id="input3" />
+                            </div>
+                            <div class="TapleCon">
+                                <table class="table">
+                                    <thead class="Header">
+                                        <th style="flex: 1;">التاريخ</th>
+                                        <th style="flex: 1;">طول الخط البديل</th>
+                                        <th style="flex: 1;">الامتار المنفذه</th>
+                                        <th style="flex: 1;">الامتار المتبقية</th>
+                                        <th style="flex: 1;">الامتار المعمدة</th>
+                                        <th style="flex: 1;">التقرير</th>
+                                        <th style="flex: 1;">المرفقات</th>
+                                    </thead>
+                                    <tbody class="body" style="display: block;"> 
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="flex: 1;text-align: center;">12/08/2024</td>
+                                            <td style="flex: 1;text-align: center;">12340</td>
+                                            <td style="flex: 1;text-align: center;">245</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">120</td>
+                                            <td style="flex: 1;text-align: center;">تم تنفيذ جميع المشروعات الخاصة</td>
+                                            <td style="flex: 1;text-align: center;" onclick="openTab()"><img src="../../../assest/Icons/Honesty/arrowdown.png" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pagination" style="width: 100%;" id="pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="z-index: 2;" id="sixtab" class="sixtab">
+                    <div class="tab-content'" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                        <div class="sixcloseTab" id="sixcloseTab" style="cursor: pointer;width: 100%;"><img class="closeTab" src="../../../assest/Icons/genral/X.png" /></div>
+                        <h3 style="width: 100%;direction: rtl;color: var(--btn-color);">تمديد خط بديل</h3>
+                            <div class="DragBoxsContnar">
+                                <div class="DragBox">
+                                    <label>ارفاق ملفات التقرير </label>
+                                    <div class="drag-and-drop" data-input-id="file-input-license">
+                                        <img src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                        <div style="width: 100%;">
+                                            <div id="uploadText-license" style="text-align: center;">اضغط للارفاق</div>
+                                            <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                            <div class="file-name" id="file-name-license"></div>
+                                            <div class="file-size" id="file-size-license"></div>
+                                            <div style="display: flex; flex-direction: row; align-items: center;width: 100%;">
+                                                <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                    <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                </div>
+                                                <div id="upload-percentage-license" class="upload-percentage"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</div>
+<script src="./script.js"></script>
+<script src="../../../ShareJS/NavBar/nav.js"></script>
+<script src="../../../ShareJS/SearchAndFilter/SearchAndFilter.js"></script>
+<script src="../../../ShareJS/SearchAndFilter/script.js"></script>
+<script src="../../../ShareJS/NavBar/script.js"></script>
+<script src="../../../ShareJS/Media/Media.js"></script>
+<script src="../../../ShareJS/footer/footer.js"></script>
+<script src="../../../ShareJS/table/table.js"></script>
+</body>
+</html>

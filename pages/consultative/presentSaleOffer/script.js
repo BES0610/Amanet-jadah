@@ -50,11 +50,10 @@ function renderItems(page) {
             <div><img style="cursor: pointer;" id="openTabIcon-${i}" src="${item.icon}" alt="icon" /></div>
         `;
         bodyDivData.appendChild(bodyDiv);
-
-        // Attach event listener for opening the tab for the current item
         document.getElementById(`openTabIcon-${i}`).addEventListener('click', () => {
             openTab(item); // Open tab with the item details
         });
+
     }
 
     createPagination(); // Update pagination controls
@@ -243,3 +242,4 @@ setTimeout(() => {
     li.appendChild(newDiv);
 
 }, 1)
+
