@@ -189,10 +189,119 @@ navber.innerHTML = `
                         <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060 (1).jpg" alt="" />
                         <a href="../../../pages/Honesty/trusted/index.html"><div>اعتماد</div></a>
                     </div>
-                    <div class="link-container">
-                        <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275060 (2).jpg" alt="" />
+                    <div class="link-container" id="smalltap1" style="position: relative;" onclick="toggleDropdown1()">
+                        <img src="../../../assest/Icons/HomePage/Honesty/Group 1171275061.jpg" alt="" />
                         <div>اعدادات</div>
+                        <icon>
+                            <img style="width: 7px; height: 7px; margin-right: -23px;" src="../../../assest/Media/Genral/arrow.jpg" alt="Arrow" />
+                        </icon>
+                        <!-- Hidden dropdown content -->
+                        <div class="dropdown-content">
+                            <div style="margin-bottom : 12px; margin-left: 0;" onclick="showVideo()">اضافه فيديو</div>
+                            <div style="margin-bottom : 12px; margin-left: 0;" onclick="showWay()">اضافه تعهد</div>
+                            <div style="margin-bottom : 12px; margin-left: 0;" onclick="showLast()" >اضافه اليه</div>
+                        </div>
                     </div>
+                        <div class="NavVideo hidden" id="NavVideo">
+                            <div class="form-container" style="padding: 0">
+                            <div class="inputCon" style="display: flex;flex-direction: column;margin: 12px">
+                                <label>اسم فيديو</label>
+                                <input style="width: 100%" type="email"  placeholder="اسم فيديو" required />
+                            </div>
+                            <div class="inputCon" style="display: flex;flex-direction: column;margin: 12px">
+                                <label>وصف فيديو </label>
+                                <input style="width: 100%" type="email"  placeholder="وصف فيديو " required />
+                            </div>
+                            <label>ملف فيديو</label>
+                                <div class="DragBoxsContnar"style="box-shadow: 0px 4px 19.5px 0px #0000001F;margin: 0;width: 120%;text-align: center;border-radius: 14px;padding: 5px;height: 50px">
+                                    <div class="DragBox" style="margin: 0"> 
+                                        <div style="margin: 0" class="drag-and-drop" data-input-id="file-input-license">
+                                            <img style="margin: 0" src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                            <div style="margin: 0" style="width: 100%;">
+                                                <div  id="uploadText-license" style="text-align: center;margin: 0;margin-top: -14px">اضغط للارفاق</div>
+                                                <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                <div class="file-name" id="file-name-license"></div>
+                                                <div class="file-size" id="file-size-license"></div>
+                                                <div style="display: flex; flex-direction: row; align-items: center;width: 50%;">
+                                                    <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                        <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                    </div>
+                                                    <div id="upload-percentage-license" class="upload-percentage"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <button>حفظ</button>
+                            </div>
+                            </div>
+                            <div class="NavWay hidden" id="NavWay">
+                                    <div class="form-container" style="padding: 0">
+                                    <div class="inputCon" style="display: flex;flex-direction: column;margin: 12px">
+                                        <label>اسم التعهد</label>
+                                        <input style="width: 100%" type="email"  placeholder="اسم التعهد" required />
+                                    </div>
+                                    <div class="inputCon" style="display: flex;flex-direction: column;margin: 12px">
+                                        <label>وصف التعهد </label>
+                                        <input style="width: 100%" type="email"  placeholder="وصف التعهد " required />
+                                    </div>
+                                    <label>ملف التعهد</label>
+                                        <div class="DragBoxsContnar"style="box-shadow: 0px 4px 19.5px 0px #0000001F;margin: 0;width: 120%;text-align: center;border-radius: 14px;padding: 5px;height: 50px">
+                                            <div class="DragBox" style="margin: 0"> 
+                                                <div style="margin: 0" class="drag-and-drop" data-input-id="file-input-license">
+                                                    <img style="margin: 0" src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                                    <div style="margin: 0" style="width: 100%;">
+                                                        <div  id="uploadText-license" style="text-align: center;margin: 0;margin-top: -14px">اضغط للارفاق</div>
+                                                        <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                        <div class="file-name" id="file-name-license"></div>
+                                                        <div class="file-size" id="file-size-license"></div>
+                                                        <div style="display: flex; flex-direction: row; align-items: center;width: 50%;">
+                                                            <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                                <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                            </div>
+                                                            <div id="upload-percentage-license" class="upload-percentage"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <button>حفظ</button>
+                                    </div>
+                                </div>
+                            <div class="NavLast hidden" id="NavLast">
+                                    <div class="form-container" style="padding: 0">
+                                    <div class="inputCon" style="display: flex;flex-direction: column;margin: 12px">
+                                        <label>اسم اليه</label>
+                                        <input style="width: 100%" type="email"  placeholder="اسم اليه" required />
+                                    </div>
+                                    <div class="inputCon" style="display: flex;flex-direction: column;margin: 12px">
+                                        <label>وصف اليه </label>
+                                        <input style="width: 100%" type="email"  placeholder="وصف اليه " required />
+                                    </div>
+                                    <label>ملف اليه</label>
+                                        <div class="DragBoxsContnar"style="box-shadow: 0px 4px 19.5px 0px #0000001F;margin: 0;width: 120%;text-align: center;border-radius: 14px;padding: 5px;height: 50px">
+                                            <div class="DragBox" style="margin: 0"> 
+                                                <div style="margin: 0" class="drag-and-drop" data-input-id="file-input-license">
+                                                    <img style="margin: 0" src="../../../assest/Icons/Owner/OrderDetils/elements.jpg" id="upload-icon-license" />
+                                                    <div style="margin: 0" style="width: 100%;">
+                                                        <div  id="uploadText-license" style="text-align: center;margin: 0;margin-top: -14px">اضغط للارفاق</div>
+                                                        <input type="file" id="file-input-license" class="file-input" accept="*" style="display: none;" onchange="handleFileUpload(this)" />
+                                                        <div class="file-name" id="file-name-license"></div>
+                                                        <div class="file-size" id="file-size-license"></div>
+                                                        <div style="display: flex; flex-direction: row; align-items: center;width: 50%;">
+                                                            <div class="progress-container" id="progress-container-license" style="display: none; flex: 1; margin-right: 10px;">
+                                                                <div class="progress-bar" id="progress-bar-license" style="height: 100%;"></div>
+                                                            </div>
+                                                            <div id="upload-percentage-license" class="upload-percentage"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <button>حفظ</button>
+                                    </div>
+                                </div>
+        
                 </div>
                 
                 <div class="ScoRow">

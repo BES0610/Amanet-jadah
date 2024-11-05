@@ -66,3 +66,35 @@ function toggleDropdown() {
     const linkContainer = document.querySelector('#smalltap');
     linkContainer.classList.toggle('active');
 }
+
+function toggleDropdown1() {
+    const linkContainer = document.querySelector('#smalltap1');
+    linkContainer.classList.toggle('active');
+}
+
+const navVideo = document.getElementById("NavVideo");
+const navWay = document.getElementById("NavWay");
+const navLast = document.getElementById("NavLast");
+// Show functions
+function showVideo() {
+    navVideo.classList.remove("hidden");
+}
+function showWay() {
+    navWay.classList.remove("hidden");
+}
+function showLast() {
+    navLast.classList.remove("hidden");
+}
+
+// Hide the elements when clicking outside of them
+window.addEventListener('click', (event) => {
+    if (!navVideo.contains(event.target) && !event.target.closest('.NavVideo')) {
+        navVideo.classList.add('hidden');
+    }
+    if (!navWay.contains(event.target) && !event.target.closest('.NavWay')) {
+        navWay.classList.add('hidden');
+    }
+    if (!navLast.contains(event.target) && !event.target.closest('.NavLast')) {
+        navLast.classList.add('hidden');
+    }
+});

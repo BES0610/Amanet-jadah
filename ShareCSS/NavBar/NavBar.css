@@ -321,3 +321,107 @@
     font-family: "Helvetica";
 
 }
+
+    /* Form */
+    .form-container{
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-right: 50px;
+        margin-left: auto;
+        border-bottom: 1px solid #CFD3D8;
+        margin-bottom: 12px;
+    }
+    .form-container .inputCon {
+        display: inline-flex;
+        margin: 22px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .form-container .inputCon input{
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #CFD3D8;
+        width: 280px;
+    }
+    .form-container .inputCon label{
+        font-weight: 400;
+        margin: 8px;
+        text-align: justify;
+    }
+    .form-container .inputCon input::placeholder {
+        font-family: "Helvetica", sans-serif;
+        color: #888; /* Color of the placeholder text */
+        font-style: italic; /* Italic style for the placeholder */
+        opacity: 1; /* Set opacity to ensure visibility */
+    }
+
+
+    .NavVideo, .NavWay, .NavLast {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        background-color: white;
+        width: 318px;
+        height: auto;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0px 4px 19.5px 0px #0000001F;
+    }
+
+    .NavVideo button {
+        width: 100%;
+        height: 46px;
+        padding: 12px;
+        border-radius: 12px;
+        color: white;
+        background-color: var(--btn-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+        font-family: "HelveticaBold";
+    }
+
+    .NavWay button {
+        width: 100%;
+        height: 46px;
+        padding: 12px;
+        border-radius: 12px;
+        color: white;
+        background-color: var(--btn-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+        font-family: "HelveticaBold";
+    }
+
+    .NavLast button {
+        width: 100%;
+        height: 46px;
+        padding: 12px;
+        border-radius: 12px;
+        color: white;
+        background-color: var(--btn-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+        font-family: "HelveticaBold";
+    }
+
+    .hidden {
+        display: none;
+    }
+    
